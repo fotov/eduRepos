@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="87aa1b58-bd86-41f2-a66e-b6caba4fd0af">
+  <producedTypes>
+    <selectionType typeId="54c0984b-dc39-4fb4-8388-5f4175289b4f" valueTypeId="35a32020-8cdb-450c-b12c-405bc9d5b2e7"/>
+    <listType typeId="45ac04cc-7004-40a7-a500-dbe1ea113d89" valueTypeId="7231b612-f548-4303-b5ad-0e9f23b1580b"/>
+    <managerType typeId="e01154cc-d3ec-4c77-bc0c-a3a117ad8dfd" valueTypeId="215a4cd9-4f0c-41e1-a07a-caa7b762c4dc"/>
+    <recordSetType typeId="82f63662-3d99-469c-956b-1fd3341fd220" valueTypeId="aaebc28c-9932-4893-9642-d407b467e172"/>
+    <recordKeyType typeId="8cac1016-b7b2-4ea2-b8a6-913cd65316f7" valueTypeId="ec536300-dedc-46c6-92b6-6b4e38ef00e0"/>
+    <recordType typeId="13213c69-fc0d-4411-8f56-6ba8f0af0635" valueTypeId="4e7962cb-3a8e-4980-8efb-11acdbe67a3f"/>
+    <recordManagerType typeId="74703895-2439-4835-b343-48b3e53e3c4d" valueTypeId="5e5810fc-ee57-4f7c-9726-99a21ebf40eb"/>
+  </producedTypes>
+  <name>ДатыАктуальностиРасширений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Даты актуальности расширений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="3de4efcd-66ec-41a0-9257-b16741ce37c2">
+    <name>ДатаАктуальности</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата актуальности</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="7ab66f2f-9aa9-4b14-9b0b-010913da749f">
+    <name>ВерсияДополнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия дополнения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВерсииДополнений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="31e657a7-ec40-42f4-9812-055cb6cd1439">
+    <name>База</name>
+    <synonym>
+      <key>ru</key>
+      <value>База</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Базы1С</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

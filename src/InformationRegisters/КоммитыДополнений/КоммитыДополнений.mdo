@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4340109b-0600-469c-82e2-a5303fcaeb0d">
+  <producedTypes>
+    <selectionType typeId="5fd48524-032e-4550-a91e-74c8262bfd82" valueTypeId="f5b01d80-808f-496c-b727-b3e163c35bb7"/>
+    <listType typeId="37453663-7f29-4e11-bb6b-0e404e14bf6a" valueTypeId="83527bf9-faee-4020-8692-097a7e1df1ef"/>
+    <managerType typeId="4ab081ec-9f7f-422f-92d4-cd5541cc8e15" valueTypeId="9b4c63f4-092f-439e-8084-f7aee58dd293"/>
+    <recordSetType typeId="f6d4ddc8-5f21-49d2-862a-bc4464c1d241" valueTypeId="4cd6eb6a-6071-4d09-a1bb-0ae999537719"/>
+    <recordKeyType typeId="034ca160-647a-4f94-90b3-83062e63403c" valueTypeId="18b44d3e-ee3b-409d-a4c3-02666b2850dc"/>
+    <recordType typeId="bb4a6fe6-eaba-44d2-ade0-ec048cafb727" valueTypeId="a3684e5d-6958-421d-8aa3-45bbe1e0f7c0"/>
+    <recordManagerType typeId="39e8b2b8-6264-4a5a-92bf-0dfa54253b8e" valueTypeId="30d41b78-b413-4ddb-9b93-02314afc8eec"/>
+  </producedTypes>
+  <name>КоммитыДополнений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Коммиты дополнений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSliceLast>true</enableTotalsSliceLast>
+  <resources uuid="e30679a5-0c5e-4ad4-80d1-e1a4ca732316">
+    <name>Хеш</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хеш</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>40</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="a4066f8e-6c5e-4e96-82a7-dc88e8343a60">
+    <name>ВерсияДополнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия дополнения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВерсииДополнений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

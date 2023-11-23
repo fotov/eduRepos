@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="14e9265d-dea7-4c42-bb23-1e43f27d75a9">
+  <producedTypes>
+    <objectType typeId="33996357-39fb-4c29-ad3b-fd2482183416" valueTypeId="e1c6bfd7-e4b4-44e5-bd7a-955cb9bd3643"/>
+    <refType typeId="21bd1220-791a-4368-ace9-d679f612e5d1" valueTypeId="a3edee82-3a02-47e0-84f0-2b4dbb5c8b7e"/>
+    <selectionType typeId="e2e40cc5-a835-476d-82e5-9c0a3e2ddc40" valueTypeId="a8cd8057-854f-4408-b612-489dbd6ab5f0"/>
+    <listType typeId="265f1a62-b568-4d2a-bfae-d6c58e42d17d" valueTypeId="cb855552-a109-49d8-9f7e-23537232b618"/>
+    <managerType typeId="e05faa41-a00b-492b-bb79-6d41a14b370b" valueTypeId="4a3fd89b-7ee0-4a6f-9dee-f1a0473f2cd6"/>
+  </producedTypes>
+  <name>МеткиМетеор</name>
+  <synonym>
+    <key>ru</key>
+    <value>Метки метеор</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.МеткиМетеор.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.МеткиМетеор.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="38f277af-2a15-40a5-9905-c09514c8a4bf">
+      <name>Срочное</name>
+      <description>Срочное</description>
+      <code xsi:type="core:StringValue">
+        <value>000000018</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

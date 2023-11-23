@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="87b0513d-0c4b-4d25-9a24-cc63a3b021ac">
+  <producedTypes>
+    <objectType typeId="e6610773-702f-4516-a36f-a1ea2e2083ce" valueTypeId="69ab4979-6a2f-4ae3-b20b-24b03f6e8a07"/>
+    <managerType typeId="78a2110b-f0ac-4e60-9301-0c3a773ced99" valueTypeId="09a07164-5bf7-4b54-8e85-dacacff2236d"/>
+  </producedTypes>
+  <name>РаботаСЗадачами</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа с задачами</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.РаботаСЗадачами.Form.Форма</defaultForm>
+  <forms uuid="e85c4adf-fd57-4f47-8414-2c72b725662c">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="374471cf-5153-4254-9150-56fe457de57e">
+    <name>ФормаЗамечания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма замечания</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="06b96bec-e26e-4644-ad49-9137c5b16a40">
+    <name>ФормаДобавленияЧасов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма добавления часов</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ce299687-7f12-4039-ba7c-8f354ca46c5d">
+    <name>ФормаОценкиКонтроляТрудозатрат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма оценки контроля трудозатрат</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c5955a01-f4d4-4334-befe-a8c530ee6bd8">
+    <name>ФормаРешенияКонтроляТрудозатрат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма решения контроля трудозатрат</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="2a2a247d-785e-41ca-b321-d26505f4bec8">
+    <name>ФормаОценкиКачестваКода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма оценки качества кода</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="677c8ccd-b7e5-453c-90a2-d6f815367b77">
+    <name>ФормаСменыИсполнителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма смены исполнителя</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

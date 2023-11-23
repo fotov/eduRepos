@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8af2b8c6-40ed-4289-bbab-a802070bcb23">
+  <producedTypes>
+    <objectType typeId="0fbd0fe3-8306-4753-800b-907f5e639a3f" valueTypeId="6de087b5-d32a-4e34-8d4f-73b481eba3ca"/>
+    <refType typeId="c48c16ca-4835-485a-9623-f7ea99809168" valueTypeId="34b9f250-9c1b-4b5e-91d2-78fd70597716"/>
+    <selectionType typeId="fbc7996a-1f4d-48ce-b853-c8aa12db096d" valueTypeId="a2b6efba-5f6c-470a-8b57-6f7dee9b5916"/>
+    <listType typeId="df1a7dc3-e011-4c3e-af72-8d37449561ac" valueTypeId="6454271e-6557-4695-bd0e-3753f08b3f0e"/>
+    <managerType typeId="508c853d-96fb-4bbd-8dd7-8e21519e540b" valueTypeId="fcb8e447-b7f1-4cb8-8ab7-6ca9e6d85918"/>
+  </producedTypes>
+  <name>СтекиТехнологий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Стеки технологий</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.СтекиТехнологий.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

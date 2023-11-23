@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="11a24799-7760-4376-9be4-8d1efb97fef3">
+  <producedTypes>
+    <managerType typeId="d6d772db-4464-4f2b-92f9-daf06adb8728" valueTypeId="d5460e00-8bd1-48bd-96f9-e55b94e7f7bf"/>
+    <valueManagerType typeId="09440a5d-7371-44ca-b5fb-c52563dbdeea" valueTypeId="35d7ca50-46c6-4063-8151-1e19d6830c49"/>
+    <valueKeyType typeId="b27e1506-411b-4609-b0b2-2c21eabbd609" valueTypeId="bfa2b120-9e69-4fc1-9f7f-b1af068cbbba"/>
+  </producedTypes>
+  <name>КонвейерОбработкиОповещениеТелеграммАвтотесты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Конвейер обработки оповещение телеграмм автотесты</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>300</length>
+    </stringQualifiers>
+  </type>
+  <multiLine>true</multiLine>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

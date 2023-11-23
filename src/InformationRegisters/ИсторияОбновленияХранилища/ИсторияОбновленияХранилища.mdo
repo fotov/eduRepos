@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3b8fbe41-36de-42c8-bb92-967a1843d077">
+  <producedTypes>
+    <selectionType typeId="98303392-44cf-4417-b96d-bc18ae774a71" valueTypeId="e8dd6336-6f61-4dfd-bfd2-b65aa0ed19fb"/>
+    <listType typeId="4d58c3d2-2701-4f14-8a3f-a7c923ee7815" valueTypeId="6df5fa1a-e58c-4eb6-a8a4-4e446bd706f1"/>
+    <managerType typeId="0ad0cab5-0829-498e-b068-3b3907d44fde" valueTypeId="dc8fa99e-a343-4ec7-aa20-305106c867e2"/>
+    <recordSetType typeId="7e504a09-fae6-4302-a4e5-058e458b9232" valueTypeId="92f99fec-0a8c-495a-86f8-12fe32eab89a"/>
+    <recordKeyType typeId="c1aa57f7-e559-46d8-8ceb-a187438cce80" valueTypeId="e94649a4-6384-4ffa-b7f2-bbea1c0fe1a4"/>
+    <recordType typeId="f415c5ac-87a9-459c-be8c-662308906aac" valueTypeId="c20775f4-fae5-4042-af2e-ddd59e6d70c7"/>
+    <recordManagerType typeId="32d6a873-db95-492b-b8fa-7798064de25b" valueTypeId="9645ed76-09a6-4520-a2cb-3146a7d653a2"/>
+  </producedTypes>
+  <name>ИсторияОбновленияХранилища</name>
+  <synonym>
+    <key>ru</key>
+    <value>История обновления хранилища</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="b555638b-3460-4825-a6cf-293d854cf481">
+    <name>Хранилище</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хранилище</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Хранилища</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d003b231-73c9-43ca-9401-df232f6c6da4">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

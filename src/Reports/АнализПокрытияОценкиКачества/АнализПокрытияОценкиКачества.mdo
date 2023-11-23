@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3b787d49-4920-4db4-90cd-1df7523aa805">
+  <producedTypes>
+    <objectType typeId="ce006f82-26b6-45c7-8486-2fe892b503db" valueTypeId="70b80e86-ae61-42d4-a55b-2a0940b862dc"/>
+    <managerType typeId="e7389cfc-30b2-40da-9094-acf5dec162de" valueTypeId="f4319bea-1425-4b90-81dd-8b005e197271"/>
+  </producedTypes>
+  <name>АнализПокрытияОценкиКачества</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ покрытия оценки качества</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.АнализПокрытияОценкиКачества.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="31e155c6-bd53-4074-89c2-779d23d13084">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f6a22a76-46da-408e-8713-9389a23a839f">
+  <name>Инфраструктура</name>
+  <synonym>
+    <key>ru</key>
+    <value>Инфраструктура</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.Базы1С</content>
+  <content>ScheduledJob.ОчисткаКаталогаВременныхФайлов</content>
+  <content>ScheduledJob.ВыполнениеЗадачРоботом</content>
+  <content>ScheduledJob.МониторингСистемы</content>
+  <content>ScheduledJob.ОчисткаУстаревшихДанныхУК</content>
+  <content>InformationRegister.ОтправленныеУведомления</content>
+  <content>ScheduledJob.АвтозавершениеЗадач</content>
+  <content>Role.ЧтениеБазы1С</content>
+  <content>Role.ДобавлениеИзменениеБазы1С</content>
+  <content>Role.ЧтениеОтправленныеУведомления</content>
+  <content>Constant.АдресСервераАПК</content>
+  <content>Catalog.Конфигурации</content>
+  <content>ScheduledJob.ЕжедневноеОбновлениеКлонов</content>
+  <parentSubsystem>Subsystem.НепрерывнаяИнтеграция</parentSubsystem>
+</mdclass:Subsystem>

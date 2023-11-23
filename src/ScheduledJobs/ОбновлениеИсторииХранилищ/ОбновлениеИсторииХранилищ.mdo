@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="76c6bb3b-ab40-48f9-8032-1d348560ebd0">
+  <name>ОбновлениеИсторииХранилищ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обновление истории хранилищ</value>
+  </synonym>
+  <methodName>CommonModule.РаботаСХранилищамиСлужебный.ОбновлениеИсторииХранилищОбработчикЗадания</methodName>
+  <description>Обновление истории хранилищ</description>
+  <key>ОбновлениеИсторииХранилищ</key>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

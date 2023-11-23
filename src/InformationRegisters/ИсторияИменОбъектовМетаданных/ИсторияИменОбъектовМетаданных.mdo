@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6452e3fe-2fba-48fd-af5a-7cbe21ab1bfe">
+  <producedTypes>
+    <selectionType typeId="f1636729-65a4-4bd9-a738-9e56125536b0" valueTypeId="085f8979-b0db-4350-b1f6-76f99bbfbb99"/>
+    <listType typeId="49dd4a69-dab6-4b5f-8b71-5e284fc10a44" valueTypeId="e0104c52-ce2d-4359-8fa6-669cf2dc059b"/>
+    <managerType typeId="fde12ac3-6513-4848-868e-63ef0578d7c2" valueTypeId="c9621905-2e57-417f-bcdf-b04e77aecd4b"/>
+    <recordSetType typeId="977a1c38-acfe-4fff-94f9-d4a6299e27bf" valueTypeId="01cef43f-a34e-4f5c-b682-152a632f847f"/>
+    <recordKeyType typeId="3bc7a575-79bc-4b1f-aa03-417084443b9c" valueTypeId="d573afc2-882c-4e18-ba53-edef0957e226"/>
+    <recordType typeId="950f5b26-d3da-4752-a730-a1ea52f2bf71" valueTypeId="fcb73756-fc5f-448d-b25f-b137faf400ce"/>
+    <recordManagerType typeId="960510aa-1112-4d77-9986-93f14d335f40" valueTypeId="bd5ab0fa-c3de-4660-a4b5-1174744c3d43"/>
+  </producedTypes>
+  <name>ИсторияИменОбъектовМетаданных</name>
+  <synonym>
+    <key>ru</key>
+    <value>История имен объектов метаданных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="65362385-ce6f-4b59-a6ec-7247bc44d3c1">
+    <name>Наименование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a8b5725b-5bea-4daf-9552-6a5701d20f26">
+    <name>ОбъектМетаданных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект метаданных</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОбъектыМетаданных</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6f98a61b-5d16-4b68-8fb3-3fee66ac9839">
+  <producedTypes>
+    <selectionType typeId="17923a69-ecc7-469f-ad0a-620416115ff8" valueTypeId="e8c7c5f1-0096-4da2-9bb5-a04c2319874b"/>
+    <listType typeId="04085055-c0ce-4842-9ba6-68178c64a773" valueTypeId="8075f9cd-a8eb-4a6d-96b3-c5fa77b46616"/>
+    <managerType typeId="4390bf36-d0e2-4f7b-9c95-18af38af181e" valueTypeId="f057c360-d6cb-46aa-8395-66131c2daf91"/>
+    <recordSetType typeId="8301a5d5-0254-435c-b400-1c4e859a8eed" valueTypeId="ba96c2b9-7a82-497e-9efa-f6f590ecb4e3"/>
+    <recordKeyType typeId="1d308c13-30ca-444c-bac7-8d5224eefd82" valueTypeId="d76fc357-781e-4a54-801a-37c32d638393"/>
+    <recordType typeId="fe3ff78a-91b4-4386-a9dc-9db5e55cfaad" valueTypeId="201e380c-2e8c-42b1-b60b-2883468216d4"/>
+    <recordManagerType typeId="8c12523b-0d1c-4e5d-a702-6a8d483248c0" valueTypeId="359b5e24-5eae-4ce2-9b69-db8db35a1b2e"/>
+  </producedTypes>
+  <name>ОчередьФормированияИтоговыхИзменений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очередь формирования итоговых изменений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="53ebcbbb-68e4-4fe7-a2f5-6c1dec848ecb">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыОперацийОбработкиОчереди</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="3f3da53e-2cd0-4b19-999a-23be37378daf">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="b8f7f495-2069-4227-85bd-8bc93bdd9d1a">
+    <name>ЗадачаМетеор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача метеор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЗадачиМетеор</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="24d2efe8-7965-45cd-b42f-ff832affb890">
+  <producedTypes>
+    <objectType typeId="539816c4-dc90-4d8f-a1ad-93ec75d13b82" valueTypeId="1bcf69a7-cc8d-4c35-9749-16916e633137"/>
+    <managerType typeId="b631b8ce-cb74-4113-b82a-00b8dbf12c88" valueTypeId="0bc1f155-eef5-4d70-b548-bd572f50884a"/>
+  </producedTypes>
+  <name>КонтрольИзмененнныхОбъектовSQL</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контроль измененнных объектов SQL</value>
+  </synonym>
+  <mainDataCompositionSchema>Report.КонтрольИзмененнныхОбъектовSQL.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="86f11684-af10-4eab-b65b-d7fb7d762327">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

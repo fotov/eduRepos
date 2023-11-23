@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:BusinessProcess xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2f99c173-1e8d-4871-8edc-5a89b8e638cb">
+  <producedTypes>
+    <objectType typeId="4df987c0-05c5-4440-a08a-12584de59929" valueTypeId="2a7c8606-7906-4394-b3d6-4ca1e74a431b"/>
+    <refType typeId="8848d6be-e455-4897-a4f1-4caf5c75ad15" valueTypeId="13ca0e5b-2ccf-4c1b-9b49-c698ac31c83d"/>
+    <selectionType typeId="beec8177-8467-47db-ae69-642d9cfdb274" valueTypeId="45959569-cf91-4aa7-aa06-3bb30900f449"/>
+    <listType typeId="e64ecdde-514f-4714-acbf-1865b4affdf4" valueTypeId="94e4203b-3f41-4ec1-bd75-64d9a85c8a82"/>
+    <managerType typeId="25fe8e48-8e1f-4126-a472-6282aa038390" valueTypeId="9787df34-c46a-4091-8be6-1ec5ffa4dda5"/>
+    <routePointRef typeId="bab5d003-57cb-416b-bcc9-e20a5a61f2ae" valueTypeId="cab15b21-eeb3-42d1-8156-6e437ad8467b"/>
+  </producedTypes>
+  <name>СогласованиеПереноса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Согласование переноса</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>BusinessProcess.СогласованиеПереноса.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockFields>BusinessProcess.СогласованиеПереноса.Attribute.ЗадачаМетеор</dataLockFields>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <editType>InDialog</editType>
+  <defaultObjectForm>BusinessProcess.СогласованиеПереноса.Form.ФормаБизнесПроцесса</defaultObjectForm>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <task>Task.ЗадачаИсполнителя</task>
+  <createTaskInPrivilegedMode>true</createTaskInPrivilegedMode>
+  <attributes uuid="24660283-b659-4b68-bb75-b30086253719">
+    <name>Аналитик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Аналитик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5bb1b936-174f-4fa7-8f00-ce92c1561418">
+    <name>Разработчик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Разработчик</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="44c18f20-a067-40c8-91d9-83a1b8f6e58a">
+    <name>ЗадачаМетеор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача Метеор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЗадачиМетеор</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ee86b089-aef3-4e74-ac04-9a3d42643cf9">
+    <name>Исполнитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a0c200ff-5fd8-47f6-ad13-78696f261456">
+    <name>ПереносСогласован</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перенос согласован</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f4a8bcf8-f254-4558-91f7-0a3458597fd1">
+    <name>ПереносСогласован_ПроверкаКода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перенос согласован проверка кода</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="02393d9d-e67e-4360-8c19-0f24f7cb7a5f">
+    <name>Проверил_ПроверкаКода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверил код</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="23e14f05-0768-4bf3-9cba-1b1b183fe45a">
+    <name>ЗамечаниеHTML_ПроверкаКода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Замечание HTML проверка кода</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <extendedEdit>true</extendedEdit>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6e535fff-2399-4b41-9246-ff0a09599ed4">
+    <name>ЗамечаниехзВложения_ПроверкаКода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Замечаниехз вложения проверка кода</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9b3aaafe-2540-49f0-a040-f85cbe20d684">
+    <name>ПереносСогласован_ПрименениеИзменений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменения применены</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="766dbfa1-2abf-493f-bc45-aed14a107e00">
+    <name>Проверил_ПрименениеИзменений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Применил изменения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="87e8597f-bf62-47f7-be9e-782f00df0971">
+    <producedTypes>
+      <objectType typeId="94d45f3d-3663-40bb-b91c-b7a688d00fd2" valueTypeId="0031305c-24fa-4697-aaf3-8eeebf09bd9c"/>
+      <rowType typeId="44ea5e98-1a36-48fb-8355-9cbd0193bc19" valueTypeId="0ebf3087-9a91-4770-8a36-ca6bceabe61c"/>
+    </producedTypes>
+    <name>Коммиты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коммиты</value>
+    </synonym>
+    <attributes uuid="abdbcc67-9d73-429c-9776-7bff1a3c0c08">
+      <name>Коммит</name>
+      <synonym>
+        <key>ru</key>
+        <value>Коммит</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ИсторияХранилища</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="94b01259-6ac4-47e9-83e0-4b1b22dc317d">
+      <name>КоммитХО</name>
+      <synonym>
+        <key>ru</key>
+        <value>Коммит ХО</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ИсторияХранилища</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="56535a69-9b4c-49b0-84f7-0184024b98f8">
+    <producedTypes>
+      <objectType typeId="b0aee571-a6cc-4e81-903b-4e89583877df" valueTypeId="a5bca8d3-ba41-4751-b270-49519aad2232"/>
+      <rowType typeId="5b50afaf-2837-473d-b496-3ba3b469a67a" valueTypeId="25ae98e9-3802-4031-b5e6-230407c6d08f"/>
+    </producedTypes>
+    <name>СогласованныеДополнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Согласованные дополнения</value>
+    </synonym>
+    <attributes uuid="97a594be-8814-4a66-8788-52fb9ecf1c54">
+      <name>ВерсияДополнения</name>
+      <synonym>
+        <key>ru</key>
+        <value>Версия дополнения</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВерсииДополнений</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="f13a16de-4cfc-44f3-b67a-5717327bf692">
+    <name>ФормаБизнесПроцесса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма бизнес процесса</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:BusinessProcess>

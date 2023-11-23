@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="618b7dd3-fda1-4c71-b5a6-44e22753ce8a">
+  <producedTypes>
+    <refType typeId="1690a35c-f629-489b-af4b-5f48581050db" valueTypeId="42d7a4ce-74f9-4c2b-a992-37a074f65bdb"/>
+    <listType typeId="0a202b44-be10-4bda-812b-b60388d5046f" valueTypeId="9173a03f-25a2-45a4-82ef-39a0ce3e1587"/>
+    <managerType typeId="c51a5194-e790-477c-b173-01847ee12703" valueTypeId="888e21c3-ed3b-4fad-9d2a-eacb47d3fa9a"/>
+  </producedTypes>
+  <name>СтатусыВыгрузкиДополнений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы выгрузки дополнений</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="19f09b98-97f6-4b5d-8e2a-7e7fcb3210c8">
+    <name>ВОчереди</name>
+    <synonym>
+      <key>ru</key>
+      <value>В очереди</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e1a339cb-ceb8-46d2-9b01-7eca64b53379">
+    <name>Выгружено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выгружено</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4eeb029d-851f-461a-a758-96333eb767ba">
+    <name>Ошибка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибка</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

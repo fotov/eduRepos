@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d3dfacc7-9476-40ba-a952-dac8da0de5bf">
+  <producedTypes>
+    <selectionType typeId="0f59b4a9-0408-454d-a419-23622d47ad6f" valueTypeId="9ea40bef-8333-4d21-acd6-b58f9e31651b"/>
+    <listType typeId="dafa3ea8-66f8-42b0-adaf-f41590d8a1b7" valueTypeId="aad5b2d1-4fa7-44ba-b636-53de0d853007"/>
+    <managerType typeId="2a97f1d4-8ef3-4097-85c0-a78a90f1a5b2" valueTypeId="06d75a36-0630-48a8-8879-cad9395eeb03"/>
+    <recordSetType typeId="0bcca9dc-b941-4f3e-b180-794286d1b960" valueTypeId="9a6d80e1-9666-499d-9e43-67c7da5d7ff0"/>
+    <recordKeyType typeId="fb78391f-3579-4784-adc4-f7d319ef7680" valueTypeId="086d7fca-985f-4718-b569-6a2cbae8cc6f"/>
+    <recordType typeId="8dbc4287-f05d-4128-b4a0-54f21feb5b6e" valueTypeId="17910918-46d2-45bb-a20a-44e783fbd204"/>
+    <recordManagerType typeId="e2a69f48-4a6e-4721-94bc-5e1679faac76" valueTypeId="ed1d681a-9440-42ee-b756-a6eca9429f5f"/>
+  </producedTypes>
+  <name>СломанныеТесты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сломанные тесты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.СломанныеТесты.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c5e4dc7f-ea77-4799-b278-925e42ef65d4">
+    <name>КоммитИсправления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коммит исправления</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИсторияХранилища</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="8f24846d-a843-41d7-8c81-a18a65374858">
+    <name>Исправлен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исправлен</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="1a982a66-93c5-4843-a04c-5113e50df67e">
+    <name>ТекстОшибки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст ошибки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="44ca31bc-fde1-4c4c-967d-60c99ab6d4e0">
+    <name>Коммит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коммит</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИсторияХранилища</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="12fd0a78-30e1-4023-b3ad-494e914f3f74">
+    <name>Тест</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тест</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Тесты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="510eac58-7ba9-4b6e-8416-6fa63e7c944a">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8a110400-0347-4ac1-a8c7-5165f591ac36">
+  <name>Мониторинг</name>
+  <synonym>
+    <key>ru</key>
+    <value>Мониторинг</value>
+  </synonym>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>InformationRegister.ЖурналМониторинга</content>
+  <content>Catalog.КлючевыеОперацииМониторинга</content>
+  <content>Enum.ЭтапыОперацийМониторинга</content>
+  <content>CommonModule.Мониторинг</content>
+  <content>Constant.ПериодХраненияДанныхМониторинга</content>
+  <content>ScheduledJob.ОчисткаУстаревшихПоказателейМониторинга</content>
+  <content>CommonModule.МониторингСлужебный</content>
+  <content>Report.Удалить_ОценкаДлительностиОпераций</content>
+  <content>Catalog.ВидыМониторинга</content>
+  <content>InformationRegister.ПодпискиНаМониторинг</content>
+  <content>Role.БазовыеПраваМониторинг</content>
+  <content>Catalog.ПоказателиМониторинга</content>
+  <content>InformationRegister.СтатистикаМониторинга</content>
+  <content>Role.НастройкаИЧтениеДанныхМониторинга</content>
+  <content>ScheduledJob.РасчетПоказателейМониторинга</content>
+  <parentSubsystem>Subsystem.Администрирование</parentSubsystem>
+</mdclass:Subsystem>

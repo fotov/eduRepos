@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="980512be-3a87-4f31-b2c4-2a4ed16b401b">
+  <producedTypes>
+    <refType typeId="549f610e-7187-4fec-b3ec-6b7694303f48" valueTypeId="cbcdedc9-e7e9-4caf-9383-10c20778ceb4"/>
+    <listType typeId="77cd0218-faa9-42f2-bcf1-d0f1ae104749" valueTypeId="fe96df86-91e8-4a88-ab6e-dd260ded4407"/>
+    <managerType typeId="188f75fa-436b-4660-810f-ecbacc33cfde" valueTypeId="43b09d31-61fb-4c6d-8b2f-235e1233ebae"/>
+  </producedTypes>
+  <name>ВидыЗадачМетеор</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды задач метеор</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="9166f419-1cd6-4371-9dd8-220655956560">
+    <name>Задание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задание</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6f90be5e-6169-41b3-82bb-6939e227284e">
+    <name>Инцидент</name>
+    <synonym>
+      <key>ru</key>
+      <value>Инцидент</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

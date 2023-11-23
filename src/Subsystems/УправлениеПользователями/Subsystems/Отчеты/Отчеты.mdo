@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1064784a-5b07-4985-878c-5823c0aa362a">
+  <name>Отчеты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отчеты</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>Report.АдминистраторыРасширений</content>
+  <content>Report.АдминистраторыПользователей</content>
+  <content>CommonModule.УправлениеПользователями</content>
+  <parentSubsystem>Subsystem.УправлениеПользователями</parentSubsystem>
+</mdclass:Subsystem>

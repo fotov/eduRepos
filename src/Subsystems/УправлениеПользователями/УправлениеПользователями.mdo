@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="955b5ede-e9cd-450f-ae37-6c14b3aac580">
+  <name>УправлениеПользователями</name>
+  <synonym>
+    <key>ru</key>
+    <value>Управление пользователями</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>HTTPService.УправлениеПользователями</content>
+  <subsystems>Интеграция</subsystems>
+  <subsystems>Отчеты</subsystems>
+</mdclass:Subsystem>

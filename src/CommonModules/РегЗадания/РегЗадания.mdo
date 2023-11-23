@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="567ff952-fdae-465a-986d-379f56c84ca6">
+  <name>РегЗадания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Рег задания</value>
+  </synonym>
+  <server>true</server>
+  <privileged>true</privileged>
+</mdclass:CommonModule>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5160d4bd-999f-4fb3-8085-be54f03a16ff">
+  <name>СтруктураКомпании</name>
+  <synonym>
+    <key>ru</key>
+    <value>Структура компании</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Role.ДобавлениеИзменениеСотрудников</content>
+  <content>Role.БазовыеПраваНСИ</content>
+  <content>Catalog.Команды</content>
+  <content>Catalog.РолиСотрудников</content>
+  <content>Catalog.Сотрудники</content>
+  <content>InformationRegister.ВедущиеПоСотрудникам</content>
+  <content>InformationRegister.КомандыСотрудников</content>
+  <content>InformationRegister.РолиПоСотрудникам</content>
+  <content>Catalog.СтекиТехнологий</content>
+  <content>InformationRegister.РуководителиКоманд</content>
+  <parentSubsystem>Subsystem.НСИ</parentSubsystem>
+</mdclass:Subsystem>

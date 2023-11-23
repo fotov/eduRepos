@@ -1,0 +1,1020 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЗадачаМетеор</dataPath>
+			<field>ЗадачаМетеор</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.ЗадачиМетеор</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВсегоЗадач</dataPath>
+			<field>ВсегоЗадач</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Всего задач</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипЗадачи</dataPath>
+			<field>ТипЗадачи</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип задачи</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Команда</dataPath>
+			<field>Команда</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоИскомыхЗадач</dataPath>
+			<field>КоличествоИскомыхЗадач</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество искомых задач</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПроцентИскомыхЗадач</dataPath>
+			<field>ПроцентИскомыхЗадач</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Процент искомых задач</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧДЦ=2</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Хранилище</dataPath>
+			<field>Хранилище</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Хранилище</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НаименованиеЗадачиМетеор</dataPath>
+			<field>НаименованиеЗадачиМетеор</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование задачи метеор</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаСозданияОбращения</dataPath>
+			<field>ДатаСозданияОбращения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата создания обращения</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВремяСогласованияВладельцами</dataPath>
+			<field>ВремяСогласованияВладельцами</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время согласования владельцами (мин)</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КонтактноеЛицо</dataPath>
+			<field>КонтактноеЛицо</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контактное лицо</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	Рег.ЗадачаМетеор КАК ЗадачаМетеор,
+	Рег.ЗадачаМетеор.ВидЗадачи КАК ВидЗадачи,
+	Рег.Дата КАК ДатаЭтапа,
+	МАКСИМУМ(Рег.Тип = ЗНАЧЕНИЕ(Справочник.ТипыЗадачиМетеор.Инциденты)) КАК ЭтоИнцидент,
+	МАКСИМУМ(Рег.Тип.Наименование = "Работа по ТЗ") КАК ЭтоРаботаПоТЗ
+ПОМЕСТИТЬ ЗадачиПоЭтапу
+ИЗ
+	РегистрСведений.ИсторияЭтаповЗадачиМетеор КАК Рег
+ГДЕ
+	Рег.Дата МЕЖДУ &amp;НачДата И &amp;КонДата
+	И Рег.Этап = &amp;Этап1ДляЗапроса
+
+СГРУППИРОВАТЬ ПО
+	Рег.ЗадачаМетеор,
+	Рег.Дата,
+	Рег.ЗадачаМетеор.ВидЗадачи
+
+ИНДЕКСИРОВАТЬ ПО
+	ЗадачаМетеор,
+	ДатаЭтапа
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЗадачиПоЭтапу.ЗадачаМетеор КАК ЗадачаМетеор,
+	МАКСИМУМ(ВЫБОР
+			КОГДА ЗадачиПоЭтапу.ВидЗадачи = ЗНАЧЕНИЕ(Перечисление.ВидыЗадачМетеор.Инцидент)
+				ТОГДА "Инцидент"
+			КОГДА ЗадачиПоЭтапу.ВидЗадачи = ЗНАЧЕНИЕ(Перечисление.ВидыЗадачМетеор.Задание)
+				ТОГДА "Работа по ТЗ"
+			КОГДА ЗадачиПоЭтапу.ЭтоИнцидент
+				ТОГДА "Инцидент"
+			КОГДА ЗадачиПоЭтапу.ЭтоРаботаПоТЗ
+				ТОГДА "Работа по ТЗ"
+			ИНАЧЕ "Прочее"
+		КОНЕЦ) КАК ТипЗадачи
+ПОМЕСТИТЬ ТипПоЗадаче
+ИЗ
+	ЗадачиПоЭтапу КАК ЗадачиПоЭтапу
+
+СГРУППИРОВАТЬ ПО
+	ЗадачиПоЭтапу.ЗадачаМетеор
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЗадачиПоЭтапу.ДатаЭтапа КАК ДатаЭтапа,
+	ЗадачиПоЭтапу.ЗадачаМетеор КАК ЗадачаМетеор,
+	МАКСИМУМ(ЕСТЬNULL(ПрошлыеЭтапы.Дата, ДАТАВРЕМЯ(1, 1, 1, 0, 0, 0))) КАК ДатаПредыдущегоЭтапа,
+	МИНИМУМ(ЕСТЬNULL(БудущиеЭтапы.Дата, ДАТАВРЕМЯ(3999, 1, 1, 0, 0, 0))) КАК ДатаСледующегоЭтапа
+ПОМЕСТИТЬ СмежныеЭтапы
+ИЗ
+	ЗадачиПоЭтапу КАК ЗадачиПоЭтапу
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ИсторияЭтаповЗадачиМетеор КАК ПрошлыеЭтапы
+		ПО ЗадачиПоЭтапу.ЗадачаМетеор = ПрошлыеЭтапы.ЗадачаМетеор
+			И (ПрошлыеЭтапы.Дата &lt; ЗадачиПоЭтапу.ДатаЭтапа)
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ИсторияЭтаповЗадачиМетеор КАК БудущиеЭтапы
+		ПО ЗадачиПоЭтапу.ЗадачаМетеор = БудущиеЭтапы.ЗадачаМетеор
+			И (БудущиеЭтапы.Дата &gt; ЗадачиПоЭтапу.ДатаЭтапа)
+
+СГРУППИРОВАТЬ ПО
+	ЗадачиПоЭтапу.ДатаЭтапа,
+	ЗадачиПоЭтапу.ЗадачаМетеор
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЗадачиПоЭтапу.ЗадачаМетеор КАК ЗадачаМетеор,
+	Коммиты.ВерсияХранилища.Владелец КАК Хранилище,
+	ЕСТЬNULL(МАКСИМУМ(ЭтапАналитическаяПроработка.Исполнитель.Команда), МАКСИМУМ(ЭтапВыполнитьОсновнуюРаботуПоЗаданию.Исполнитель.Команда)) КАК Команда
+ПОМЕСТИТЬ КомандаХранилищеЗадачи
+ИЗ
+	ЗадачиПоЭтапу КАК ЗадачиПоЭтапу
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЗадачиМетеорВерсийХранилища КАК Коммиты
+		ПО ЗадачиПоЭтапу.ЗадачаМетеор = Коммиты.ЗадачаМетеор
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ИсторияЭтаповЗадачиМетеор КАК ЭтапАналитическаяПроработка
+		ПО ЗадачиПоЭтапу.ЗадачаМетеор = ЭтапАналитическаяПроработка.ЗадачаМетеор
+			И (ЭтапАналитическаяПроработка.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыЗадачиМетеор.АналитическаяПроработка))
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ИсторияЭтаповЗадачиМетеор КАК ЭтапВыполнитьОсновнуюРаботуПоЗаданию
+		ПО ЗадачиПоЭтапу.ЗадачаМетеор = ЭтапВыполнитьОсновнуюРаботуПоЗаданию.ЗадачаМетеор
+			И (ЭтапВыполнитьОсновнуюРаботуПоЗаданию.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыЗадачиМетеор.ВыполнитьОсновнуюРаботуПоЗаданию))
+
+СГРУППИРОВАТЬ ПО
+	ЗадачиПоЭтапу.ЗадачаМетеор,
+	Коммиты.ВерсияХранилища.Владелец
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СмежныеЭтапы.ДатаЭтапа КАК ДатаЭтапа,
+	СмежныеЭтапы.ЗадачаМетеор КАК ЗадачаМетеор,
+	ЕСТЬNULL(ПрошлыеЭтапы.Этап, НЕОПРЕДЕЛЕНО) КАК ПредыдущийЭтап,
+	ЕСТЬNULL(БудущиеЭтапы.Этап, НЕОПРЕДЕЛЕНО) КАК СледующийЭтап
+ПОМЕСТИТЬ втВсеЗадачиЗаПериод
+ИЗ
+	СмежныеЭтапы КАК СмежныеЭтапы
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ИсторияЭтаповЗадачиМетеор КАК ПрошлыеЭтапы
+		ПО СмежныеЭтапы.ЗадачаМетеор = ПрошлыеЭтапы.ЗадачаМетеор
+			И (ПрошлыеЭтапы.Дата = СмежныеЭтапы.ДатаПредыдущегоЭтапа)
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ИсторияЭтаповЗадачиМетеор КАК БудущиеЭтапы
+		ПО СмежныеЭтапы.ЗадачаМетеор = БудущиеЭтапы.ЗадачаМетеор
+			И (БудущиеЭтапы.Дата = СмежныеЭтапы.ДатаСледующегоЭтапа)
+		ЛЕВОЕ СОЕДИНЕНИЕ КомандаХранилищеЗадачи КАК КомандаХранилищеЗадачи
+		ПО СмежныеЭтапы.ЗадачаМетеор = КомандаХранилищеЗадачи.ЗадачаМетеор
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	втВсеЗадачиЗаПериод.ЗадачаМетеор КАК ЗадачаМетеор,
+	МАКСИМУМ(ВЫБОР
+			КОГДА втВсеЗадачиЗаПериод.ПредыдущийЭтап = &amp;Этап2ДляЗапроса
+				ТОГДА 1
+			ИНАЧЕ 0
+		КОНЕЦ) КАК КоличествоИскомыхЗадач,
+	0 КАК ПроцентИскомыхЗадач,
+	1 КАК ВсегоЗадач
+ПОМЕСТИТЬ Объединения
+ИЗ
+	втВсеЗадачиЗаПериод КАК втВсеЗадачиЗаПериод
+ГДЕ
+	(&amp;ВариантПоиска = "1"
+			ИЛИ &amp;ВариантПоиска = "5")
+
+СГРУППИРОВАТЬ ПО
+	втВсеЗадачиЗаПериод.ЗадачаМетеор
+
+ОБЪЕДИНИТЬ
+
+ВЫБРАТЬ
+	втВсеЗадачиЗаПериод.ЗадачаМетеор,
+	МАКСИМУМ(ВЫБОР
+			КОГДА втВсеЗадачиЗаПериод.СледующийЭтап = &amp;Этап2ДляЗапроса
+				ТОГДА 1
+			ИНАЧЕ 0
+		КОНЕЦ),
+	0,
+	1
+ИЗ
+	втВсеЗадачиЗаПериод КАК втВсеЗадачиЗаПериод
+ГДЕ
+	(&amp;ВариантПоиска = "2"
+			ИЛИ &amp;ВариантПоиска = "6")
+
+СГРУППИРОВАТЬ ПО
+	втВсеЗадачиЗаПериод.ЗадачаМетеор
+
+ОБЪЕДИНИТЬ
+
+ВЫБРАТЬ
+	втВсеЗадачиЗаПериод.ЗадачаМетеор,
+	МАКСИМУМ(ВЫБОР
+			КОГДА ПрошлыеЭтапы.ЗадачаМетеор ЕСТЬ NULL
+				ТОГДА 0
+			ИНАЧЕ 1
+		КОНЕЦ),
+	0,
+	1
+ИЗ
+	втВсеЗадачиЗаПериод КАК втВсеЗадачиЗаПериод
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ИсторияЭтаповЗадачиМетеор КАК ПрошлыеЭтапы
+		ПО втВсеЗадачиЗаПериод.ЗадачаМетеор = ПрошлыеЭтапы.ЗадачаМетеор
+			И (ПрошлыеЭтапы.Дата &lt; втВсеЗадачиЗаПериод.ДатаЭтапа)
+			И (ПрошлыеЭтапы.Этап = &amp;Этап2ДляЗапроса)
+ГДЕ
+	(&amp;ВариантПоиска = "3"
+			ИЛИ &amp;ВариантПоиска = "7")
+
+СГРУППИРОВАТЬ ПО
+	втВсеЗадачиЗаПериод.ЗадачаМетеор
+
+ОБЪЕДИНИТЬ
+
+ВЫБРАТЬ
+	втВсеЗадачиЗаПериод.ЗадачаМетеор,
+	МАКСИМУМ(ВЫБОР
+			КОГДА БудущиеЭтапы.ЗадачаМетеор ЕСТЬ NULL
+				ТОГДА 0
+			ИНАЧЕ 1
+		КОНЕЦ),
+	0,
+	1
+ИЗ
+	втВсеЗадачиЗаПериод КАК втВсеЗадачиЗаПериод
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ИсторияЭтаповЗадачиМетеор КАК БудущиеЭтапы
+		ПО втВсеЗадачиЗаПериод.ЗадачаМетеор = БудущиеЭтапы.ЗадачаМетеор
+			И (БудущиеЭтапы.Дата &gt; втВсеЗадачиЗаПериод.ДатаЭтапа)
+			И (БудущиеЭтапы.Этап = &amp;Этап2ДляЗапроса)
+ГДЕ
+	(&amp;ВариантПоиска = "4"
+			ИЛИ &amp;ВариантПоиска = "8")
+
+СГРУППИРОВАТЬ ПО
+	втВсеЗадачиЗаПериод.ЗадачаМетеор
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЗадачиПоЭтапу.ЗадачаМетеор КАК ЗадачаМетеор,
+	МИНИМУМ(ИсторияЭтаповЗадачиМетеор.Дата) КАК ДатаСоздания
+ПОМЕСТИТЬ втДатыСозданияЗадач
+ИЗ
+	ЗадачиПоЭтапу КАК ЗадачиПоЭтапу
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ИсторияЭтаповЗадачиМетеор КАК ИсторияЭтаповЗадачиМетеор
+		ПО ЗадачиПоЭтапу.ЗадачаМетеор = ИсторияЭтаповЗадачиМетеор.ЗадачаМетеор
+
+СГРУППИРОВАТЬ ПО
+	ЗадачиПоЭтапу.ЗадачаМетеор
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ИсторияЭтаповЗадачиМетеор_СозданиеЗаявкиНаПереносВПродуктив.ЗадачаМетеор КАК ЗадачаМетеор,
+	МАКСИМУМ(ИсторияЭтаповЗадачиМетеор_СозданиеЗаявкиНаПереносВПродуктив.Дата) КАК Дата
+ПОМЕСТИТЬ ДатыПоследнейЗаявкиНаПереносВПродуктив
+ИЗ
+	ЗадачиПоЭтапу КАК ЗадачиПоЭтапу
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ИсторияЭтаповЗадачиМетеор КАК ИсторияЭтаповЗадачиМетеор_СозданиеЗаявкиНаПереносВПродуктив
+		ПО (ИсторияЭтаповЗадачиМетеор_СозданиеЗаявкиНаПереносВПродуктив.ЗадачаМетеор = ЗадачиПоЭтапу.ЗадачаМетеор)
+			И (ИсторияЭтаповЗадачиМетеор_СозданиеЗаявкиНаПереносВПродуктив.Этап = ЗНАЧЕНИЕ(Справочник.ЭтапыЗадачиМетеор.СозданиеЗаявкиНаПереносВПродуктив))
+
+СГРУППИРОВАТЬ ПО
+	ИсторияЭтаповЗадачиМетеор_СозданиеЗаявкиНаПереносВПродуктив.ЗадачаМетеор
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ИсторияЭтаповЗадачиМетеор_ЭтапПослеСогласования.ЗадачаМетеор КАК ЗадачаМетеор,
+	ДатыПоследнейЗаявкиНаПереносВПродуктив.Дата КАК Дата_СозданиеЗаявкиНаПереносВПродуктив,
+	МИНИМУМ(ИсторияЭтаповЗадачиМетеор_ЭтапПослеСогласования.Дата) КАК Дата_ПослеСогласования
+ПОМЕСТИТЬ ДатыУВладельцев
+ИЗ
+	РегистрСведений.ИсторияЭтаповЗадачиМетеор КАК ИсторияЭтаповЗадачиМетеор_ЭтапПослеСогласования
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ДатыПоследнейЗаявкиНаПереносВПродуктив КАК ДатыПоследнейЗаявкиНаПереносВПродуктив
+		ПО (ИсторияЭтаповЗадачиМетеор_ЭтапПослеСогласования.Этап В (ЗНАЧЕНИЕ(Справочник.ЭтапыЗадачиМетеор.СдатьРаботуЗаказчику), ЗНАЧЕНИЕ(Справочник.ЭтапыЗадачиМетеор.пРОВЕРКАДокументации)))
+			И ИсторияЭтаповЗадачиМетеор_ЭтапПослеСогласования.Дата &gt; ДатыПоследнейЗаявкиНаПереносВПродуктив.Дата
+			И ИсторияЭтаповЗадачиМетеор_ЭтапПослеСогласования.ЗадачаМетеор = ДатыПоследнейЗаявкиНаПереносВПродуктив.ЗадачаМетеор
+
+СГРУППИРОВАТЬ ПО
+	ИсторияЭтаповЗадачиМетеор_ЭтапПослеСогласования.ЗадачаМетеор,
+	ДатыПоследнейЗаявкиНаПереносВПродуктив.Дата
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ДатыУВладельцев.ЗадачаМетеор КАК ЗадачаМетеор,
+	СУММА(РАЗНОСТЬДАТ(ВЫБОР
+				КОГДА ДатыУВладельцев.Дата_СозданиеЗаявкиНаПереносВПродуктив &gt; ПроизводственныйКалендарь.День
+					ТОГДА ДатыУВладельцев.Дата_СозданиеЗаявкиНаПереносВПродуктив
+				ИНАЧЕ ПроизводственныйКалендарь.День
+			КОНЕЦ, ВЫБОР
+				КОГДА ДатыУВладельцев.Дата_ПослеСогласования &lt; КОНЕЦПЕРИОДА(ПроизводственныйКалендарь.День, ДЕНЬ)
+					ТОГДА ДатыУВладельцев.Дата_ПослеСогласования
+				ИНАЧЕ КОНЕЦПЕРИОДА(ПроизводственныйКалендарь.День, ДЕНЬ)
+			КОНЕЦ, МИНУТА)) КАК ВремяСогласованияВладельцами
+ПОМЕСТИТЬ ВремяСогласованияВладельцамиПоЗадаче
+ИЗ
+	ДатыУВладельцев КАК ДатыУВладельцев
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ПроизводственныйКалендарь КАК ПроизводственныйКалендарь
+		ПО (НАЧАЛОПЕРИОДА(ДатыУВладельцев.Дата_СозданиеЗаявкиНаПереносВПродуктив, ДЕНЬ) &lt;= ПроизводственныйКалендарь.День)
+			И (НАЧАЛОПЕРИОДА(ДатыУВладельцев.Дата_ПослеСогласования, ДЕНЬ) &gt;= ПроизводственныйКалендарь.День)
+			И (НЕ ПроизводственныйКалендарь.Выходной)
+
+СГРУППИРОВАТЬ ПО
+	ДатыУВладельцев.ЗадачаМетеор
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Объединения.ЗадачаМетеор КАК ЗадачаМетеор,
+	КомандаХранилищеЗадачи.Хранилище КАК Хранилище,
+	КомандаХранилищеЗадачи.Команда КАК Команда,
+	ТипПоЗадаче.ТипЗадачи КАК ТипЗадачи,
+	втДатыСозданияЗадач.ДатаСоздания КАК ДатаСозданияОбращения,
+	ВремяСогласованияВладельцамиПоЗадаче.ВремяСогласованияВладельцами КАК ВремяСогласованияВладельцами,
+	Объединения.ЗадачаМетеор.КонтактноеЛицо КАК КонтактноеЛицо,
+	Объединения.КоличествоИскомыхЗадач КАК КоличествоИскомыхЗадач,
+	Объединения.ПроцентИскомыхЗадач КАК ПроцентИскомыхЗадач,
+	Объединения.ВсегоЗадач КАК ВсегоЗадач,
+	Объединения.ЗадачаМетеор.НаименованиеЗадачи КАК НаименованиеЗадачиМетеор
+ИЗ
+	Объединения КАК Объединения
+		ЛЕВОЕ СОЕДИНЕНИЕ втДатыСозданияЗадач КАК втДатыСозданияЗадач
+		ПО Объединения.ЗадачаМетеор = втДатыСозданияЗадач.ЗадачаМетеор
+		ЛЕВОЕ СОЕДИНЕНИЕ ВремяСогласованияВладельцамиПоЗадаче КАК ВремяСогласованияВладельцамиПоЗадаче
+		ПО Объединения.ЗадачаМетеор = ВремяСогласованияВладельцамиПоЗадаче.ЗадачаМетеор
+		ЛЕВОЕ СОЕДИНЕНИЕ КомандаХранилищеЗадачи КАК КомандаХранилищеЗадачи
+		ПО Объединения.ЗадачаМетеор = КомандаХранилищеЗадачи.ЗадачаМетеор
+		ЛЕВОЕ СОЕДИНЕНИЕ ТипПоЗадаче КАК ТипПоЗадаче
+		ПО Объединения.ЗадачаМетеор = ТипПоЗадаче.ЗадачаМетеор</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>ЗадачаМетеорНаименование</dataPath>
+		<expression>ЗадачаМетеор.НаименованиеЗадачи</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Задача метеор наименование</v8:content>
+			</v8:item>
+		</title>
+	</calculatedField>
+	<totalField>
+		<dataPath>ВсегоЗадач</dataPath>
+		<expression>Сумма(ВсегоЗадач)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>КоличествоИскомыхЗадач</dataPath>
+		<expression>Сумма(КоличествоИскомыхЗадач)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ПроцентИскомыхЗадач</dataPath>
+		<expression>100 * Сумма(КоличествоИскомыхЗадач) / Сумма(ВсегоЗадач)</expression>
+	</totalField>
+	<parameter>
+		<name>КонДата</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Кон дата</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаОкончания</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>НачДата</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Нач дата</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаНачала</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>ПериодОтчета</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период отчета</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ВариантПоиска</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Вариант поиска</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>0</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</valueType>
+		<value xsi:type="xs:string"/>
+		<useRestriction>false</useRestriction>
+		<availableValue>
+			<value xsi:type="xs:string">1</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап1 в периоде, Этап2 сразу перед ним</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:string">2</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап1 в периоде, Этап2 сразу после него</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:string">3</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап1 в периоде, Этап2 один из предыдущих</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:string">4</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап1 в периоде, Этап2 один из следующих</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:string">5</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап2 в периоде, Этап1 сразу перед ним</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:string">6</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап2 в периоде, Этап1 сразу после него</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:string">7</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап2 в периоде, Этап1 один из предыдущих</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<availableValue>
+			<value xsi:type="xs:string">8</value>
+			<presentation xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Этап2 в периоде, Этап1 один из следующих</v8:content>
+				</v8:item>
+			</presentation>
+		</availableValue>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>Этап1ДляЗапроса</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Этап1 для запроса</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ЭтапыЗадачиМетеор</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+		<expression>Выбор когда &amp;ВариантПоиска &lt;= "4" Тогда &amp;Этап1 Иначе &amp;Этап2 Конец</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>Этап2ДляЗапроса</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Этап2 для запроса</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ЭтапыЗадачиМетеор</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+		<expression>Выбор когда &amp;ВариантПоиска &lt;= "4" Тогда &amp;Этап2 Иначе &amp;Этап1 Конец</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>Этап1</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Этап1</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ЭтапыЗадачиМетеор</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>Этап2</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Этап2</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ЭтапыЗадачиМетеор</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+		<denyIncompleteValues>true</denyIncompleteValues>
+		<use>Always</use>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>ПоКоманде</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Отчёт по метрикам: По команде</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЗадачаМетеор</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаСозданияОбращения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВремяСогласованияВладельцами</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КонтактноеЛицо</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВсегоЗадач</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВсегоЗадач</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоИскомыхЗадач</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПроцентИскомыхЗадач</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ПериодОтчета</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">ThisQuarter</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>f3bc7805-d8a4-43fe-832b-5de323cfa8a4</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВариантПоиска</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string"/>
+					<dcsset:userSettingID>4723390c-1fc6-43d9-88d9-2c17b8b47577</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Этап1</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>d6cf6794-368f-405f-8207-e41bbd9182d9</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Этап2</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>5a3baa69-071d-48b4-bdbe-68f3c33e1f3c</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>КоличествоИскомыхЗадач</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Арктика</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ТипЗадачи</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Команда</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+	<settingsVariant>
+		<dcsset:name>ПоХранилищу</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>По хранилищу</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Хранилище</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВсегоЗадач</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВсегоЗадач</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоИскомыхЗадач</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПроцентИскомыхЗадач</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ПериодОтчета</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">ThisQuarter</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>f3bc7805-d8a4-43fe-832b-5de323cfa8a4</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВариантПоиска</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string"/>
+					<dcsset:userSettingID>4723390c-1fc6-43d9-88d9-2c17b8b47577</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Этап1</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>39adce96-4643-435a-ac7f-4d7046279bf3</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Этап2</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>19eafc58-66ba-4620-8d39-f7e34a4c7eb8</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>КоличествоИскомыхЗадач</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Арктика</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ТипЗадачи</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Хранилище</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+	<settingsVariant>
+		<dcsset:name>ПоКомандеИХранилищу</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>По команде и хранилищу</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЗадачаМетеор</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаСозданияОбращения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВремяСогласованияВладельцами</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВсегоЗадач</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВсегоЗадач</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КоличествоИскомыхЗадач</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПроцентИскомыхЗадач</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ПериодОтчета</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">ThisQuarter</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>f3bc7805-d8a4-43fe-832b-5de323cfa8a4</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВариантПоиска</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string"/>
+					<dcsset:userSettingID>4723390c-1fc6-43d9-88d9-2c17b8b47577</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Этап1</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>39adce96-4643-435a-ac7f-4d7046279bf3</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Этап2</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>19eafc58-66ba-4620-8d39-f7e34a4c7eb8</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>КоличествоИскомыхЗадач</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Арктика</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:column>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Хранилище</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:column>
+				<dcsset:row>
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ТипЗадачи</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item>
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Команда</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item>
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>ЗадачаМетеор</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:row>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="97fc19e7-5f05-44cf-8532-46fe70aa263b">
+  <name>НастройкиИСправочники</name>
+  <synonym>
+    <key>ru</key>
+    <value>НСИ Дополнений</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Enum.СостоянияДополнений</content>
+  <content>Catalog.Дополнения</content>
+  <content>Enum.ВидыОперацииДополнений</content>
+  <content>Enum.ТипыДополнений</content>
+  <content>Catalog.ВерсииДополненийПрисоединенныеФайлы</content>
+  <content>Catalog.ВерсииДополнений</content>
+  <content>Enum.СтатусыОперацийДополнений</content>
+  <content>InformationRegister.ОчередьВыгрузкиДополнений</content>
+  <content>CommonModule.РаботаСДополнениямиСлужебный</content>
+  <content>ScheduledJob.ВыгрузкаДополненийВРепозиторий</content>
+  <content>Enum.СтатусыВыгрузкиДополнений</content>
+  <content>InformationRegister.ДатыАктуальностиРасширений</content>
+  <content>Role.БазовыеПраваДополнения</content>
+  <content>Role.ИспользованиеСервисаСервераДополнений</content>
+  <content>Enum.ТипыРасширений</content>
+  <content>ScheduledJob.ОбновлениеСтатусовДополнений</content>
+  <content>InformationRegister.КоммитыДополнений</content>
+  <content>InformationRegister.ЗадачиМетеорДополнений</content>
+  <content>InformationRegister.ВерсииДополненийПоЗадачеИБазе</content>
+  <parentSubsystem>Subsystem.Дополнения</parentSubsystem>
+</mdclass:Subsystem>

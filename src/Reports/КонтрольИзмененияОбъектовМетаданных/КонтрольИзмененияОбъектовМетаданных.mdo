@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="35206f62-3b85-4aaf-98ce-1dcbb02e1a10">
+  <producedTypes>
+    <objectType typeId="c3f030ea-2948-4652-b1ff-6009f9446dd1" valueTypeId="146e66ce-bef5-46a5-81e9-0ec7eb4621ce"/>
+    <managerType typeId="068dfee8-6005-49f8-982c-4af3acb28111" valueTypeId="8a1571fb-5e1c-4fe4-8097-d63f0681be9d"/>
+  </producedTypes>
+  <name>КонтрольИзмененияОбъектовМетаданных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контроль изменения объектов метаданных</value>
+  </synonym>
+  <comment>1.0.0.1</comment>
+  <mainDataCompositionSchema>Report.КонтрольИзмененияОбъектовМетаданных.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="15271e8e-e10a-4c18-8b2d-8dacf7fcf912">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

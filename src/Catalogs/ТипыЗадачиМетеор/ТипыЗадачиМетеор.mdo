@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8e856268-1794-4706-a060-916521c9e19a">
+  <producedTypes>
+    <objectType typeId="75985226-03af-4e3c-aeb5-e65bbfb07173" valueTypeId="4e3a27b6-98e7-43e9-a365-e3317a109ef4"/>
+    <refType typeId="09ae794f-b719-49af-8980-460af83208a2" valueTypeId="59ebda22-a81e-495e-ba7a-f0ba0c0d39c9"/>
+    <selectionType typeId="bf64e911-0ee5-4233-821c-39c1bd5c79e6" valueTypeId="c3c78470-52bc-454d-b9b7-6ca5e2bc3d95"/>
+    <listType typeId="70433710-f376-4ab9-9628-bc4c17ff8b7e" valueTypeId="8fe7f2e8-52ed-41cf-ab20-96f18903d3e4"/>
+    <managerType typeId="012dcfbb-ae4a-4204-8437-cbc88a4f4149" valueTypeId="2127ece2-95ea-48bb-832f-e7d9185d9fcf"/>
+  </producedTypes>
+  <name>ТипыЗадачиМетеор</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы задачи метеор</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ТипыЗадачиМетеор.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ТипыЗадачиМетеор.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockFields>Catalog.ТипыЗадачиМетеор.StandardAttribute.Code</dataLockFields>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="a3b39e22-e7ab-47b1-aeb8-f08df7f639d9">
+      <name>Инциденты</name>
+      <description>Инциденты</description>
+      <code xsi:type="core:StringValue">
+        <value>03</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

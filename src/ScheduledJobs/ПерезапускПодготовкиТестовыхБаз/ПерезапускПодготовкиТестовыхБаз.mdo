@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4b389d8a-6c14-442c-bc58-63c05b9a24b6">
+  <name>ПерезапускПодготовкиТестовыхБаз</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перезапуск подготовки тестовых баз</value>
+  </synonym>
+  <methodName>CommonModule.РегЗадания.ПерезапускПодготовкиТестовыхБаз</methodName>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

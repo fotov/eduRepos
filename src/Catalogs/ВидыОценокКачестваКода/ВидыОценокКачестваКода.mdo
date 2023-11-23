@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4b678bf7-433f-4da3-8bc7-457f9f51d396">
+  <producedTypes>
+    <objectType typeId="0b1a9929-bf53-45d3-afb2-c7ce00d5f650" valueTypeId="a9b5bee5-58b5-4bd2-b202-9d1cd0e5b3f0"/>
+    <refType typeId="d012833a-b4ba-4b11-8c52-10ad4450c3a0" valueTypeId="631ab0f5-c4a4-4ebb-ac59-b18a92f27b7a"/>
+    <selectionType typeId="c8affae2-34d3-427c-a4ca-100c187244c5" valueTypeId="9ae398c8-55ad-41ea-bb60-f8cd7c58d77d"/>
+    <listType typeId="b2a9dea3-5a10-4a34-946d-b8b8b3eeb419" valueTypeId="08e37f70-53a0-4b13-93aa-c8a24b0a9964"/>
+    <managerType typeId="f78a29bc-bb68-49b0-8089-30d621ccf366" valueTypeId="92c9de98-26d2-4af1-9572-04f6315b4038"/>
+  </producedTypes>
+  <name>ВидыОценокКачестваКода</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды оценок качества кода</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыОценокКачестваКода.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Вид оценки качества кода</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="2b557d7f-2774-4cc0-b8b5-7fea4adf1c1b">
+      <name>КодВалидный</name>
+      <description>Код валидный</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="820634cb-cab4-4975-85e8-8568d845f1f7">
+      <name>КодПишетсяВЗащитномСтиле</name>
+      <description>Код пишется в защитном стиле</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="967fabf9-5066-4610-805d-1900d3c9f980">
+      <name>КодПонятный</name>
+      <description>Код понятный</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="94e8cce6-f482-42e1-b849-563b892cf412">
+      <name>КодПростой</name>
+      <description>Код простой</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="5049fbfe-d3ba-4a30-a889-2ddd7cd8b88e">
+      <name>КодСамодокументируемый</name>
+      <description>Код самодокументируемый</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="0d37257c-89f0-4e55-8e88-c58159c9e8e2">
+      <name>КорректнаяДекларацияПрограммныхИнтерфейсов</name>
+      <description>Корректная декларация программных интерфейсов</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="84ecb996-86c2-440a-ad85-d2743e2d12ae">
+      <name>КорректноеАрхитектурноеРазделениеНаПодсистемы</name>
+      <description>Корректное архитектурное разделение на подсистемы</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="d387fe86-b541-4c62-affb-0c92093ebf0d">
+      <name>КорректноеИспользованиеПроцедурИФункций</name>
+      <description>Корректное использование процедур и функций</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

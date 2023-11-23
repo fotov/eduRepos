@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="91bae2d0-71ca-40b1-ab4b-4facd399e301">
+  <producedTypes>
+    <managerType typeId="a41d98d0-91ce-4b5d-91ad-fc7b769b5e17" valueTypeId="08a99c90-f961-4c58-8cdf-0d0aeb9e5492"/>
+    <valueManagerType typeId="19dfac9a-40ea-4526-9ebf-48ffeed5efb9" valueTypeId="260cc894-4e75-4425-9f32-1c8edc7da2c1"/>
+    <valueKeyType typeId="c75318c8-0bc7-4014-a37b-6fc9d4d154b1" valueTypeId="7b48372c-654c-48f9-9097-ecd319a7982f"/>
+  </producedTypes>
+  <name>ПутьСкрипта_setMark</name>
+  <synonym>
+    <key>ru</key>
+    <value>Путь скрипта setMark</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

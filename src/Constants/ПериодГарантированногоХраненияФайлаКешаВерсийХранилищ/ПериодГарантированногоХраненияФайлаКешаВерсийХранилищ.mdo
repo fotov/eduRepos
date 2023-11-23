@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dd8f2879-9885-4439-b1e1-775813337f6b">
+  <producedTypes>
+    <managerType typeId="dbbf0522-b8bf-4b7b-a46a-a2f510329be8" valueTypeId="514037e3-bc6f-407f-8acf-4df924322d6a"/>
+    <valueManagerType typeId="2ffaa6ce-b850-4221-bdd2-fd84421f305e" valueTypeId="1bd7e0c2-4ea1-4671-b928-a00ce17f7d86"/>
+    <valueKeyType typeId="6f6b2ef9-d569-4349-b192-1f8c767f9446" valueTypeId="90c94e59-ded0-4368-a94a-3956a49f9d5a"/>
+  </producedTypes>
+  <name>ПериодГарантированногоХраненияФайлаКешаВерсийХранилищ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Период гарантированного хранения файла кеша версий хранилищ, ч.</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>2</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <explanation>
+    <key>ru</key>
+    <value>Период в часах</value>
+  </explanation>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

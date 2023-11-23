@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2b97297d-17e1-4eda-aa9d-7ef7dbd97765">
+  <producedTypes>
+    <managerType typeId="c30b132f-3af9-40f0-9692-43f2500bf062" valueTypeId="b20a5290-c5a0-4d50-8abf-b26e4479e3ae"/>
+    <valueManagerType typeId="bfb07363-8c86-40dc-9788-e412da04d584" valueTypeId="ddb08367-0e7f-4583-8227-230bc86c8cbc"/>
+    <valueKeyType typeId="01666f83-06a8-44bb-bc10-d01c0244b9eb" valueTypeId="73903e8b-bc49-4494-926e-844a1c3b91ae"/>
+  </producedTypes>
+  <name>КаталогЛогов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Каталог логов</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>1024</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

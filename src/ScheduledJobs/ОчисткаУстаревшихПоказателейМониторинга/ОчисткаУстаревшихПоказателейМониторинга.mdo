@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="de2e9c5b-b41c-4684-883a-a7f80bdac032">
+  <name>ОчисткаУстаревшихПоказателейМониторинга</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очистка устаревших показателей мониторинга</value>
+  </synonym>
+  <methodName>CommonModule.МониторингСлужебный.ОчиститьДанныеМониторингаОбработчикЗадания</methodName>
+  <description>Очистка данных мониторинга</description>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

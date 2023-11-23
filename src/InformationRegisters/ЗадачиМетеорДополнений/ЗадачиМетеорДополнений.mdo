@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="085e0e16-8a57-4b4c-a679-165b0720c2f7">
+  <producedTypes>
+    <selectionType typeId="6a354beb-71d4-4772-bf8c-437ffb1f5c9a" valueTypeId="f142edf7-484d-4fce-a6cb-a32a8a863e01"/>
+    <listType typeId="227e1e4d-f688-4f99-9539-757e2b2c6f64" valueTypeId="8936817e-668a-4fba-8f96-ece79845b309"/>
+    <managerType typeId="f8ef82ca-a550-441f-8c54-8d8282bcdd18" valueTypeId="185c8e61-bae6-4379-8286-ab277174777b"/>
+    <recordSetType typeId="eeb9abdf-fe72-4d59-b0b3-7a58149cdce8" valueTypeId="84c35f0b-c20e-4a69-a483-28b11050b739"/>
+    <recordKeyType typeId="a6a1e751-f481-4c97-8566-9332c1c957ca" valueTypeId="039a2afd-d6f5-47c1-a8d1-cd1e8c220aa3"/>
+    <recordType typeId="5ca57f02-f17a-4186-a420-64a6622c2f6a" valueTypeId="f7dc901b-c16e-4765-988c-e3316ff2e15e"/>
+    <recordManagerType typeId="d404f820-0bba-46ef-a9ba-112a51848740" valueTypeId="15dcbc20-8907-4bd4-b9a6-11469d2fbb73"/>
+  </producedTypes>
+  <name>ЗадачиМетеорДополнений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Задачи метеор дополнений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="62633d26-0578-4a29-8109-8575d76a901b">
+    <name>ЗадачаМетеор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача метеор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЗадачиМетеор</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="0795a74f-e0f0-4f67-b89a-67f0f96b7d3c">
+    <name>ВерсияДополнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия дополнения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВерсииДополнений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

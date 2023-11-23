@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bd43bd5a-2e5a-4fd8-b861-61b20972ec71">
+  <producedTypes>
+    <selectionType typeId="15e4f930-0ee3-49b8-ac16-50db9d8994a0" valueTypeId="89f1407d-038b-4401-b9ad-9047fce25e38"/>
+    <listType typeId="f24db377-bea4-4e0b-acbf-99bac7474641" valueTypeId="73722d00-cc7f-4f08-80db-dbe284e3b62a"/>
+    <managerType typeId="00d5366c-9c95-46a1-9e3f-e0d2363025cb" valueTypeId="60879f88-11bc-4d40-8149-7c2271f80fd0"/>
+    <recordSetType typeId="3c6d8209-ce53-428e-8397-b81748417e89" valueTypeId="d2b547be-7594-47ac-aac0-08aaf5cc839c"/>
+    <recordKeyType typeId="7f042a7b-f810-4299-99bd-7450372cea0c" valueTypeId="51ede4f7-3ffc-48e9-bf74-18246f3ffe80"/>
+    <recordType typeId="ddb5816e-ddf2-4ab1-b63a-bcdafdcc4a9e" valueTypeId="62444a53-cdd3-4b6e-88fc-719840d02ad8"/>
+    <recordManagerType typeId="6cd49d7a-3a45-4f87-a45e-658c031eeb5c" valueTypeId="9af35f3c-ed9b-41f5-87b6-6a87d45071bb"/>
+  </producedTypes>
+  <name>СтатистикаМониторинга</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статистика мониторинга</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.СтатистикаМониторинга.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSliceLast>true</enableTotalsSliceLast>
+  <resources uuid="33800f46-2802-4618-9f03-0d7f61bcea3d">
+    <name>Хранилище</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хранилище</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Хранилища</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="a0bded62-6dfc-461d-8b37-bffeba1bb0f2">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>15</precision>
+        <scale>2</scale>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="c419adce-6b75-4448-9a64-fc6f57cadaf3">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="72e58c68-1330-4c3f-a948-937ea0cac8e8">
+    <name>ВидМониторинга</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид мониторинга</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыМониторинга</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f903a000-a09f-4648-a9c1-92c8cf0ca0f8">
+    <name>Показатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПоказателиМониторинга</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="b4967bbc-abe4-49b8-8e76-5c0ea3b95691">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

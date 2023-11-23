@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="df83ab12-3f2f-4519-92ec-0876dbba20ef">
+  <name>Удалить_Объекты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удалить объекты</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <explanation>
+    <key>ru</key>
+    <value>Неиспользуемые, устаревшие объекты, которые нужно удалить из конфигурации
+</value>
+  </explanation>
+  <content>ChartOfCalculationTypes.Удалить_Показатели</content>
+</mdclass:Subsystem>

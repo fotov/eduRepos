@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c7c91a71-c92c-4611-9a40-587fad003c48">
+  <name>ПереносИзменений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перенос изменений</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>InformationRegister.РегистрАдресации</content>
+  <content>BusinessProcess.СогласованиеПереноса</content>
+  <content>Task.ЗадачаИсполнителя</content>
+  <content>DataProcessor.РаботаСЗадачами</content>
+  <content>BusinessProcess.ПредварительнаяПроверка</content>
+  <content>Catalog.ЗадачиМетеор</content>
+  <content>Catalog.ЭтапыЗадачиМетеор</content>
+  <content>InformationRegister.ИсторияЭтаповЗадачиМетеор</content>
+  <content>Catalog.ТипыЗадачиМетеор</content>
+  <content>InformationRegister.ТекущийЭтапЗадачиМетеор</content>
+  <content>Catalog.МеткиМетеор</content>
+  <content>Report.Удалить_ИcторияЭтапов</content>
+  <content>InformationRegister.ПоследниеПроверенныеКоммиты</content>
+  <content>Catalog.ДействияКонвейераОбработки</content>
+  <content>InformationRegister.СобытияМетеор</content>
+  <content>CommonModule.ОбновлениеAUTHORSСервер</content>
+  <content>Enum.ВидыЗадачМетеор</content>
+  <content>Constant.КонвейерОбработкиОповещениеТелеграммАвтотесты</content>
+  <content>Constant.КонвейерОбработкиОповещениеТелеграммСинтаксическийКонтроль</content>
+  <content>BusinessProcess.КонвейерОбработки</content>
+  <content>CommonModule.КонвейерОбработкиСервер</content>
+  <content>InformationRegister.ИсторияПримененияКонфигураций</content>
+  <content>WebService.Automacon</content>
+  <content>Role.ЧтениеСобытияМетеор</content>
+  <content>Role.ЧтениеДействияКонвейераОбработки</content>
+  <content>Role.ЧтениеЗадачиМетеор</content>
+  <content>Role.ЧтениеМеткиМетеор</content>
+  <content>Role.ЧтениеТипыЗадачиМетеор</content>
+  <content>Role.ЧтениеЭтапыЗадачиМетеор</content>
+  <content>Role.ИспользованиеСогласованиеЗаявок</content>
+  <content>Role.ДобавлениеИзменениеИсторияПримененияКонфигураций</content>
+  <content>Role.ЧтениеИсторияЭтаповЗадачиМетеор</content>
+  <content>Role.ЧтениеПоследниеПроверенныеКоммиты</content>
+  <content>Role.ДобавлениеИзменениеПоследниеПроверенныеКоммиты</content>
+  <content>Role.ДобавлениеИзменениеСогласованиеПереноса</content>
+  <content>Role.ДобавлениеИзменениеЗадачаИсполнителя</content>
+  <content>BusinessProcess.СогласованиеАрхитектуры</content>
+  <content>Role.ДобавлениеИзменениеСогласованияАрхитектуры</content>
+  <content>Role.ЧтениеСогласованияАрхитектуры</content>
+  <content>Role.ДобавлениеИзменениеИсторииЭтаповЗадачиМетеор</content>
+  <content>Constant.КоличествоИзмененийПропускВедущимПроверкиАПК</content>
+  <content>Report.КонтрольИзмененнныхОбъектов</content>
+  <content>Report.КонтрольИзмененнныхОбъектовSQL</content>
+  <content>Report.СтатистикаАвтоматическогоСогласованияПереноса</content>
+  <content>InformationRegister.ОчередьФормированияИтоговыхИзменений</content>
+  <parentSubsystem>Subsystem.НепрерывнаяИнтеграция</parentSubsystem>
+</mdclass:Subsystem>

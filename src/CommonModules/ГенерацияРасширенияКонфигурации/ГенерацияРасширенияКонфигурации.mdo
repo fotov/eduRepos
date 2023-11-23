@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a98ab561-1799-49e4-ae65-405639ca2ff9">
+  <name>ГенерацияРасширенияКонфигурации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Генерация расширения конфигурации</value>
+  </synonym>
+  <server>true</server>
+</mdclass:CommonModule>

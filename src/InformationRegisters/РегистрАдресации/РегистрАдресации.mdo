@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="02456541-b662-4401-8e92-72388e22a891">
+  <producedTypes>
+    <selectionType typeId="ec3b95a2-bcda-411b-856b-35f45ba37a4f" valueTypeId="f337d8c1-c662-4b4f-ac1b-b3bcb027c41d"/>
+    <listType typeId="8c11a8e7-2cd9-42e1-bf86-92ab70ac3e63" valueTypeId="5a31ce59-4495-44c5-93c9-5fd34329287a"/>
+    <managerType typeId="5e4f8a1c-7d4c-45dc-922f-f908b0312b11" valueTypeId="e3499b09-75ce-47c5-aff5-c32e8a243eba"/>
+    <recordSetType typeId="ca6b2b30-221d-42b4-a19a-8f32905ca3b5" valueTypeId="cf9aaefc-fef1-4786-881e-3371ce8a9570"/>
+    <recordKeyType typeId="153210a6-aac3-46d5-b386-9f0c6b03ccdf" valueTypeId="b6e72326-4d57-43d3-a671-b298f04dcd1b"/>
+    <recordType typeId="19e94df4-cc51-420a-ad8e-e18b73038377" valueTypeId="370969bf-8c15-4c60-a437-7ee6e1a89a78"/>
+    <recordManagerType typeId="eb79389e-166a-4e94-afb3-74e5313ac94a" valueTypeId="42b44ccf-3948-4243-8edd-8e24bcb1f5a9"/>
+  </producedTypes>
+  <name>РегистрАдресации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регистр адресации</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="bfa11690-5856-46f8-94c1-55df3271e71a">
+    <name>РольИсполнителя</name>
+    <synonym>
+      <key>ru</key>
+      <value>Роль исполнителя</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РолиИсполнителей</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f5b4dad8-3463-46f8-9761-c5fc9e9092b5">
+    <name>Исполнитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исполнитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

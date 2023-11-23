@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f2f338f9-526f-4950-ac25-933681a67312">
+  <producedTypes>
+    <selectionType typeId="658667d0-1494-4048-b966-711a8c0feec4" valueTypeId="bb858683-2771-4aff-b2e2-140c00e07d18"/>
+    <listType typeId="90369cdc-b621-4bb5-a078-8a64a5af1cd9" valueTypeId="a252a539-b9a1-432a-b06f-5951b53e5062"/>
+    <managerType typeId="dbc3a78e-e419-4955-9daf-90d652a839f3" valueTypeId="7bb5a2fb-df6b-46e0-97df-72b1f2e60986"/>
+    <recordSetType typeId="51dce59e-b261-46ed-b996-4c8bca4aaf5e" valueTypeId="2c38d1b0-8995-4119-84b8-f2a574f97484"/>
+    <recordKeyType typeId="876c3936-d33b-4c4c-8234-176461adbe67" valueTypeId="ed85e037-da97-4f15-9f93-eac0c7e05043"/>
+    <recordType typeId="20bc775c-e227-48d7-9051-7eb3e9047e38" valueTypeId="b95b339a-90aa-4eca-911f-f7b9d0903b18"/>
+    <recordManagerType typeId="6584d6a3-8771-4eda-83b1-a43687d8c7ce" valueTypeId="a75091ce-27a0-49dd-b066-c72a5789d484"/>
+  </producedTypes>
+  <name>СледующиеЭтапыЗадачиПоТочкеМаршрута</name>
+  <synonym>
+    <key>ru</key>
+    <value>Следующие этапы задачи по точке маршрута</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.СледующиеЭтапыЗадачиПоТочкеМаршрута.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="ccaada2c-61f3-4d58-9874-12d53db7604d">
+    <name>ТочкаМаршрута</name>
+    <synonym>
+      <key>ru</key>
+      <value>Точка маршрута</value>
+    </synonym>
+    <type>
+      <types>BusinessProcessRoutePointRef</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="aa5bb1a9-1ea0-41f5-8d68-641b68ee0a23">
+    <name>Согласовано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Согласовано</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="302a8ace-3633-42ca-8c4a-785d71863bff">
+    <name>Этап</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этап</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЭтапыЗадачиМетеор</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="ae7cc2dc-f2b1-4dff-aecd-972b5c9b38bb">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

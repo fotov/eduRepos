@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="05dec81d-c386-456b-9fd7-97b876c675a0">
+  <name>Администрирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Администрирование</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>DataProcessor.ПанельАдминистрированияБСП</content>
+  <content>DataProcessor.ОценкаПроизводительности</content>
+  <content>DataProcessor.НастройкиПользователей</content>
+  <content>DataProcessor.АвтоматическоеИзвлечениеТекстов</content>
+  <content>DataProcessor.АктивныеПользователи</content>
+  <content>DataProcessor.БлокировкаРаботыПользователей</content>
+  <content>DataProcessor.ГрупповоеИзменениеРеквизитов</content>
+  <content>DataProcessor.ЖурналРегистрации</content>
+  <content>DataProcessor.НастройкаСтандартногоИнтерфейсаOData</content>
+  <content>DataProcessor.ОбновлениеВспомогательныхДанных</content>
+  <content>DataProcessor.ПереносФайлов</content>
+  <content>DataProcessor.ПоискИУдалениеДублей</content>
+  <content>DataProcessor.РегламентныеИФоновыеЗадания</content>
+  <content>DataProcessor.РезультатыОбновленияПрограммы</content>
+  <content>DataProcessor.УдалениеПомеченныхОбъектов</content>
+  <content>DataProcessor.АдминистрированиеУправлениеКоммитами</content>
+  <content>SessionParameter.ВыполняетсяОтладкаВКопии</content>
+  <parentSubsystem>Subsystem.Администрирование</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a69fff74-5c5a-43d9-bc95-50bf6ae9b961">
+  <name>АвтозавершениеЗадач</name>
+  <synonym>
+    <key>ru</key>
+    <value>Автозавершение задач</value>
+  </synonym>
+  <methodName>CommonModule.РегЗадания.АвтозавершениеЗадач</methodName>
+  <description>Автозавершение задач</description>
+  <key>АвтозавершениеЗадач</key>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

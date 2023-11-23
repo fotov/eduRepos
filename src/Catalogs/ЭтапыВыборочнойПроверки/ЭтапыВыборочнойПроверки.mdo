@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4a3a8010-e51b-44f6-86d7-c7cfa8905a8a">
+  <producedTypes>
+    <objectType typeId="607b61b0-367f-4a1f-96cd-385a34d342ba" valueTypeId="3bc47648-7932-42f3-bf9a-6517095145b5"/>
+    <refType typeId="cfce35c3-fc1f-4388-bdc6-b06215969d56" valueTypeId="e9a1317a-571f-49b4-9591-d6ae4e378baf"/>
+    <selectionType typeId="0050e842-9aa8-48a2-a1bb-ca048c496ae5" valueTypeId="2fd4453e-60d3-4d42-9741-5747258cd38d"/>
+    <listType typeId="f8bea990-9920-42ec-9ea2-73f1c905e037" valueTypeId="ce28e1a8-3ee3-4d91-a391-38f0c54baf7a"/>
+    <managerType typeId="eedba740-eaa5-4fc7-b627-893dc0b507e3" valueTypeId="81164d6f-1fcd-4ad5-90a1-69d9771fdd69"/>
+  </producedTypes>
+  <name>ЭтапыВыборочнойПроверки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Этапы выборочной проверки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ЭтапыВыборочнойПроверки.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e8152e28-7aad-4e1f-820b-dd5a3021bbce">
+  <producedTypes>
+    <objectType typeId="01f35303-8c7b-4568-921e-554823404974" valueTypeId="c15af1db-0994-4bf0-b58c-48a5c08815f9"/>
+    <refType typeId="144267b7-6e3f-4e36-96e7-247a44492480" valueTypeId="68b2ede6-a420-4b08-816b-70896b2b5a74"/>
+    <selectionType typeId="fd26cfce-3805-4b86-89ff-a22b9995f73d" valueTypeId="9d93486b-ff2a-473a-afc2-01e762ec215a"/>
+    <listType typeId="b78b8220-900d-4391-bc83-4c2020d09966" valueTypeId="11a723db-23ce-4ec4-b438-3d54cdc9ded5"/>
+    <managerType typeId="f6b03a3a-6f31-489a-9f57-2c30845fe93e" valueTypeId="715f3b31-37e8-4e7d-8a87-bdfbc6b55420"/>
+  </producedTypes>
+  <name>ШагиПроцесса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Шаги процесса</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ШагиПроцесса.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ШагиПроцесса.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Процессы</owners>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ШагиПроцесса.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="fc6d4923-6edf-415d-8b5f-985f26bbb671">
+    <name>ТипШага</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип шага</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="734f473b-a05c-4e67-ae43-a1b196513a34">
+    <name>ВложенныйПроцесс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вложенный процесс</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Процессы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="60b46df0-ea6c-4c8a-b9b2-9e66c236bcb5">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

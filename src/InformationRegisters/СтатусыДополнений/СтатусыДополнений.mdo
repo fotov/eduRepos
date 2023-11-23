@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="55674e2d-310f-4d18-91ba-579d581ae8a0">
+  <producedTypes>
+    <selectionType typeId="3eb9f49c-1595-494e-8971-2ac4e5e638b7" valueTypeId="4794419c-2172-43d7-91b2-c3dd84342bf8"/>
+    <listType typeId="5f7f51aa-afb5-4018-a434-9e7847a75d7c" valueTypeId="4404425e-a9ef-40f2-bb82-ace070ba5f1f"/>
+    <managerType typeId="1de293f5-e4fa-4e59-9394-5ec74bb6ac0b" valueTypeId="6378b7a0-bcf6-447d-89b2-a190fd07452b"/>
+    <recordSetType typeId="38de5663-7174-452b-a16c-d6c8227969fb" valueTypeId="7808c7db-db89-4a77-a521-abf340988eea"/>
+    <recordKeyType typeId="68b33f19-2c2e-43ac-a09d-e8c380dd5107" valueTypeId="48a59b11-7861-4718-83be-298f4155fbfa"/>
+    <recordType typeId="62806d8e-9422-428e-8594-35fd00705921" valueTypeId="a25ec2a6-beba-4b5f-9b69-b736c277d12d"/>
+    <recordManagerType typeId="cf12abc4-90b2-4969-b09b-b8236467be14" valueTypeId="24a26c1f-1d0e-49cb-b971-941a84a11694"/>
+  </producedTypes>
+  <name>СтатусыДополнений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы дополнений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <enableTotalsSliceLast>true</enableTotalsSliceLast>
+  <resources uuid="4beee910-265d-47af-bd6b-dfa43799f53a">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыИсторииХранилищ</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="e7fe19b3-263f-4864-9ef6-271bfc1d0fce">
+    <name>ВерсияДополнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия дополнения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВерсииДополнений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

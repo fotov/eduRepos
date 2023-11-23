@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c885e714-8cca-4fb8-8e4e-f12b01bc748d">
+  <name>НСИ</name>
+  <synonym>
+    <key>ru</key>
+    <value>НСИ</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.ТехнологиииУведомлений</content>
+  <content>Catalog.ТехнологииИнтеграции</content>
+  <content>Catalog.Права</content>
+  <content>Catalog.ИзмененияМатрицыПрав</content>
+  <content>Catalog.Удалить_Должности</content>
+  <content>Catalog.ДействияСОбъектами</content>
+  <content>Catalog.ОбъектыМетаданных</content>
+  <content>Catalog.ТипыОбъектов</content>
+  <content>Catalog.Конфигурации</content>
+  <content>Catalog.Платформы</content>
+  <content>Role.ЧтениеДействияСОбъектами</content>
+  <content>Role.ЧтениеДолжности</content>
+  <content>Role.ЧтениеИзмененияМатрицыПрав</content>
+  <content>Role.ЧтениеКонфигурации</content>
+  <content>Role.ДобавлениеИзменениеКонфигурации</content>
+  <content>Role.ЧтениеОбъекты</content>
+  <content>Role.ДобавлениеИзменениеОбъекты</content>
+  <content>Role.ЧтениеПлатформы</content>
+  <content>Role.ДобавлениеИзменениеПлатформы</content>
+  <content>Role.ЧтениеПрава</content>
+  <content>Role.ДобавлениеИзменениеПрава</content>
+  <content>Role.ЧтениеТехнологииИнтеграции</content>
+  <content>Role.ДобавлениеИзменениеТехнологииИнтеграции</content>
+  <content>Role.ЧтениеТехнологиииУведомлений</content>
+  <content>Role.ДобавлениеИзменениеТехнологиииУведомлений</content>
+  <content>Role.ЧтениеТипыОбъектов</content>
+  <content>Role.ДобавлениеИзменениеТипыОбъектов</content>
+  <content>Catalog.Подсистемы</content>
+  <content>CommonModule.ЗагрузкаМетаданных</content>
+  <content>InformationRegister.СоставПодсистем</content>
+  <content>CommonModule.ЗагрузкаМетаданныхСлужебный</content>
+  <content>ScheduledJob.ЗагрузкаОписанияМетаданных</content>
+  <content>InformationRegister.ИсторияИменОбъектовМетаданных</content>
+  <content>Catalog.ПредопределенныеЭлементыОбъектовМетаданных</content>
+  <parentSubsystem>Subsystem.ТехническийПроект</parentSubsystem>
+</mdclass:Subsystem>

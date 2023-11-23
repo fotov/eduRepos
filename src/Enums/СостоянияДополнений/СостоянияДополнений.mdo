@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="26f50fd0-5e95-43f1-a7c5-6b51920d21e8">
+  <producedTypes>
+    <refType typeId="e042c992-f8bc-4f11-91b6-dc8a0c8a7093" valueTypeId="c6f70c31-bb5a-469a-9961-6cee9277a88a"/>
+    <listType typeId="4461cee1-2053-45ae-ab6f-3bbe13a6f754" valueTypeId="d4bffabe-b4eb-4828-84bb-a5bc99ae2f8f"/>
+    <managerType typeId="ace40373-4bc0-44fc-b3f9-ad79dae4ce52" valueTypeId="b20285e3-5d6c-4690-a971-9bb6164c655c"/>
+  </producedTypes>
+  <name>СостоянияДополнений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния дополнений</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="ff2c95d2-f3d1-499a-8e57-dfae365a861b">
+    <name>Включено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Включено</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8780f70b-8262-40d4-8fc0-a2276a024b69">
+    <name>Отключено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отключено</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1093ce8a-202a-465f-a419-7230233c30f2">
+    <name>Удалено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалено</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f8b6d7db-135e-4f42-a6c8-9c95de0d3b1c">
+  <name>Дополнения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дополнения</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.РазделДополнения</picture>
+  </picture>
+  <content>CommonModule.РаботаСДополнениями</content>
+  <content>Role.ДобавлениеИзменениеДополнений</content>
+  <content>Role.ИспользованиеУправлениеДополнениями</content>
+  <content>Role.РазделДополнения</content>
+  <content>Role.ПросмотрОтчетовПоДополнениям</content>
+  <content>Role.ЧтениеДополнений</content>
+  <content>CommonCommand.ПанельОтчетовДополнения</content>
+  <content>Report.СведенияОДополнениях</content>
+  <content>CommonPicture.РазделДополнения</content>
+  <content>ScheduledJob.ЗагрузкаНовыхДополнений</content>
+  <subsystems>НастройкиИСправочники</subsystems>
+  <subsystems>Интеграция</subsystems>
+  <subsystems>УправлениеДополнениями</subsystems>
+</mdclass:Subsystem>

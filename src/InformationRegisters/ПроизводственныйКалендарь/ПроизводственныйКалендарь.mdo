@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dbdbd288-1987-439e-9e8f-5fde19012cfa">
+  <producedTypes>
+    <selectionType typeId="86c1948d-907b-407b-8f6c-71b9c75bc170" valueTypeId="b54a0518-85c4-43f5-933b-89f7442fa1fe"/>
+    <listType typeId="67c00682-becc-4f96-9aff-da532819d7ac" valueTypeId="d23b09c1-8a75-460b-9ce2-325a67c6fba5"/>
+    <managerType typeId="0d03ee2f-20ab-49da-83c0-c70e6c54ff5f" valueTypeId="ecc08a38-4304-4e00-a0ea-9910aece5466"/>
+    <recordSetType typeId="ff99624b-4e13-4c78-bcab-9f4a8e1479cd" valueTypeId="7eb06247-a13d-429b-8501-1fe536831002"/>
+    <recordKeyType typeId="eb383b70-6d01-41be-9c39-54a568a7cb65" valueTypeId="283800f5-2729-4dfe-853d-f97fe2231c1f"/>
+    <recordType typeId="33d7b0e5-e18b-413e-a5d4-2b3c59fad49f" valueTypeId="22e5a3b4-590d-4872-be4c-3b0e0c10c40f"/>
+    <recordManagerType typeId="ed242d11-e53a-4769-a0df-dbf7e043ad7e" valueTypeId="b87638e4-d09a-4569-b79d-ec4e6743ab4e"/>
+  </producedTypes>
+  <name>ПроизводственныйКалендарь</name>
+  <synonym>
+    <key>ru</key>
+    <value>Производственный календарь</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="38f3b865-313b-4721-ad5f-6c6c4d7524b0">
+    <name>Выходной</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выходной</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="94be4479-9d08-4ecb-8c3f-917403655fb4">
+    <name>День</name>
+    <synonym>
+      <key>ru</key>
+      <value>День</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <commands uuid="736e7d58-0b2b-4cad-b80a-5c580fa91909">
+    <name>ЗагрузитьПроизводственныйКалендарь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузить производственный календарь</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:InformationRegister>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bb5119aa-aaa8-4861-a835-7e3181268ccb">
+  <producedTypes>
+    <selectionType typeId="1182de7c-9b6d-4f4d-a556-b97da656a9a9" valueTypeId="9f02ad03-4eb3-4ca8-9aea-0e1fef1eef74"/>
+    <listType typeId="838e6b4c-5040-4137-b142-315ab3f75454" valueTypeId="76b6850a-c9a5-4f73-ac9b-1691293e7416"/>
+    <managerType typeId="8d9af23b-57bb-489e-81f8-0f6fb0b558dd" valueTypeId="75a11d61-7a4d-4165-9ee9-d8a8c25d9955"/>
+    <recordSetType typeId="442d42fc-da0b-475a-beec-91a447c3d0bf" valueTypeId="bf84d404-da6d-46ae-b9d4-3269d7043c67"/>
+    <recordKeyType typeId="4e4a81a1-7f30-4229-888b-68b205d60d6b" valueTypeId="749f72ca-4e8d-4987-b841-f4f7e0f21278"/>
+    <recordType typeId="26760c91-c144-4943-aebd-cc688d08239b" valueTypeId="4f5eb3a0-bffa-4e0e-9e50-a80959abbac3"/>
+    <recordManagerType typeId="3646be2a-eaf1-40b2-b54a-29bda497d819" valueTypeId="78b3303a-3395-4cfa-835e-339e58a52791"/>
+  </producedTypes>
+  <name>ОчередьПолученияИзмененийОбъектовВерсийХранилища</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очередь получения изменений объектов версий хранилища</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="abff61d1-78a9-4698-ba44-9d07a82d8577">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыОперацийОбработкиОчереди</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="bb5e1545-f033-4fba-811f-4f07b0bada96">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="f92be9b9-9ab4-4a2f-a75c-dc2bf232135f">
+    <name>ВерсияХранилища</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия хранилища</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИсторияХранилища</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

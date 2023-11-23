@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="801aae0c-1d44-443e-b732-e0fde60f4c67">
+  <name>ЗагрузкаМетаданных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка метаданных</value>
+  </synonym>
+  <server>true</server>
+</mdclass:CommonModule>

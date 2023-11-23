@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="227feb4d-70e8-427b-a2d1-5e14b8987e28">
+  <producedTypes>
+    <managerType typeId="9febaf8f-2def-4444-8cc5-29d43c1067f0" valueTypeId="1773fdba-0b67-47fa-a101-c2f8550f5303"/>
+    <valueManagerType typeId="91218dcc-2e49-4edb-a40b-745f97631cdc" valueTypeId="204e8965-3431-4dce-a652-47f65e4a42de"/>
+    <valueKeyType typeId="2034b866-31ae-43e6-9c51-3c08d8370238" valueTypeId="dca27bba-8561-4470-9c18-7952f6391dca"/>
+  </producedTypes>
+  <name>МинимальноеКоличествоЧасовДляНеобходимостиКонтроляТрудозатрат</name>
+  <synonym>
+    <key>ru</key>
+    <value>Минимальное количество часов для необходимости контроля трудозатрат</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>5</precision>
+      <scale>1</scale>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

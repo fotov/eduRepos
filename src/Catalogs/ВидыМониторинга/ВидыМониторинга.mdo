@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b5ca2a41-509b-4530-b80a-771a42b220e1">
+  <producedTypes>
+    <objectType typeId="fa7161d1-6836-48a0-9de4-6ad941356e95" valueTypeId="87def27e-31da-4aa3-b2b1-0a6def0ad84f"/>
+    <refType typeId="a766e50a-d1ff-4bab-a85e-9dfa5a43053a" valueTypeId="cc81d013-d0e6-4fda-abde-93456506dee8"/>
+    <selectionType typeId="cfc9b8d6-bed1-48c7-9a81-3bc11ba03da1" valueTypeId="e55fc2ac-11a3-48ec-a93d-24ec28045940"/>
+    <listType typeId="dad865c6-a64a-4233-acaf-67995d7c8d7e" valueTypeId="6cd94c94-17ce-4611-ba05-6448a72bd9b1"/>
+    <managerType typeId="2bc722ae-5647-489d-9c17-ab02cbe5be5e" valueTypeId="d9a68bdf-77d4-4f40-aec8-9fa1bc7c05ed"/>
+  </producedTypes>
+  <name>ВидыМониторинга</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды мониторинга</value>
+  </synonym>
+  <inputByString>Catalog.ВидыМониторинга.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="f1504a65-5e3b-414e-885b-8eb07553de95">
+      <name>БлокировкаЗадачКонвеера</name>
+      <description>Блокировка задач конвеера</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="5af9f109-13e9-4184-a0a4-dfb09bddf754">
+      <name>ЗависаниеПолученияИсторииХранилища</name>
+      <description>Зависание получения истории хранилища</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="68c8123a-c739-43be-b137-b48d93775c9f">
+      <name>ЗагрузкаИОбработкаВерсииИсторииХранилища</name>
+      <description>Загрузка и обработка версии истории хранилища</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="b723f03f-1e17-4493-a441-29a79e95de91">
+      <name>ИнтеграцияСМетеор</name>
+      <description>Интеграция с метеор</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="bffc8915-6452-438e-b626-be05e867a58f">
+      <name>ОпределениеЗадачиВерсии</name>
+      <description>Определение задачи версии</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="13204e44-2543-4d5b-8148-47266a286bd0">
+      <name>ПроверкаАПК</name>
+      <description>Проверка АПК</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="88a0c93f-e2e2-4a00-a567-0fa6f212ad5d">
+      <name>СинхронизацияХранилищаСGIT</name>
+      <description>Синхронизация хранилища с GIT</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

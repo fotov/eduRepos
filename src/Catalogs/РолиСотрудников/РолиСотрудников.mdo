@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="10ab5840-567b-4c11-ad42-28b1c05012e9">
+  <producedTypes>
+    <objectType typeId="8f73581e-b84a-4c7b-97ac-a4f8b4bc6d80" valueTypeId="923699d2-fce0-4e81-8ed7-537bbe9a3321"/>
+    <refType typeId="8d5b3d6f-3503-45cc-9829-f1ae59d83ab0" valueTypeId="cce90b75-8ccc-4ff7-bdd1-09e519750e91"/>
+    <selectionType typeId="3b6a2718-84ec-4564-92f8-4bb9abd6bbae" valueTypeId="c7a0310e-23c9-4cc4-9ad1-597923823de0"/>
+    <listType typeId="061b9777-947c-452d-b9c4-f3837db0577f" valueTypeId="cb04c79d-6d51-4251-8423-94a926c65c8a"/>
+    <managerType typeId="d56993a3-ddb2-42b0-8fd1-9c809fc5731a" valueTypeId="7f3f5f50-72e2-4e22-b1a8-0ffbf7da03a1"/>
+  </producedTypes>
+  <name>РолиСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Роли сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.РолиСотрудников.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Роль сотрудника</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="3b15b4eb-3f2a-4f64-9936-c369e76e3088">
+    <name>ЭтоВедущий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это ведущий</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9c72fc67-427b-42ce-b871-baef27f8c776">
+    <name>СтекТехнологий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Стек технологий</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.СтекиТехнологий</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

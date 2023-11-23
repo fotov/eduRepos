@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a493c69b-4573-41b1-a7bd-4cb0ded706f5">
+  <name>НСИ</name>
+  <synonym>
+    <key>ru</key>
+    <value>НСИ</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Enum.ЗначенияОценкиКачестваКода</content>
+  <parentSubsystem>Subsystem.КачествоИМетрики</parentSubsystem>
+</mdclass:Subsystem>

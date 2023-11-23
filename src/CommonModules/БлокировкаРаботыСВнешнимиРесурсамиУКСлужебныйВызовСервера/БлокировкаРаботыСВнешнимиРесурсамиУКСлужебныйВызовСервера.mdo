@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1222c927-6a92-4f8e-8350-285bde003ad3">
+  <name>БлокировкаРаботыСВнешнимиРесурсамиУКСлужебныйВызовСервера</name>
+  <synonym>
+    <key>ru</key>
+    <value>Блокировка работы с внешними ресурсами УКСлужебный вызов сервера</value>
+  </synonym>
+  <server>true</server>
+  <serverCall>true</serverCall>
+</mdclass:CommonModule>

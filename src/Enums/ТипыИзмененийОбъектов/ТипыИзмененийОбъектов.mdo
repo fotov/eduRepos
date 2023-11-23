@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9d2bed61-ff98-4c1f-b48c-e09dbb73d6a7">
+  <producedTypes>
+    <refType typeId="85562f07-b7ae-4375-bc88-04a79b807fa1" valueTypeId="58dc6afd-da97-4e64-9fbf-bc3cb20835f2"/>
+    <listType typeId="0278632e-9c88-40b1-8966-ec83b014add4" valueTypeId="a0e00544-c55f-4fe4-917d-d9f4e6c612da"/>
+    <managerType typeId="14b50de4-49cf-4229-b555-c935eacceea0" valueTypeId="b4b737bf-f9c1-4406-87de-b3af6a622878"/>
+  </producedTypes>
+  <name>ТипыИзмененийОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы изменений объектов</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="cea3395c-d5e2-4e14-887e-a4ddc848d3d2">
+    <name>Изменен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменен</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="d4fa0ccd-46fa-47c3-8c09-db3bef194c08">
+    <name>Добавлен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Добавлен</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f3531ae2-79c3-4344-91d7-20f1c0b6cefa">
+    <name>Удален</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удален</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

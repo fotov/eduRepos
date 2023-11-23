@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="94e3ce82-66ab-4a44-9c83-ee33e3d661ad">
+  <name>СинтаксическаяПроверкаBSLLS</name>
+  <synonym>
+    <key>ru</key>
+    <value>Синтаксическая проверка BSLLS</value>
+  </synonym>
+  <server>true</server>
+</mdclass:CommonModule>

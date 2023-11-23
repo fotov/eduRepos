@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="47baa757-1ca9-4d3f-a845-b6409b1c2945">
+  <producedTypes>
+    <managerType typeId="4d2812f2-0331-4272-91dd-2c5d8b1270b4" valueTypeId="ab6f9d7a-7bab-43bf-b5a6-1a49090a1818"/>
+    <valueManagerType typeId="c8277d4b-556f-4dcb-a57a-da2a80c0ee78" valueTypeId="9d4d828c-d89c-4ed8-9c90-bc46891a5ce5"/>
+    <valueKeyType typeId="a00e1a6f-143a-4793-b3d0-fb32eaf92ed1" valueTypeId="a8295704-0389-4905-82c6-06e621ef001a"/>
+  </producedTypes>
+  <name>КоличествоИзмененийПропускВедущимПроверкиАПК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Количество изменений пропуск ведущим проверки АПК</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>2</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

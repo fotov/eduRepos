@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="33d401a1-8e29-4dd7-8ad7-009b28a21b5a">
+  <producedTypes>
+    <managerType typeId="0c58094f-0d1d-4a2e-9c26-d239768bf286" valueTypeId="a915ae32-398d-42fe-b690-4e11ee0bb95f"/>
+    <valueManagerType typeId="84c15269-24b4-4dbc-9421-6c6bb1add376" valueTypeId="ed87914f-005b-4d5c-9ba4-00ce11e5ec0d"/>
+    <valueKeyType typeId="65164957-e224-4b16-9c57-deb596fb60cf" valueTypeId="644dd46d-fff3-4f3d-8a6a-f29c4b09e8b9"/>
+  </producedTypes>
+  <name>КаталогРепозиториевСравненияИзменений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Каталог репозиториев сравнения изменений</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>1024</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

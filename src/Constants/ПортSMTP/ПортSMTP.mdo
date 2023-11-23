@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="38df66f4-ce39-4915-8308-a3eb1932571b">
+  <producedTypes>
+    <managerType typeId="eaae2c9c-99ce-4c8a-82f8-65d50bc3cf82" valueTypeId="1d2df224-98c9-4eaf-aa85-66b25e49fba7"/>
+    <valueManagerType typeId="25296c5e-4da9-4f37-8fae-e29803069d15" valueTypeId="613c383a-aeab-4a48-ade1-838c1c73afc1"/>
+    <valueKeyType typeId="712464f9-0282-50cc-9246-7b8f143b3071" valueTypeId="2d9ae54e-564f-5a35-a0d2-30460dae7470"/>
+  </producedTypes>
+  <name>ПортSMTP</name>
+  <synonym>
+    <key>ru</key>
+    <value>Порт SMTP</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>5</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <toolTip>
+    <key>ru</key>
+    <value>Порт SMTP (необязательное поле)</value>
+  </toolTip>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

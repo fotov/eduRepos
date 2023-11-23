@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cf907c46-7172-4ca5-81e5-cd9960d571d7">
+  <producedTypes>
+    <selectionType typeId="3cb322ef-64d4-4ae4-a61a-d22e07eefdc7" valueTypeId="f398fd6f-2f57-4c70-99d1-af1bb5600b85"/>
+    <listType typeId="27536bbc-a5bb-4d99-a96b-5f03fd04cb3b" valueTypeId="6d3aad73-d8b5-447c-a6c9-3cc94be3c53d"/>
+    <managerType typeId="5c147e99-9aa7-462e-b739-b6b8ce003abf" valueTypeId="25e600be-efc1-4031-a1cb-0e8932df5efe"/>
+    <recordSetType typeId="efac1f15-b210-4ad9-ad42-9872a14d53e5" valueTypeId="85c88639-cbac-4938-bf77-a757e0bc2462"/>
+    <recordKeyType typeId="2fb9ee60-b2c2-4124-82a7-64670139d53c" valueTypeId="98b902ff-6b6c-406b-9e27-496320244c47"/>
+    <recordType typeId="c45ebdd0-3f78-489d-80ea-5c92d79cefb6" valueTypeId="fd55580b-7c36-404c-9adb-7b570914c64d"/>
+    <recordManagerType typeId="28a9aba2-bba9-49d4-ad3b-0ab461919065" valueTypeId="10595746-3a74-4b4d-9ab8-acbafcb88243"/>
+  </producedTypes>
+  <name>ОчередьОповещенийИзмененияМетаданныхRMQ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очередь оповещений изменения метаданных RMQ</value>
+  </synonym>
+  <comment>для RabbitMQ</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="a210cf4b-d885-4afb-8f42-71f3a5abfc25">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыОперацийОбработкиОчереди</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="2ac9fc0c-ba55-4ef9-b172-3d644a6878b5">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="42820fd7-5461-4698-9250-17f280bc1ee3">
+    <name>Конфигурация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конфигурация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Конфигурации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="4054f3c5-46f5-45c3-8cab-1cbf791fd8cb">
+    <name>ИмяОбъектаМетаданных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя объекта метаданных</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

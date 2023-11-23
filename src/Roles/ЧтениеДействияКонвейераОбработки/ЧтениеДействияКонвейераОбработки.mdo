@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a817d145-3be3-4b29-a98e-9c64b9e2ac87">
+  <name>ЧтениеДействияКонвейераОбработки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Чтение действия конвейера обработки</value>
+  </synonym>
+</mdclass:Role>

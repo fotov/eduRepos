@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d33c8dff-c9a0-4d95-b707-1c75d4fe217e">
+  <name>ВыполнениеЗадачРоботом</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выполнение задач роботом</value>
+  </synonym>
+  <methodName>CommonModule.РегЗадания.ВыполнениеЗадачРоботом</methodName>
+  <description>РОБОТ выполнение задач</description>
+  <key>РОБОТ_выполнениезадач</key>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

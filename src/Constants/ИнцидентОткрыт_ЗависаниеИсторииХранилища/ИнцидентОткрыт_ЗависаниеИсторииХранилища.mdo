@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="85acae91-e88a-464b-9261-1228c09f74bc">
+  <producedTypes>
+    <managerType typeId="45fcc3df-da5c-4744-a32e-c97c1df2329d" valueTypeId="8aded58a-1239-4821-9200-de71b5302d96"/>
+    <valueManagerType typeId="5df103fe-2729-44e4-ada9-ba303e98f956" valueTypeId="2f1e300d-2c04-4508-86ed-c6fba7d622b4"/>
+    <valueKeyType typeId="34e018de-9384-4709-9fe9-502b04a040f4" valueTypeId="5c66e31f-a7bb-4892-98e3-e67247faa912"/>
+  </producedTypes>
+  <name>ИнцидентОткрыт_ЗависаниеИсторииХранилища</name>
+  <synonym>
+    <key>ru</key>
+    <value>Инцидент открыт зависание истории хранилища</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

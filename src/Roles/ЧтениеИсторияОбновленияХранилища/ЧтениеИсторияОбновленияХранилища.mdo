@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="39fb530e-2763-4a83-be8e-a021be09aebf">
+  <name>ЧтениеИсторияОбновленияХранилища</name>
+  <synonym>
+    <key>ru</key>
+    <value>Чтение история обновления хранилища</value>
+  </synonym>
+</mdclass:Role>

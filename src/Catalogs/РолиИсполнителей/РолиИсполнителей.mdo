@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a04e592f-feec-4086-b01e-816bca8a2137">
+  <producedTypes>
+    <objectType typeId="dfe7cddf-5234-4b4a-b408-3efbea10ec12" valueTypeId="15378b53-a4ac-4e96-bcb1-5214f48fe7a0"/>
+    <refType typeId="b750a173-ecc4-4b9c-9099-d910f6a8ed4c" valueTypeId="13133d2c-2708-4e0e-bf1e-b6345c5aa5c0"/>
+    <selectionType typeId="fb5ddc46-fcc8-4c9c-908d-496b6373cc66" valueTypeId="242d5809-23ad-4442-b2bb-df4a952804c2"/>
+    <listType typeId="8bb7e92f-c6f7-40ab-81f7-a828e02f6009" valueTypeId="1713fe3e-379b-4420-ba01-5ed6099ce6aa"/>
+    <managerType typeId="f5a0831c-302b-4360-8314-3dd64cfb4467" valueTypeId="d9e5aaf3-bee8-4ab0-bada-2b4d0870b74d"/>
+  </producedTypes>
+  <name>РолиИсполнителей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Роли исполнителей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.РолиИсполнителей.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.РолиИсполнителей.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="1b8140e6-d65b-40c3-8fa7-01b13c9841f3">
+      <name>АкцептантСинтаксическогоКонтроля</name>
+      <description>Акцептант синтаксического контроля</description>
+      <code xsi:type="core:StringValue">
+        <value>000000010</value>
+      </code>
+    </items>
+    <items id="f687d8e9-21fc-4941-99c8-10e81b250016">
+      <name>АкцептантФинальногоТестирования</name>
+      <description>Акцептант финального тестирования</description>
+      <code xsi:type="core:StringValue">
+        <value>000000011</value>
+      </code>
+    </items>
+    <items id="ddc59096-b4f8-4f59-92ba-579066528cb8">
+      <name>Аналитик</name>
+      <description>Аналитик</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+    <items id="05582ec1-293f-402d-9d9d-88d1b3cace7f">
+      <name>ВедущийПрограммист</name>
+      <description>Ведущий программист</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="d3cda934-74f0-4557-8fac-5d2b81e413ee">
+      <name>ВладелецСистемы</name>
+      <description>Владелец системы</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="00d6a1f6-9ed1-4edd-a708-adafb78f169d">
+      <name>КонтролерДокументации</name>
+      <description>Контролер документации</description>
+      <code xsi:type="core:StringValue">
+        <value>000000016</value>
+      </code>
+    </items>
+    <items id="0e37cef7-214a-4874-822e-d72f4c4eae3f">
+      <name>Удалить_ПроверкаДокументации</name>
+      <description>Проверка документации</description>
+      <code xsi:type="core:StringValue">
+        <value>000000008</value>
+      </code>
+    </items>
+    <items id="f75dffe1-759a-432e-8c65-1e47b040c69f">
+      <name>Удалить_ПроверкаЧасов</name>
+      <description>Проверка часов</description>
+      <code xsi:type="core:StringValue">
+        <value>000000009</value>
+      </code>
+    </items>
+    <items id="bcddb027-d940-453f-a0fa-e1d0b97fd5b0">
+      <name>Разработчик</name>
+      <description>Разработчик</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="6c6a255b-ee16-43ae-a049-180ee40ec4aa">
+      <name>Робот</name>
+      <description>Робот</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="babdab49-edc2-4d6c-9314-54ec3f03fbe5">
+      <name>РуководительПроектов</name>
+      <description>Руководитель проектов</description>
+      <code xsi:type="core:StringValue">
+        <value>000000006</value>
+      </code>
+    </items>
+    <items id="e20640e4-d157-402a-aad8-7458bfe7f773">
+      <name>СогласующийКонтроляТрудозатрат</name>
+      <description>Согласующий контроля трудозатрат</description>
+      <code xsi:type="core:StringValue">
+        <value>000000015</value>
+      </code>
+    </items>
+    <items id="edff8569-5bf7-479e-93fa-fea5047b5790">
+      <name>Тестирование</name>
+      <description>Тестирование</description>
+      <code xsi:type="core:StringValue">
+        <value>000000007</value>
+      </code>
+    </items>
+    <items id="22248b61-bab0-470f-af38-15a440eed3f5">
+      <name>ТехническаяПоддержка</name>
+      <description>Техническая поддержка</description>
+      <code xsi:type="core:StringValue">
+        <value>000000012</value>
+      </code>
+    </items>
+    <items id="c887ae09-80f5-4887-b813-9593f13a72d6">
+      <name>ЭкспертОценкиТрудозатратАналитики</name>
+      <description>Эксперт оценки трудозатрат аналитики</description>
+      <code xsi:type="core:StringValue">
+        <value>000000014</value>
+      </code>
+    </items>
+    <items id="d33b7bae-68a5-4bab-8869-386aeb4f97d3">
+      <name>ЭкспертОценкиТрудозатратРазработки</name>
+      <description>Эксперт оценки трудозатрат разработки</description>
+      <code xsi:type="core:StringValue">
+        <value>000000013</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

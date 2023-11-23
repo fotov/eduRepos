@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="daa7d5c2-a6a3-4a29-88a1-adfb6e0ee2b3">
+  <producedTypes>
+    <selectionType typeId="d1148779-d246-4a06-9a5c-20117f2478f4" valueTypeId="9ea26797-6396-48c8-8cf8-358238bfce70"/>
+    <listType typeId="e1cb2253-fc77-4f05-90e0-4cee98b20c0d" valueTypeId="f109bc40-22d8-4e3b-9cc4-f1057026493c"/>
+    <managerType typeId="98458612-f23d-4fe6-ac67-eabba623c9c8" valueTypeId="1aee3bfa-da48-4787-8a51-137c49ee4a93"/>
+    <recordSetType typeId="47e500b0-ccb2-4aca-9372-c527fb46efdd" valueTypeId="c650483d-79e1-4601-a934-11e3999d2ba4"/>
+    <recordKeyType typeId="a02b2afc-6309-4c77-8b6d-703b7c6121ec" valueTypeId="23b83245-395c-47f5-9d83-ebb23053658c"/>
+    <recordType typeId="8e7cf103-1648-48da-bf85-b9a26a627ddf" valueTypeId="cf512d78-44e1-4147-b23a-50d2fa68c876"/>
+    <recordManagerType typeId="e5580c23-cb44-49c3-8346-bbcd1692f818" valueTypeId="92b76b8f-1b8d-4625-9a5f-bd7ed5c4188a"/>
+  </producedTypes>
+  <name>ИзмененияСвойствОбъектовМетаданных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Изменения свойств объектов метаданных</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="5f208635-8586-4bd8-af90-34067a95447e">
+    <name>Изменение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <resources uuid="365f0ad3-918a-4aef-836a-7eb157259b1b">
+    <name>ВидИзменения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид изменения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="81683a2c-325c-4860-9f6a-bc5e054db9b1">
+    <name>ВерсияХранилища</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия хранилища</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИсторияХранилища</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9fd1f531-1313-4698-a2d8-6bf24869bd7f">
+    <name>ИмяОбъектаМетаданных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя объекта метаданных</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e8283d94-92aa-483a-bd3a-6b40b0956cbb">
+    <name>Свойство</name>
+    <synonym>
+      <key>ru</key>
+      <value>Свойство</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="10d6a113-50f5-4660-b935-8143bc72848a">
+    <name>ВидСвойства</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид свойства</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

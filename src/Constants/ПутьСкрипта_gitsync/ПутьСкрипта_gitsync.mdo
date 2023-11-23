@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f9aeb996-9b0d-4870-a170-75125b9fce16">
+  <producedTypes>
+    <managerType typeId="91799efa-67b8-4b13-92ae-d6a9b7546820" valueTypeId="f40145e0-d95b-4ad3-bdb2-d54e0973eab7"/>
+    <valueManagerType typeId="a8070b7d-9587-4680-b8cc-485721b48be7" valueTypeId="399b3157-2e01-4a39-9487-d2efbbe1015c"/>
+    <valueKeyType typeId="cd47e478-6ed1-4427-b867-fc40e9986c2a" valueTypeId="00d16ea8-593b-4ff9-a3af-4d696debb0f0"/>
+  </producedTypes>
+  <name>ПутьСкрипта_gitsync</name>
+  <synonym>
+    <key>ru</key>
+    <value>Путь скрипта gitsync</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

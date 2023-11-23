@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="adee7c9a-5611-45ab-8f14-4a00a0b5ef40">
+  <producedTypes>
+    <managerType typeId="038bc5d5-947e-41c8-b716-e3b14e9719e0" valueTypeId="9448ace1-e45c-4b27-97a8-e45d2f0ec949"/>
+    <valueManagerType typeId="dfb79313-e09e-4809-a70a-09d981b0ab7b" valueTypeId="16b1b0ef-7089-4e23-870c-e20867ae5122"/>
+    <valueKeyType typeId="3b00e758-aee5-4d34-a106-af5546597b5e" valueTypeId="7a0b109c-b100-4549-9c0e-5309bbf1112b"/>
+  </producedTypes>
+  <name>КодировкаИсполненияРаботаСGit</name>
+  <synonym>
+    <key>ru</key>
+    <value>Кодировка исполнения работа с git</value>
+  </synonym>
+  <comment>Кодировка, устанавливаемая по умолчанию</comment>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>25</length>
+    </stringQualifiers>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

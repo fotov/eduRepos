@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5b1932f2-7aa7-4013-bfe6-9cc72d0e8e68">
+  <name>ИспользованиеСервисаКешВерсийХранилищ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использование сервиса кеш версий хранилищ</value>
+  </synonym>
+</mdclass:Role>

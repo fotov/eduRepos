@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c5aeb19d-1fec-4269-9a2a-313606ed39fb">
+  <name>РазделКонтрольТрудозатрат</name>
+  <synonym>
+    <key>ru</key>
+    <value>Раздел контроль трудозатрат</value>
+  </synonym>
+</mdclass:Role>

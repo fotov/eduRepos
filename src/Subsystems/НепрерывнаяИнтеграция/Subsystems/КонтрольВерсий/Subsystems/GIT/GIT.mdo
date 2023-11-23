@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a3ad7871-3658-4a4a-8cfd-32960e5affcc">
+  <name>GIT</name>
+  <synonym>
+    <key>ru</key>
+    <value>GIT</value>
+  </synonym>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Catalog.СерверыGIT</content>
+  <content>CommonModule.РаботаСGIT</content>
+  <content>Catalog.ПроектыGIT</content>
+  <content>CommonModule.РаботаСGITСлужебный</content>
+  <content>Constant.ТаймаутРаботаСGIT</content>
+  <content>Constant.КодировкаИсполненияРаботаСGit</content>
+  <content>Constant.КодировкаПотоковРаботаСGit</content>
+  <parentSubsystem>Subsystem.НепрерывнаяИнтеграция.Subsystem.КонтрольВерсий</parentSubsystem>
+</mdclass:Subsystem>

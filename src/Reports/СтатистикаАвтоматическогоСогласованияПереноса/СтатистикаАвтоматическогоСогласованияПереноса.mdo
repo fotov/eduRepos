@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c270094f-a42c-4f32-b2f0-3483f5b317e6">
+  <producedTypes>
+    <objectType typeId="d35bf973-e032-4252-b7ee-c5b1a7388951" valueTypeId="b4d27d99-9ccf-431c-9751-87714402566b"/>
+    <managerType typeId="8533bc20-3392-4d59-9c68-aad0cd61cf01" valueTypeId="53ce6288-2287-4738-b3cb-fe33c6122bd6"/>
+  </producedTypes>
+  <name>СтатистикаАвтоматическогоСогласованияПереноса</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статистика автоматического согласования переноса</value>
+  </synonym>
+  <defaultForm>CommonForm.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.СтатистикаАвтоматическогоСогласованияПереноса.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>CommonForm.ФормаВариантаОтчета</defaultVariantForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="e10f25fb-e7a2-4fb6-be8c-ec433e181610">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2afb0121-5e60-4983-9ec6-9cc8f9bbb1b2">
+  <producedTypes>
+    <objectType typeId="87de7ea0-e16b-4ffd-a529-b6685f9b0f8e" valueTypeId="de05b53d-d6ae-4406-952a-95459ad66906"/>
+    <refType typeId="09d1e242-436e-4800-bafb-d696f76d7446" valueTypeId="65e1d0e4-eaf5-4a3a-bf5a-0858ad693688"/>
+    <selectionType typeId="666fab4b-cb8f-45dd-b865-1c865c5c4e70" valueTypeId="af26f969-cb06-4cc4-8d6e-1c1245afaf4c"/>
+    <listType typeId="785e7577-fddd-4244-b8d3-808db0959ea9" valueTypeId="04fd3f6b-a643-4f9b-9542-3c58433ed62a"/>
+    <managerType typeId="fc711dc0-01c1-42c5-abc6-e53bb802eb6a" valueTypeId="14152041-0265-4fe0-b0c9-b08b9e462698"/>
+  </producedTypes>
+  <name>ПротоколВыборочнойПроверки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Протокол выборочной проверки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПротоколВыборочнойПроверки.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ПротоколВыборочнойПроверки.Form.ФормаДокумента</defaultObjectForm>
+  <posting>Deny</posting>
+  <realTimePosting>Deny</realTimePosting>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="f1d3b8a2-f372-49fe-bbd9-989560eb8cd5">
+    <name>ВидОценки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид оценки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыВыборочнойПроверки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="19af93c3-ec4a-49ff-a41d-b3ad717f0d62">
+    <name>Этап</name>
+    <synonym>
+      <key>ru</key>
+      <value>Этап</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЭтапыВыборочнойПроверки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="a5103040-e761-4fb7-94fa-18199ee377fa">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="4e1da3af-a8bb-4b01-bfcb-99c35c8b1591">
+    <producedTypes>
+      <objectType typeId="9b089101-0074-40ba-8aa1-d1bc605d5e95" valueTypeId="9c79e861-c40d-47a2-a79a-4c1c52cf1c1b"/>
+      <rowType typeId="bc228b5a-4b6d-43ca-b9d2-2d23574833a0" valueTypeId="bb0465e7-c4fb-4b95-b195-02bf00af61fa"/>
+    </producedTypes>
+    <name>Задачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задачи</value>
+    </synonym>
+    <attributes uuid="d9aa8950-764e-4cf4-8baf-5a64b80cb9f5">
+      <name>ЗадачаМетеор</name>
+      <synonym>
+        <key>ru</key>
+        <value>Задача метеор</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ЗадачиМетеор</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="86a188bc-fde6-4afd-bed5-6b6bb863bd48">
+    <producedTypes>
+      <objectType typeId="ed79cc8c-3a51-4923-b034-3ad890f68025" valueTypeId="b234379c-e457-43fd-b6fc-91e314d13d66"/>
+      <rowType typeId="fbb738f3-b690-4205-b69f-6162c8a35244" valueTypeId="f66a3017-aa15-4048-962d-42051abe15d3"/>
+    </producedTypes>
+    <name>Оценка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оценка</value>
+    </synonym>
+    <attributes uuid="e6b17dbd-e0f3-4dc0-8815-11cd51c868d0">
+      <name>Сотрудник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сотрудник</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Сотрудники</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="f758d632-f147-4fd1-83c8-bb70da637d76">
+      <name>Замечания</name>
+      <synonym>
+        <key>ru</key>
+        <value>Замечания</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="1740b7a5-05be-40cb-96af-6a67d4fc1673">
+      <name>КомментарийРазработчика</name>
+      <synonym>
+        <key>ru</key>
+        <value>Комментарий разработчика</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="dfa753e8-9cbf-47be-a1dc-2519b67bc1c4">
+      <name>РешениеИСледующиеШаги</name>
+      <synonym>
+        <key>ru</key>
+        <value>Решение и следующие шаги</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

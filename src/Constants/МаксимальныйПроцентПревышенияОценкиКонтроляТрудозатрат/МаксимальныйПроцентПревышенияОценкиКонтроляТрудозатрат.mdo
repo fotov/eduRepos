@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7c96775d-526f-46d6-925f-d1429e343c96">
+  <producedTypes>
+    <managerType typeId="892a8b09-9eac-4399-8875-b586d881645a" valueTypeId="ee32cba9-55c9-44b0-a815-13da2686de0f"/>
+    <valueManagerType typeId="7e4493b0-6716-422e-9360-f6b63e32bc28" valueTypeId="5c6a78bc-709e-4bdf-8131-e5d2a35d431f"/>
+    <valueKeyType typeId="9c805a1d-9734-436a-b465-9396e3fff9dc" valueTypeId="05f58627-fbcf-4ec4-b2ef-8a8e12c635fa"/>
+  </producedTypes>
+  <name>МаксимальныйПроцентПревышенияОценкиКонтроляТрудозатрат</name>
+  <synonym>
+    <key>ru</key>
+    <value>Максимальный процент превышения оценки контроля трудозатрат</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>3</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

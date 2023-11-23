@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="36c226ed-dab7-49c0-bb47-e003511928eb">
+  <producedTypes>
+    <objectType typeId="d163c919-55c2-4ab0-a511-66426f6a501a" valueTypeId="7f5f4601-eeaf-472c-a0a6-52f13f7f5c9c"/>
+    <managerType typeId="bce1ce9b-1d7b-4312-9ffd-c6c478a046b2" valueTypeId="79e79dc7-6ec7-442d-878e-d94d85634d96"/>
+  </producedTypes>
+  <name>ПропускиПроверкиАПК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пропуски проверки АПК</value>
+  </synonym>
+  <defaultForm>CommonForm.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.ПропускиПроверкиАПК.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>CommonForm.ФормаВариантаОтчета</defaultVariantForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="002b1e1d-3a19-4539-ad48-86e848e3834d">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

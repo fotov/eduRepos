@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ff0d08bf-d313-4f53-a47e-fe90b6889f33">
+  <producedTypes>
+    <selectionType typeId="f4f00148-d52b-4012-84b4-44a1a5b74806" valueTypeId="30882fa8-a504-4444-bcc9-05e925c03d49"/>
+    <listType typeId="d279d6fe-974c-4c89-98d9-62b6c488790c" valueTypeId="1f3335e9-b232-4b0b-9c2b-231e1513883b"/>
+    <managerType typeId="8d52119e-08fa-43de-a4ee-27c2d22129b0" valueTypeId="6937adc4-9b91-4e33-bdda-f749718658de"/>
+    <recordSetType typeId="6784f061-4543-4844-9e74-a0e55dfa30c7" valueTypeId="046f710b-a234-4f9b-9634-40934902fd9b"/>
+    <recordKeyType typeId="323a8a3b-4f89-44bf-834a-c24a8dce0ddb" valueTypeId="22dbb29e-9990-49c3-bc84-22f6cc771392"/>
+    <recordType typeId="2eef544e-15e7-45d1-8347-297956342938" valueTypeId="a8746f83-2d70-445f-acba-41728ed74da7"/>
+    <recordManagerType typeId="5996865d-2eaa-4056-a821-49ef8eb0f8e2" valueTypeId="571a5ac5-ef0d-4b46-990d-e81d109e98bc"/>
+  </producedTypes>
+  <name>ЗначенияНастроекПрограммы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Значения настроек программы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.ЗначенияНастроекПрограммы.Form.ФормаРедактирования</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="721a05a9-ee1f-4418-9632-7ec8f5c612e7">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>Characteristic.НастройкиПрограммы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameterLinks>
+      <name>Настройка</name>
+      <field>InformationRegister.ЗначенияНастроекПрограммы.Dimension.Настройка</field>
+    </choiceParameterLinks>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="edb39a26-16fe-44e8-92ed-3419390fcda4">
+    <name>Настройка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка</value>
+    </synonym>
+    <type>
+      <types>ChartOfCharacteristicTypesRef.НастройкиПрограммы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="43331800-f7d6-425b-8a42-3361edf1eb54">
+    <name>НомерЗначения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Номер значения</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="0f694133-ea14-4aad-8d1c-b088670d5d5e">
+    <name>ФормаРедактирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма редактирования</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

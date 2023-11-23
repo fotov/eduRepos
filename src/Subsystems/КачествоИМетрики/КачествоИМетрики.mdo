@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aa3a3b51-04d5-4f85-adfb-c37697acc605">
+  <name>КачествоИМетрики</name>
+  <synonym>
+    <key>ru</key>
+    <value>Качество и метрики</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.РазделКачество</picture>
+  </picture>
+  <content>InformationRegister.ЗамечанияКоммита</content>
+  <content>Catalog.СтандартыРазработки</content>
+  <content>Enum.ИсточникиЗамечаний</content>
+  <content>CommonCommand.ПанельОтчетовКачествоИМетрики</content>
+  <content>Report.Метрики</content>
+  <content>Report.МетрикиРазработки</content>
+  <content>CommonPicture.РазделКачество</content>
+  <content>Role.РазделКачествоИМетрики</content>
+  <content>InformationRegister.Удалить_ЗначенияПоказателей</content>
+  <content>Role.ЧтениеСтандартыРазработки</content>
+  <content>Role.ЧтениеЗамечанияКоммита</content>
+  <content>Role.ДобавлениеИзменениеЗамечанияКоммита</content>
+  <content>Report.ПропускиПроверкиАПК</content>
+  <content>InformationRegister.ОценкиКачестваКода</content>
+  <content>Catalog.ВидыОценокКачестваКода</content>
+  <content>Report.ОценкаКачестваКода</content>
+  <content>Role.ДобавлениеИзменениеОценкиКачестваКода</content>
+  <content>Role.ПросмотрОтчетаОценкиКачестваКода</content>
+  <content>Role.ЧтениеВидыОценокКачестваКода</content>
+  <content>Role.ЧтениеОценкиКачестваКода</content>
+  <subsystems>КонтрольТрудозатрат</subsystems>
+  <subsystems>ПроверкаДокументации</subsystems>
+  <subsystems>НСИ</subsystems>
+  <subsystems>ВыборочнаяПроверка</subsystems>
+  <subsystems>КонтрольЗаписиРабочихДанных</subsystems>
+</mdclass:Subsystem>

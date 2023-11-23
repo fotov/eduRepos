@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c5103c42-8c55-4515-8e45-e68529206f8f">
+  <producedTypes>
+    <objectType typeId="1b0cb346-0374-4161-92f2-dc86f84311c9" valueTypeId="7e5a0185-9fc3-4b32-b34e-6cf17f3bf353"/>
+    <refType typeId="03a61bae-6246-435a-9e27-25871957b7be" valueTypeId="84acfcb8-5db7-4d5e-b343-12b997752373"/>
+    <selectionType typeId="5f63e53f-ce3d-4884-9271-6c0487051f5f" valueTypeId="8c65a7b7-3d06-4a63-8372-be2b5249d8cd"/>
+    <listType typeId="d6cdd091-abe3-46e5-9bed-f3dc8fd2ab35" valueTypeId="81eec284-b22c-4a1d-a4de-ca552bf06e65"/>
+    <managerType typeId="1aa8434a-b9a7-41aa-af61-f70b6cbeccd3" valueTypeId="7dbc3c51-69da-45b8-b488-14b2ebde4a79"/>
+  </producedTypes>
+  <name>ВидыПроверокДокументации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды проверок документации</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыПроверокДокументации.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Вид проверки документации</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Виды проверок документации</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="1980ee45-a93b-4330-b4f9-a1617c7d5d74">
+      <name>ДокументацияВики</name>
+      <description>Документация в Wiki системе</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="020af4dd-28dd-4bc0-a08b-4ad9b8244060">
+      <name>РазделТестирование</name>
+      <description>Раздел &quot;Тестирование&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="9c552770-4982-48c5-9f59-ef128022074f">
+      <name>РазделТехПроект</name>
+      <description>Раздел &quot;Тех. проект&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="ab6266f5-1ba8-4949-994b-457686f2f081">
+      <name>РазделЧтоСделатьЧтоСделано</name>
+      <description>Разделы: &quot;Что сделать&quot;, &quot;Что сделано&quot;</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

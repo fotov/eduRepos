@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="894281a4-705d-4054-86e1-8d93644314b9">
+  <producedTypes>
+    <objectType typeId="8fb76310-4593-4106-a3d7-16dc7cba246c" valueTypeId="d3270c86-9879-448d-955e-fd40209f591e"/>
+    <managerType typeId="49dced4d-ed4a-4752-a891-4f9fd9453e66" valueTypeId="f261e168-fc82-4e33-afba-1cf70ba19d27"/>
+  </producedTypes>
+  <name>ОчередьСогласованияТрудозатрат</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очередь согласования трудозатрат</value>
+  </synonym>
+  <mainDataCompositionSchema>Report.ОчередьСогласованияТрудозатрат.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="197c8519-d2c7-45f5-9044-098148cfe744">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

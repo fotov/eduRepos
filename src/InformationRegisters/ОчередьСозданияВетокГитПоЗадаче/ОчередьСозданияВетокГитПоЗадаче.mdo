@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3a9f9638-108f-424d-a1ed-4d8e914b5a9a">
+  <producedTypes>
+    <selectionType typeId="8c038b23-3470-4f4d-8241-810621dcbd06" valueTypeId="6bc7a05b-e9e0-41c7-835c-84925be61380"/>
+    <listType typeId="71016813-366f-4f46-9150-60c7327d854b" valueTypeId="7f2bfa4b-bb5e-4103-9b4f-d5a7377b4348"/>
+    <managerType typeId="64d4683d-6ef9-41d1-ab5c-ab3fd77fe934" valueTypeId="517e3351-cb93-44c4-a719-b9b5520366db"/>
+    <recordSetType typeId="00b7d86a-b7c3-4fac-a9d8-bbf8d8621f13" valueTypeId="5c2dce09-31ca-4250-9820-2e4a45371b41"/>
+    <recordKeyType typeId="f9832f41-a028-4fa1-9ede-92c123c78429" valueTypeId="0301f6c8-8959-4b66-ab76-65b9af9d5682"/>
+    <recordType typeId="0712e975-33ad-4e27-99e3-5e7b3afff192" valueTypeId="99c33576-991a-4a33-b038-39b761dfc4df"/>
+    <recordManagerType typeId="9f4cf8bc-f5b5-4e72-959f-d8d77f40b69b" valueTypeId="f1a8842b-ce70-4ee7-9b1d-6eda8e35148d"/>
+  </producedTypes>
+  <name>ОчередьСозданияВетокГитПоЗадаче</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очередь создания веток гит по задаче</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="531e070e-db7c-438c-949b-f9a33333b111">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыОперацийОбработкиОчереди</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="c2f5ab03-554e-4c8f-9682-b2e03f15a048">
+    <name>ЗадачаМетеор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача метеор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЗадачиМетеор</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="35e61b09-1ffb-42d4-b2be-62df830ca33f">
+  <name>ЧтениеСогласованияАрхитектуры</name>
+  <synonym>
+    <key>ru</key>
+    <value>Чтение согласования архитектуры</value>
+  </synonym>
+</mdclass:Role>

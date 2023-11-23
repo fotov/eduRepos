@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="56a2e802-b5a0-4967-8ccb-720ad8c111ee">
+  <producedTypes>
+    <objectType typeId="1849265a-6c13-40d3-bfd4-0951a5304a7a" valueTypeId="710ef505-dbdf-412b-9c9a-70b5dc1424c2"/>
+    <managerType typeId="451afedf-19a6-461f-80a8-83d9e5311e0a" valueTypeId="80c17b9c-b010-4abe-a865-13c58e8f68d7"/>
+  </producedTypes>
+  <name>АнализСтруктурыКоманд</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ структуры команд</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.АнализСтруктурыКоманд.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="c48d9aa4-30e6-4e63-8247-1f33c7e0deb4">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

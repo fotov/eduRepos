@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6a4f8b8d-0d21-4ab0-8c3b-d5ee3826a588">
+  <producedTypes>
+    <objectType typeId="250a972d-74b5-4531-9e7b-728afe6224c8" valueTypeId="9125d77e-d2eb-4c55-a0d7-50fbbe2b508a"/>
+    <managerType typeId="ca650547-336a-4a72-9268-d7facd03b42c" valueTypeId="000c8dc6-aef5-4e29-9c65-ddf8c09d7552"/>
+  </producedTypes>
+  <name>ТестированиеКонвейеров</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тестирование конвейеров</value>
+  </synonym>
+  <mainDataCompositionSchema>Report.ТестированиеКонвейеров.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="8a0266b0-babb-4b4b-90bb-8fe736522219">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

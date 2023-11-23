@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4cd10c1f-2f1d-4238-aff6-36ab0f98e6b6">
+  <name>ИспользованиеСервисаДополнений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Использование сервиса дополнений</value>
+  </synonym>
+</mdclass:Role>

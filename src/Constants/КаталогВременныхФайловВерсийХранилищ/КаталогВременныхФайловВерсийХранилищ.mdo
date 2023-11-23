@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="59158aaf-1e80-447e-84b6-4762568899c2">
+  <producedTypes>
+    <managerType typeId="d0055318-0b79-4375-8096-18d48f37c2ff" valueTypeId="73222a21-43d2-4f2f-a4d5-891853fc8cee"/>
+    <valueManagerType typeId="fe5f9fcb-0c4e-4ee7-b58e-6d1631ae3831" valueTypeId="c723c596-3933-4412-9f34-2a9330df7da2"/>
+    <valueKeyType typeId="826029f6-c5e3-4642-a77b-140a6b52eb62" valueTypeId="ffbec3fa-610d-4c3e-adb2-d5bcc4c89b40"/>
+  </producedTypes>
+  <name>КаталогВременныхФайловВерсийХранилищ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Каталог временных файлов версий хранилищ</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1825c64e-bb0b-4755-bdfb-f3b3d5e791b4">
+  <producedTypes>
+    <refType typeId="dffa5fdb-124f-42e8-9845-ca42ad0a780d" valueTypeId="675bf6d0-aae6-48f4-8676-53a023b30dc0"/>
+    <listType typeId="091a1f34-95e9-42a2-8619-bd4c6a7c5dae" valueTypeId="6d316ed5-39ce-4371-9058-8251411d1331"/>
+    <managerType typeId="17ec71ee-67b8-44ab-9f1f-e33deb7db013" valueTypeId="7edabbce-9883-4b79-9151-cf7cc2d4f539"/>
+  </producedTypes>
+  <name>ВариантыРезультатовПроверкиДокументации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Варианты результатов проверки документации</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="06e8a696-c9f6-476f-9e9e-f98b85bc9dd6">
+    <name>Согласовано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Согласовано</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c12659ad-9edd-4902-931e-3210cdc6a685">
+    <name>НеСогласовано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Не согласовано</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="a3b034fe-e355-4171-ba3e-c28d04474819">
+    <name>ПроверкаНеТребуется</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверка не требуется</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

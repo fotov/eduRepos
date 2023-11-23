@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="79329ce8-e43d-42b1-8ab0-d0fdf6c71412">
+  <producedTypes>
+    <selectionType typeId="aba84874-3549-47e4-9b58-c98b019f8ad7" valueTypeId="d4720f17-7b66-4aad-b9fa-a931fcbe3c11"/>
+    <listType typeId="cdfa9ee7-8d25-48d8-b18d-453d5ddba9ee" valueTypeId="672664dd-8020-4a14-b363-8df10fd9bc28"/>
+    <managerType typeId="31326de8-4579-462e-b741-b002b736f21e" valueTypeId="c81fbea7-5493-40a6-b125-6e5238e349a8"/>
+    <recordSetType typeId="e59d96de-2794-4e32-a143-6965a39b0b91" valueTypeId="537c9af6-9573-4b71-bf06-bb18e8d65376"/>
+    <recordKeyType typeId="22bf6013-8dd0-4af5-a6d6-158ddace41d4" valueTypeId="9d7c7d52-d8cc-4293-8ab4-fbbd53fb074b"/>
+    <recordType typeId="0b896332-9452-48d7-9a6f-6157a6622603" valueTypeId="e692dbb5-370a-4ffd-bc18-5fcefe7082e3"/>
+    <recordManagerType typeId="eac2b997-b567-45c7-a8d4-8d44220ddb9f" valueTypeId="5654293c-f78a-4ce9-9f98-b99867c9aed8"/>
+  </producedTypes>
+  <name>ХешиГитСравненияИзменений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Хеши гит сравнения изменений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="e85e2e71-9fa7-42cf-b1eb-e583f0006b30">
+    <name>ХешНачалаВетки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хеш начала ветки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>40</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value>                                        </value>
+    </fillValue>
+  </resources>
+  <resources uuid="147907ed-1bbf-424a-9808-208977d6d4a2">
+    <name>ХешОкончанияВетки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хеш окончания ветки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>40</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <attributes uuid="4591ef54-d9f7-444c-b037-14542e9f72f6">
+    <name>ДатаСоздания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата создания</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="c34cb1c7-f69b-4614-a677-44a160283a62">
+    <name>КрайняяВерсияИсторииХранилища</name>
+    <synonym>
+      <key>ru</key>
+      <value>Крайняя версия истории хранилища</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИсторияХранилища</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="93446e73-f1ca-49bb-949d-3f1e38348b7a">
+    <name>ИмяВетки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя ветки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="3ea1aabc-0184-410c-9662-c5e039cfd601">
+    <name>ЗадачаМетеор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача метеор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЗадачиМетеор</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="8f54ddce-9c34-4b4d-964f-bae53c80d728">
+    <name>Хранилище</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хранилище</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Хранилища</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

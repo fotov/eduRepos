@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6f05204c-8cec-4cca-a0ae-9e9d25dd5bec">
+  <producedTypes>
+    <managerType typeId="4a801503-3370-43de-8ee7-ef832f9b1f0c" valueTypeId="ed7b70b8-f88b-4427-af6f-2593d2b1988b"/>
+    <valueManagerType typeId="6ffa17de-1745-48cb-82e0-e690154a44a9" valueTypeId="7504ec0a-a237-4056-abc3-0a75695a4253"/>
+    <valueKeyType typeId="5e46afc6-3720-4a02-8b8a-5c6771df1703" valueTypeId="a28df67d-ec17-43bc-b2fd-100b73d460f2"/>
+  </producedTypes>
+  <name>ПороговоеКоличествоМинутНаПроверкуАПК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Пороговое количество минут на проверку АПК</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>7</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

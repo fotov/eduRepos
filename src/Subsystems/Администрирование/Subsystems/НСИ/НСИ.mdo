@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c901aebe-05d0-42d5-bda6-318add6a231f">
+  <name>НСИ</name>
+  <synonym>
+    <key>ru</key>
+    <value>НСИ</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Role.БазовыеПраваУправлениеКоммитами</content>
+  <content>Catalog.РолиИсполнителей</content>
+  <content>InformationRegister.ПроизводственныйКалендарь</content>
+  <content>Role.ЧтениеКоманды</content>
+  <content>Role.ДобавлениеИзменениеКоманды</content>
+  <content>Role.ЧтениеРолиИсполнителей</content>
+  <content>Role.ЧтениеПроизводственныйКалендарь</content>
+  <content>ScheduledJob.ЗагрузкаПроизводственногоКалендаря</content>
+  <parentSubsystem>Subsystem.Администрирование</parentSubsystem>
+</mdclass:Subsystem>

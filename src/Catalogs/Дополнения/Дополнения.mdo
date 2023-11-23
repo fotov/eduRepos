@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="feb3ba88-646e-4eee-a2fb-82e6a5394609">
+  <producedTypes>
+    <objectType typeId="8d230c33-7b63-457c-aec1-5fe239b89d31" valueTypeId="24ab8c78-5e59-48fc-aca2-852d3b810986"/>
+    <refType typeId="49f3cc03-21a3-4a7d-aa85-f7cf25468a4a" valueTypeId="5e5b0bf6-70f0-4c9f-923b-7dab1794d55b"/>
+    <selectionType typeId="f8ba03de-c24d-4043-b163-485efcfbb9ea" valueTypeId="863ccad4-7f1e-4c49-a3e3-b2ce6199fa7d"/>
+    <listType typeId="ff539a37-27f9-45e0-b628-76f3dffa058a" valueTypeId="51a0ad00-e271-4c3a-9842-6b663b318d8b"/>
+    <managerType typeId="2d21b6e9-a499-40e1-98f8-61f0982c71a1" valueTypeId="da836c5c-cb7c-4bd0-876f-e73a528d4b70"/>
+  </producedTypes>
+  <name>Дополнения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дополнения</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Дополнения.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Дополнение</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Дополнения</value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Дополнения.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.Дополнения.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.Дополнения.Form.ФормаСписка</defaultChoiceForm>
+  <attributes uuid="4168cdfa-f487-4eee-8424-d7a1f81c1933">
+    <name>ТипДополнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип дополнения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыДополнений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7c251d90-09e0-4e10-9971-cdca20df549d">
+    <name>Конфигурация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конфигурация</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Конфигурации</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="201131e5-a654-4d91-b51c-2d8592936daa">
+    <name>ТипРасширения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип расширения</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ТипыРасширений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6f5a499e-0305-406f-9bbf-e16984e1182f">
+    <name>ИмяФайлаБезРасширенияДляВыгрузки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя файла без расширения для выгрузки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>255</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="6e99411e-ee76-46a2-8b91-1aa2be09174f">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="de466255-7650-475a-a97e-84289bad7398">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

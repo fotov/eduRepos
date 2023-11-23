@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="df0d4359-5312-4c5f-ab0c-3647cf72adbf">
+  <name>РегулярныеВыражения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Регулярные выражения</value>
+  </synonym>
+  <clientManagedApplication>true</clientManagedApplication>
+  <server>true</server>
+</mdclass:CommonModule>

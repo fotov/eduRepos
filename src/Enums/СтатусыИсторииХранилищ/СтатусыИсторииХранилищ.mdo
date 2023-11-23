@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7fc51fe8-337f-4391-8ddf-23b1397fd562">
+  <producedTypes>
+    <refType typeId="a5490769-dea8-4f8c-aa4f-1d0e1d478f1c" valueTypeId="e9dc6574-d86f-4277-b737-564cb6e73ba6"/>
+    <listType typeId="515dab99-4987-45be-ad37-bd6ceb7ed165" valueTypeId="eab1a6c3-b071-4ca8-a854-7be600ca3a2b"/>
+    <managerType typeId="79c6669b-9d91-4f08-813f-3b549ee89865" valueTypeId="7dd273c9-e86e-441d-89fc-75d6938e7491"/>
+  </producedTypes>
+  <name>СтатусыИсторииХранилищ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статусы истории хранилищ</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="0ee53204-1faa-4570-b47b-70d8e1de542a">
+    <name>ЗагрузкаДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузка данных</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="12ed7c01-edb5-4801-9684-1516259068f0">
+    <name>ПредварительнаяПроверка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Предварительная проверка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0dc5fc58-f4d6-48b7-8cff-79df0e66a077">
+    <name>СогласованиеПереноса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Согласование переноса</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="16c065fc-3613-4d7e-ad9a-de35ea95f5d4">
+    <name>Перенос</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перенос</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="97a51aa0-752c-40b2-af11-ce3b49d1104c">
+    <name>Перенесено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Перенесено</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="e595ff19-5466-431a-9703-05ec03ab55ff">
+    <name>Ошибка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибка</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

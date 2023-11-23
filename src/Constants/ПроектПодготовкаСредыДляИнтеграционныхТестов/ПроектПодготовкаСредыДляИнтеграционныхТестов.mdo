@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a46ce431-2c23-4aee-a524-05208f0fa035">
+  <producedTypes>
+    <managerType typeId="be0be83c-845a-4b6f-a36a-36f7a7643fa6" valueTypeId="3b1f84ed-1c6a-422d-9f78-1585eb3c005a"/>
+    <valueManagerType typeId="a92d9027-3e5f-4603-b0ac-e080e863e4ff" valueTypeId="28d8f87c-a539-4ad1-a6c1-2f06c09b6193"/>
+    <valueKeyType typeId="d24f846f-b03a-4ea4-84bf-900643a53a70" valueTypeId="b1484872-c2f8-47da-81c5-928cffcd168c"/>
+  </producedTypes>
+  <name>ПроектПодготовкаСредыДляИнтеграционныхТестов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проект подготовка среды для интеграционных тестов</value>
+  </synonym>
+  <type>
+    <types>CatalogRef.Хранилища</types>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

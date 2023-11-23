@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5f0243ae-0dc1-4ed4-bb76-1db0162f9149">
+  <name>ВыгрузкаВерсийИсторииХранилищаВКеш</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгрузка версий истории хранилища в кеш</value>
+  </synonym>
+  <methodName>CommonModule.КешВерсийХранилищСлужебный.ВыгрузкаВерсийИсторииХранилищаВКешОбработчикЗадания</methodName>
+  <description>Выгрузка версий истории хранилища</description>
+  <key>ВыгрузкаВерсийИсторииХранилища</key>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

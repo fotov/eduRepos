@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f8cecbca-54e9-4ffc-827f-d46b90ab9dab">
+  <name>ВыгрузкаДополненийВРепозиторий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгрузка дополнений в репозиторий</value>
+  </synonym>
+  <methodName>CommonModule.РаботаСДополнениямиСлужебный.ВыгрузитьДополненияВРепозиторийОбработчикЗадания</methodName>
+  <description>Выгрузка дополнений</description>
+  <key>ВыгрузкаДополнений</key>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

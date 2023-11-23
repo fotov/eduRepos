@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="65e27d0f-3c9b-430f-996d-119f0b756025">
+  <producedTypes>
+    <objectType typeId="b19fcf5b-30f0-402b-ba10-fcbbb191415d" valueTypeId="edb04cde-1d74-4264-944e-57a28f75fdee"/>
+    <managerType typeId="31ea075e-19a3-4854-9d9a-8de88ddb7de3" valueTypeId="cbb16e3f-e426-44fe-89d0-6109e826acc4"/>
+  </producedTypes>
+  <name>ТехническиеПроекты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Технические проекты</value>
+  </synonym>
+  <mainDataCompositionSchema>Report.ТехническиеПроекты.Template.Макет</mainDataCompositionSchema>
+  <templates uuid="c55ab72b-e5da-4248-8f3c-666ac717e8f0">
+    <name>Макет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Макет</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

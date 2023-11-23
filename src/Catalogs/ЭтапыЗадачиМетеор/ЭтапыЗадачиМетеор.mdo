@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1b8d08d3-5bb6-4a12-ad0c-0e58996401cc">
+  <producedTypes>
+    <objectType typeId="9c690977-1997-4110-9ca0-69b63de57e8c" valueTypeId="9234c340-3367-4972-b248-21796d30a471"/>
+    <refType typeId="1c25a4a4-2f26-4937-858c-318abe61113d" valueTypeId="e8dbef6f-eff2-4e31-a5c7-d20621015e21"/>
+    <selectionType typeId="cbdea7a3-2e83-4127-9de8-f08e6143e0dc" valueTypeId="a1391fc4-c0e7-4ae9-9dc9-6dac51154c55"/>
+    <listType typeId="4463ce01-1c7b-4bb2-8bc1-3906d55e82a2" valueTypeId="633bebc3-7200-46f5-a841-f05b07f7745c"/>
+    <managerType typeId="ffd5e7cb-925c-4267-a091-bb4b72c707e7" valueTypeId="baacb681-1f80-4514-8c5f-228293d52750"/>
+  </producedTypes>
+  <name>ЭтапыЗадачиМетеор</name>
+  <synonym>
+    <key>ru</key>
+    <value>Этапы задачи метеор</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ЭтапыЗадачиМетеор.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ЭтапыЗадачиМетеор.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockFields>Catalog.ЭтапыЗадачиМетеор.StandardAttribute.Code</dataLockFields>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="820aabc9-2f8e-4d40-bfb7-bf917b239cb0">
+      <name>АналитическаяПроработка</name>
+      <description>Аналитическая проработка</description>
+      <code xsi:type="core:StringValue">
+        <value>000000112</value>
+      </code>
+    </items>
+    <items id="23d0a733-e2bd-4b4a-a867-d58510c09d10">
+      <name>ВыполнитьОсновнуюРаботуПоЗаданию</name>
+      <description>Выполнить основную работу по заданию</description>
+      <code xsi:type="core:StringValue">
+        <value>000000005</value>
+      </code>
+    </items>
+    <items id="4bf5d960-ebfc-42c0-ac25-15b766fb5444">
+      <name>ДоработкаДокументации</name>
+      <description>Доработка документации</description>
+      <code xsi:type="core:StringValue">
+        <value>000000285</value>
+      </code>
+    </items>
+    <items id="2d8817e7-2d30-4f4b-afe1-217aac7ce50d">
+      <name>ЗакрытьЗадание</name>
+      <description>Закрыть задание</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+    <items id="3fa0d844-cd88-44a5-84a1-504c2fa14a1d">
+      <name>ИсправлениеОшибок</name>
+      <description>Исправление ошибок</description>
+      <code xsi:type="core:StringValue">
+        <value>000000107</value>
+      </code>
+    </items>
+    <items id="6476a7ff-3d3f-44eb-acff-e92911496bb7">
+      <name>Ожидание</name>
+      <description>Ожидание</description>
+      <code xsi:type="core:StringValue">
+        <value>000001259</value>
+      </code>
+    </items>
+    <items id="79a05282-8c2d-4dec-886f-f5e8a1d7ad59">
+      <name>ОтключениеРасширения</name>
+      <description>Отключение расширения</description>
+      <code xsi:type="core:StringValue">
+        <value>000001425</value>
+      </code>
+    </items>
+    <items id="e107e9e8-0337-4b5c-9b6f-27cf971b8f8c">
+      <name>ОшибкаОтключенияРасширения</name>
+      <description>Ошибка отключения расширения</description>
+      <code xsi:type="core:StringValue">
+        <value>000001614</value>
+      </code>
+    </items>
+    <items id="1ff99780-2ea2-4459-af10-10cf85c65fa8">
+      <name>ОшибкаПодключенияРасширения</name>
+      <description>Ошибка подключения расширения</description>
+      <code xsi:type="core:StringValue">
+        <value>000001613</value>
+      </code>
+    </items>
+    <items id="e7355846-cc96-4bb9-bcf7-7646d6c6b8a2">
+      <name>ПодключениеРасширения</name>
+      <description>Подключение расширения</description>
+      <code xsi:type="core:StringValue">
+        <value>000001257</value>
+      </code>
+    </items>
+    <items id="77fdadd2-bf83-4728-b677-4f032b14662b">
+      <name>ПредварительнаяПроверкаИФормированиеДокументации</name>
+      <description>Предварительная проверка (ранее также Формирование документации)</description>
+      <code xsi:type="core:StringValue">
+        <value>000000170</value>
+      </code>
+    </items>
+    <items id="d040033b-45b4-4f23-8545-2124df7cb21d">
+      <name>ПредварительнаяПроверкаИФормированиеДокументации2</name>
+      <description>Предварительная проверка 2</description>
+      <code xsi:type="core:StringValue">
+        <value>000001120</value>
+      </code>
+    </items>
+    <items id="d768904f-c759-432f-896e-e9968e205445">
+      <name>ПроверкаДокументации</name>
+      <description>Проверка документации</description>
+      <code xsi:type="core:StringValue">
+        <value>000000284</value>
+      </code>
+    </items>
+    <items id="661fc07d-057b-47a9-8bf1-c08672370ae9">
+      <name>ПроверкаКода</name>
+      <description>Проверка кода</description>
+      <code xsi:type="core:StringValue">
+        <value>000000169</value>
+      </code>
+    </items>
+    <items id="5277ca98-cd0f-4f73-b0e2-47bfbbb8890a">
+      <name>ПроверкаКодаПодключениеРасширения</name>
+      <description>Проверка кода подключение расширения</description>
+      <code xsi:type="core:StringValue">
+        <value>000000282</value>
+      </code>
+    </items>
+    <items id="0e794f01-12e0-4c64-85aa-4a64a0de5e74">
+      <name>РазработчикуСделатьТехпроект</name>
+      <description>Разработчику сделать техпроект</description>
+      <code xsi:type="core:StringValue">
+        <value>000000119</value>
+      </code>
+    </items>
+    <items id="d675c07a-7e0f-4756-b769-5a8a0723daab">
+      <name>СдатьРаботуЗаказчику</name>
+      <description>Сдать работу заказчику</description>
+      <code xsi:type="core:StringValue">
+        <value>000000174</value>
+      </code>
+    </items>
+    <items id="213245d2-a52d-4dfa-b090-7b5120e9050f">
+      <name>СогласованиеНаПодключениеРасширения</name>
+      <description>Согласование на подключение расширения</description>
+      <code xsi:type="core:StringValue">
+        <value>000000283</value>
+      </code>
+    </items>
+    <items id="bcaf49bc-00f6-4357-84aa-da829cae1f9a">
+      <name>СогласоватьАрхитектуру</name>
+      <description>Согласовать архитектуру</description>
+      <code xsi:type="core:StringValue">
+        <value>000000113</value>
+      </code>
+    </items>
+    <items id="505fa2d2-63cf-4d73-97e9-dc03dda5fd8f">
+      <name>СозданиеЗаявкиНаПереносВПродуктив</name>
+      <description>Создание заявки на перенос в продуктив</description>
+      <code xsi:type="core:StringValue">
+        <value>000000173</value>
+      </code>
+    </items>
+    <items id="be514dbe-45c3-4924-8158-767b998e1373">
+      <name>ФормированиеДокументации</name>
+      <description>Формирование документации</description>
+      <code xsi:type="core:StringValue">
+        <value>000000394</value>
+      </code>
+    </items>
+  </predefined>
+  <predefinedDataUpdate>DontAutoUpdate</predefinedDataUpdate>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7400d449-8789-49bd-bdd4-d75f8ab4e7ed">
+  <name>ТехническийПроект</name>
+  <synonym>
+    <key>ru</key>
+    <value>Технический проект</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.РазделТехническийПроект</picture>
+  </picture>
+  <content>Document.ТехническийПроект</content>
+  <content>Report.ТехническиеПроекты</content>
+  <content>ChartOfCharacteristicTypes.СвойстваОбъектов</content>
+  <content>CommonCommand.ПанельОтчетовТехническийПроект</content>
+  <content>CommonPicture.РазделТехническийПроект</content>
+  <content>Role.РазделТехническийПроект</content>
+  <content>CommonForm.ФормаHTML</content>
+  <content>ChartOfCharacteristicTypes.ВопросыАнкетОбъектов</content>
+  <content>Role.ЧтениеТехническийПроект</content>
+  <content>Role.ДобавлениеИзменениеТехническийПроект</content>
+  <subsystems>НСИ</subsystems>
+  <subsystems>Документация</subsystems>
+  <subsystems>КонтрольИзмененияМетаданных</subsystems>
+</mdclass:Subsystem>

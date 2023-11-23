@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCharacteristicTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="45604d8e-a640-4c48-a315-83910efe3395">
+  <producedTypes>
+    <objectType typeId="a37fb4b8-3289-4d70-8279-6fc119705936" valueTypeId="4a517b21-b847-49e7-8894-e665ff2f2878"/>
+    <refType typeId="e522e45f-fbce-4558-946e-5137f3509f70" valueTypeId="ab7c9c34-15af-4603-8129-3008bdafd2d4"/>
+    <selectionType typeId="37bb6cd6-89bd-4522-b62e-633e331df1bc" valueTypeId="1ebe02f3-e339-4871-9afc-096c376ee800"/>
+    <listType typeId="ccd38a96-104f-4558-b9c8-c4fe34ca31ba" valueTypeId="12f1c1ed-d338-45a3-b92e-835cb384494f"/>
+    <managerType typeId="e6f8c23e-bbbb-4308-8619-8f0d98a72265" valueTypeId="532e5faa-cfbd-4979-abf3-71888a720fc9"/>
+    <containerType typeId="e80d4623-d3bc-49ee-b6f1-1d7421d12758" valueTypeId="cf6afbd8-a5e9-4efe-94c8-29ddf28607da"/>
+  </producedTypes>
+  <name>НастройкиПрограммы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки программы</value>
+  </synonym>
+  <inputByString>ChartOfCharacteristicTypes.НастройкиПрограммы.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>ValueType</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>DontUse</createOnInput>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <type>
+    <types>CatalogRef.Пользователи</types>
+    <types>Boolean</types>
+    <types>String</types>
+    <types>Date</types>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>15</precision>
+      <scale>2</scale>
+    </numberQualifiers>
+    <stringQualifiers>
+      <length>500</length>
+    </stringQualifiers>
+    <dateQualifiers/>
+  </type>
+  <hierarchical>true</hierarchical>
+  <foldersOnTop>true</foldersOnTop>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>150</descriptionLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="daefbeec-2e86-4c2e-9c61-adb41c4a4c2f">
+      <name>КонтрольЗаписиРабочихДанных</name>
+      <description>Контроль записи рабочих данных</description>
+      <isFolder>true</isFolder>
+      <type/>
+      <content id="71c5a984-7677-48cd-85e1-9dc1d59241c0">
+        <name>ЛогированиеКафкаАдрес</name>
+        <description>Логирование кафка адрес</description>
+        <type>
+          <types>String</types>
+          <stringQualifiers>
+            <length>500</length>
+          </stringQualifiers>
+        </type>
+      </content>
+      <content id="c8c95d51-8055-40c3-b844-5e222250d950">
+        <name>ЛогированиеКафкаЛогин</name>
+        <description>Логирование кафка логин</description>
+        <type>
+          <types>String</types>
+          <stringQualifiers>
+            <length>500</length>
+          </stringQualifiers>
+        </type>
+      </content>
+      <content id="33ad31b6-58d4-4b0f-8c80-6c1e9b88edc4">
+        <name>ЛогированиеКафкаПароль</name>
+        <description>Логирование кафка пароль</description>
+        <type>
+          <types>String</types>
+          <stringQualifiers>
+            <length>500</length>
+          </stringQualifiers>
+        </type>
+      </content>
+      <content id="e4d2e035-ce82-42b4-870d-d4e6da05c93f">
+        <name>ЛогированиеКафкаПартиция</name>
+        <description>Логирование кафка партиция</description>
+        <type>
+          <types>Number</types>
+          <numberQualifiers>
+            <precision>10</precision>
+          </numberQualifiers>
+        </type>
+      </content>
+      <content id="9a7a6fb7-8f4c-457d-bc95-cb25d167a7e2">
+        <name>ЛогированиеКафкаСдвиг</name>
+        <description>Логирование кафка сдвиг</description>
+        <type>
+          <types>Number</types>
+          <numberQualifiers>
+            <precision>10</precision>
+          </numberQualifiers>
+        </type>
+      </content>
+      <content id="1e3f4e80-3779-46d8-8132-cc97ec2bfc61">
+        <name>ЛогированиеКафкаТопик</name>
+        <description>Логирование кафка топик</description>
+        <type>
+          <types>String</types>
+          <stringQualifiers>
+            <length>500</length>
+          </stringQualifiers>
+        </type>
+      </content>
+    </items>
+    <items id="83a5b40a-0431-4cc8-a6c7-b0953c00417c">
+      <name>Метеор</name>
+      <description>Метеор</description>
+      <isFolder>true</isFolder>
+      <type/>
+      <content id="340b1243-3b90-48aa-bac7-7711c5c29524">
+        <name>ОтметкаВремениЗагрузкиЭтаповМетеор</name>
+        <description>Отметка времени загрузки этапов метеор</description>
+        <type>
+          <types>Date</types>
+          <dateQualifiers>
+            <dateFractions>Date</dateFractions>
+          </dateQualifiers>
+        </type>
+      </content>
+      <content id="37782391-b11d-42e0-bd7b-8495d680d327">
+        <name>ApiTokenV3</name>
+        <description>Токен</description>
+        <type>
+          <types>String</types>
+          <stringQualifiers>
+            <length>500</length>
+          </stringQualifiers>
+        </type>
+      </content>
+    </items>
+    <items id="7164f95d-7168-4f48-8f19-6fa54ca325ef">
+      <name>ПутиКСерверам</name>
+      <description>Пути к серверам</description>
+      <isFolder>true</isFolder>
+      <type/>
+      <content id="cd853380-e841-47ba-b1b0-3603f88a4cb8">
+        <name>АдресСервисаРаботыСБазами</name>
+        <description>Адрес сервиса работы с базами</description>
+        <type>
+          <types>String</types>
+          <stringQualifiers>
+            <length>500</length>
+          </stringQualifiers>
+        </type>
+      </content>
+      <content id="b5e1f012-fa13-4474-965a-e1b5fb30b5bc">
+        <name>СтрокиПодключенияSqlConnect</name>
+        <description>Строки подключения sql connect</description>
+        <type>
+          <types>String</types>
+          <stringQualifiers>
+            <length>500</length>
+          </stringQualifiers>
+        </type>
+      </content>
+    </items>
+    <items id="60c0a20f-073f-4ba6-b7d8-95000ecabf9f">
+      <name>УправлениеКоммитами</name>
+      <description>Управление коммитами</description>
+      <isFolder>true</isFolder>
+      <type/>
+      <content id="744138ea-811e-4fc8-adfc-277e0a18af72">
+        <name>ИспользоватьФильтрПоКомментариюОжиданиеЗагрузкиМетеор</name>
+        <description>Использовать фильтр по комментарию ожидание загрузки метеор</description>
+        <type>
+          <types>Boolean</types>
+        </type>
+      </content>
+    </items>
+  </predefined>
+  <predefinedDataUpdate>AutoUpdate</predefinedDataUpdate>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultListForm>ChartOfCharacteristicTypes.НастройкиПрограммы.Form.ФормаСписка</defaultListForm>
+  <attributes uuid="d1f78ba6-d838-42c9-8723-45aaee3eeca5">
+    <name>ИспользуетсяСписокЗначений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Используется список значений</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="d144cb85-04ac-4346-aae3-96f06d556082">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ChartOfCharacteristicTypes>

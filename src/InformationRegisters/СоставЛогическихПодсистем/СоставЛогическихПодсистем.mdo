@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3e6f4914-43fc-4d93-b7ba-c94c12bed294">
+  <producedTypes>
+    <selectionType typeId="c643cfa1-b734-4048-8d20-1be831ec1b35" valueTypeId="98b698fe-251e-47aa-a962-63018b692b84"/>
+    <listType typeId="867393a5-c662-4542-8905-9c5bb624f59f" valueTypeId="81562f5e-b451-44cb-a99e-4f2870d78308"/>
+    <managerType typeId="9920b7d3-3eed-4dac-b88c-a2b40f86b581" valueTypeId="ec84f655-e0a5-4370-895a-21d8461202de"/>
+    <recordSetType typeId="673ff776-e299-409b-ae36-ad8d5218215e" valueTypeId="070112e9-c4db-4390-802f-c333b411aae3"/>
+    <recordKeyType typeId="a6130241-76d9-4f2b-9a3c-8253f74160a9" valueTypeId="9ba0100a-0761-4dcb-8aca-7450d0978d39"/>
+    <recordType typeId="686f532f-ada0-4580-abf0-60fd8ed2127a" valueTypeId="36813120-d1ce-41b3-8ae6-001449cec183"/>
+    <recordManagerType typeId="951ecf89-0a2a-48fb-a18c-b9c5c1703e7e" valueTypeId="c2011038-20e0-433f-a42b-81b92dce9ddb"/>
+  </producedTypes>
+  <name>СоставЛогическихПодсистем</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состав логических подсистем</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c624da32-89e2-4c0d-b689-b1e126e3977b">
+    <name>ЛогическаяПодсистема</name>
+    <synonym>
+      <key>ru</key>
+      <value>Логическая подсистема</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЛогическиеПодсистемы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="7e926a9a-2bc0-468d-a9a8-0f4d8a975620">
+    <name>ОбъектМетаданных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект метаданных</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОбъектыМетаданных</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

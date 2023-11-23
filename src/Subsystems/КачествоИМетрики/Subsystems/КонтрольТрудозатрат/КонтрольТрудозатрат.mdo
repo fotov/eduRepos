@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="914720cb-7059-434c-b64d-9747bc8ba3d3">
+  <name>КонтрольТрудозатрат</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контроль трудозатрат</value>
+  </synonym>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>Constant.МинимальноеКоличествоЧасовДляНеобходимостиКонтроляТрудозатрат</content>
+  <content>Constant.МаксимальныйПроцентПревышенияОценкиКонтроляТрудозатрат</content>
+  <content>InformationRegister.ОценкаТрудозатратПоЗадачам</content>
+  <content>InformationRegister.РезультатыКонтроляТрудозатрат</content>
+  <content>BusinessProcess.КонтрольТрудозатрат</content>
+  <content>Report.АнализТрудозатрат</content>
+  <content>Role.ЧтениеОценкиТрудозатратПоЗадачам</content>
+  <content>Role.ЧтениеРезультатовКонтроляТрудозатрат</content>
+  <content>Role.ДобавлениеИзменениеОценкиТрудозатратПоЗадачам</content>
+  <content>Role.ДобавлениеИзменениеРезультатовКонтроляТрудозатрат</content>
+  <content>Role.ПросмотрОтчетаАнализТрудозатрат</content>
+  <content>Role.ДобавлениеИзменениеКонтроляТрудозатрат</content>
+  <content>Role.ЧтениеКонтроляТрудозатрат</content>
+  <content>Report.ОчередьСогласованияТрудозатрат</content>
+  <content>Role.ПросмотрОтчетаОчередьСогласованияТрудозатрат</content>
+  <content>Role.РазделКонтрольТрудозатрат</content>
+  <parentSubsystem>Subsystem.КачествоИМетрики</parentSubsystem>
+</mdclass:Subsystem>

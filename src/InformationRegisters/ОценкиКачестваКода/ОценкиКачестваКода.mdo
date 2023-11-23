@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="31672fcd-bfe3-4d4e-9ff2-094c793f7da5">
+  <producedTypes>
+    <selectionType typeId="d91648c3-00df-44ae-96a6-12c8a1c5d3aa" valueTypeId="484eaca0-8856-4d5b-8ab1-ef2f4ab1bcd0"/>
+    <listType typeId="a9a9131d-c2af-4091-a6ec-9ed254058318" valueTypeId="0123123f-147e-4316-8674-a5767b122da2"/>
+    <managerType typeId="5ec066f7-e472-45f7-97bb-21271b7ba0fa" valueTypeId="b9b0f3f1-61c9-4cac-aa60-32cf91b853f2"/>
+    <recordSetType typeId="a57f3db7-cd2d-4915-89ae-1f9b6c125626" valueTypeId="02e42926-906a-4a71-8d09-ea747ef78b21"/>
+    <recordKeyType typeId="c8b68503-81f5-4a30-83a6-aef018f3024e" valueTypeId="1c02e659-28a5-4a6a-b947-a4c40fab8406"/>
+    <recordType typeId="3ead9822-3e46-4c0a-96c8-44cbf1002835" valueTypeId="9caf2921-67bd-4be3-ba79-2ec2daa7e806"/>
+    <recordManagerType typeId="07dfaf68-b897-4a0a-939e-017e123549ff" valueTypeId="f10e89dd-78dd-4301-b610-72a267fad431"/>
+  </producedTypes>
+  <name>ОценкиКачестваКода</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оценки качества кода</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c28b3deb-5135-42bc-99e5-b85b9df44029">
+    <name>Оценка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оценка</value>
+    </synonym>
+    <type>
+      <types>EnumRef.ЗначенияОценкиКачестваКода</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="80a3f890-ef98-4739-9a4e-1fd69c821179">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="fd741b8f-0e74-4183-a9fc-d984529dbfe0">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="96786f36-84ba-45e8-bc16-95a993631db7">
+    <name>БизнесПроцесс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Бизнес процесс</value>
+    </synonym>
+    <type>
+      <types>BusinessProcessRef.ПредварительнаяПроверка</types>
+      <types>BusinessProcessRef.СогласованиеПереноса</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a2810aae-fe74-4f41-9a98-ca48f7aabe0f">
+    <name>ВидОценки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид оценки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыОценокКачестваКода</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c3ebf945-6264-45f2-a70a-804befa1cfdc">
+    <name>Оцениваемый</name>
+    <synonym>
+      <key>ru</key>
+      <value>Оцениваемый</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5f47a825-06c0-4970-8d2d-44d8feaf63f3">
+  <producedTypes>
+    <objectType typeId="c23f5ba1-64f0-495a-90df-e59d449b3eb7" valueTypeId="b4c8bf1d-7612-4d00-ba89-36efc900739e"/>
+    <managerType typeId="35168ab4-835e-4fd0-a543-38eba818c05e" valueTypeId="8cd1db10-5d91-4160-a2af-ee394293a8c6"/>
+  </producedTypes>
+  <name>КонтрольЭтаповЗадачМетеор</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контроль этапов задач метеор</value>
+  </synonym>
+  <mainDataCompositionSchema>Report.КонтрольЭтаповЗадачМетеор.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="df2664a7-32a4-4f53-a06a-3d50d2cd392b">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

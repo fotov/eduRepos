@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4edd117f-536c-40f4-a6e5-8a9f6b3a1604">
+  <producedTypes>
+    <selectionType typeId="7c596096-86aa-4854-bfff-6f43a598952b" valueTypeId="d241aa26-8c91-4ea9-abce-bd64c490ab5e"/>
+    <listType typeId="f98379c2-9022-4799-81e6-b645d61ae15c" valueTypeId="56f371c9-3ad5-4776-af58-6a817dda973b"/>
+    <managerType typeId="0b943531-79be-42c6-9ad5-035aae070636" valueTypeId="3bd26a80-74f7-45fe-8159-4a0fc22644b3"/>
+    <recordSetType typeId="384d30aa-c493-4bda-8ac3-36d557c693d0" valueTypeId="5d30a66d-cf81-4e41-a224-dfd78195b4ca"/>
+    <recordKeyType typeId="c4f5feb5-da28-4603-bbae-6c6a8e93b1a9" valueTypeId="b3f0733b-6779-4f38-b18b-ce230c2bbf39"/>
+    <recordType typeId="f44c25e7-86e6-4132-9c0b-2b14b6ca4bd5" valueTypeId="a89f1aaa-2167-46bd-ba7c-926b22b32f51"/>
+    <recordManagerType typeId="001e315d-694f-4f78-9094-d331afcae257" valueTypeId="6588980f-e163-41cd-a177-5637a8dece88"/>
+  </producedTypes>
+  <name>СоставПодсистем</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состав подсистем</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="5f21d38b-a726-4586-97f2-92c37c4acc25">
+    <name>ОбъектМетаданных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект метаданных</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОбъектыМетаданных</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="a9a58e42-d6c2-4392-8624-6bff85dd1ee7">
+    <name>Подсистема</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подсистема</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Подсистемы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

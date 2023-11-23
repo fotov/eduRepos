@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b93b5619-daef-4e8d-af65-a696657b10da">
+  <producedTypes>
+    <objectType typeId="e2d60a5f-5bfb-4f6b-b011-c96b82913ccb" valueTypeId="f28008a8-db97-4fb6-a95a-2c282af9aae8"/>
+    <managerType typeId="fb43d2ee-6f71-449e-9569-bd098d460a80" valueTypeId="9f6942fc-82bc-4756-ab1e-12c8d652904e"/>
+  </producedTypes>
+  <name>ЗагрузкаИсторииЭтаповЗадачМетеор</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка истории этапов задач метеор</value>
+  </synonym>
+  <defaultForm>DataProcessor.ЗагрузкаИсторииЭтаповЗадачМетеор.Form.Форма</defaultForm>
+  <attributes uuid="750b343f-26ab-4880-8214-aa0c483f5279">
+    <name>НачалоПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начало периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="7a387b62-5990-441a-a3fd-29ad15f941fe">
+    <name>КонецПериода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конец периода</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="520d42d3-8d51-4c43-8b80-d1aa1ef9f87b">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

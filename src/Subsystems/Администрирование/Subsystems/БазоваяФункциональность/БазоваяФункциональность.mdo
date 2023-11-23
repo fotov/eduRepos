@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1dc138a8-b3f7-4bc2-9ab9-8668e5c9e204">
+  <name>БазоваяФункциональность</name>
+  <synonym>
+    <key>ru</key>
+    <value>Базовая функциональность</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <content>HTTPService.Repos</content>
+  <content>WebService.RemoteControl</content>
+  <content>Role.ДобавлениеИзменениеСобытияМетеор</content>
+  <content>Role.httpuser</content>
+  <content>CommonModule.ОбщегоНазначенияПовтИспУК</content>
+  <content>ScheduledJob.РассылкаПисем</content>
+  <content>CommonModule.ОбновлениеИнформационнойБазыУК</content>
+  <content>CommonTemplate.ОписаниеИзмененийСистемы</content>
+  <content>CommonCommand.ПанельОтчетовГлавное</content>
+  <content>EventSubscription.ОпределитьФормуПрисоединенногоФайла</content>
+  <content>CommonModule.БлокировкаРаботыСВнешнимиРесурсамиУК</content>
+  <content>CommonModule.БлокировкаРаботыСВнешнимиРесурсамиУКПовтИсп</content>
+  <content>CommonModule.БлокировкаРаботыСВнешнимиРесурсамиУККлиентСервер</content>
+  <content>Role.ИзменениеВыполнениеЗадач</content>
+  <content>CommonModule.СтроковыеФункцииУККлиентСервер</content>
+  <content>CommonModule.РегЗадания</content>
+  <content>Document.ЭлектронноеПисьмо</content>
+  <content>CommonModule.РегламентныеЗаданияУК</content>
+  <content>Role.ЧтениеЭлектронноеПисьмо</content>
+  <content>Role.ПросмотрОбщихОтчетов</content>
+  <content>CommonModule.КоманднаяОболочкаКлиентСервер</content>
+  <content>Constant.КодировкаИсполненияРаботаСGit</content>
+  <content>Constant.КодировкаПотоковРаботаСGit</content>
+  <content>CommonModule.ОбщегоНазначенияУК</content>
+  <content>CommonModule.ОбщегоНазначенияКлиентСерверУК</content>
+  <content>CommonModule.РаботаСФормами</content>
+  <content>CommonModule.КоннекторHTTP</content>
+  <content>CommonModule.ОтчетыВызовСервераУК</content>
+  <content>ScheduledJob.ОтправкаОповещенийТелеграм</content>
+  <content>Role.ПолныеПраваУК</content>
+  <content>CommonModule.БлокировкаРаботыСВнешнимиРесурсамиУКСлужебныйВызовСервера</content>
+  <content>CommonModule.РегулярныеВыраженияПовтИсп</content>
+  <content>CommonModule.РегулярныеВыражения</content>
+  <content>Constant.КаталогЛогов</content>
+  <parentSubsystem>Subsystem.Администрирование</parentSubsystem>
+</mdclass:Subsystem>

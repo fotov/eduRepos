@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1ffd56bd-cc44-402f-8d34-8c06087cbf1c">
+  <producedTypes>
+    <objectType typeId="3275d58f-afeb-42eb-b575-635fefe9450f" valueTypeId="2d4f6f60-99ce-4987-83b9-454cb73427f7"/>
+    <refType typeId="0e863782-2aaa-4d12-a2d5-abcee1f0b6fc" valueTypeId="b156b4b5-4baa-4249-a779-20dd57b6b56f"/>
+    <selectionType typeId="3fb6710e-bb67-472b-9520-24a6f9e2f49c" valueTypeId="1ee62089-5d84-4bdb-8fb6-0977eef79196"/>
+    <listType typeId="e89a5bc4-c682-4a83-a0a9-3a3e72dbfb89" valueTypeId="7526fd4d-20c6-49e1-b4e8-0c2a67d437cd"/>
+    <managerType typeId="cc8ec549-118b-4144-93d4-0261c8977c3b" valueTypeId="49d952ef-18b4-432a-900f-cf9c352ea4e1"/>
+  </producedTypes>
+  <name>Процессы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Процессы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Процессы.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.Процессы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

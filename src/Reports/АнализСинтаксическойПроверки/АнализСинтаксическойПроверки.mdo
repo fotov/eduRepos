@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b7fa111d-0d09-4701-b01c-c817fb6fdb6b">
+  <producedTypes>
+    <objectType typeId="f1ed457a-5f90-452a-b14c-3750ca41e74f" valueTypeId="019e3ffa-408a-454b-ae6e-accafcb27e39"/>
+    <managerType typeId="f972c003-be30-44fd-b1c6-be9b8c7d6bce" valueTypeId="8d29e767-7a44-4529-ab27-a38cc494fdcc"/>
+  </producedTypes>
+  <name>АнализСинтаксическойПроверки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ синтаксической проверки</value>
+  </synonym>
+  <mainDataCompositionSchema>Report.АнализСинтаксическойПроверки.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <forms uuid="61f6c386-9861-4500-93f3-0ff0b33ec863">
+    <name>ФормаРасшифровкиПравила</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма расшифровки правила</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="55587a92-8335-43fc-864d-a023765d0c3b">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

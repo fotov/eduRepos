@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d25a2df8-cb65-4423-8877-a2ef726f12fc">
+  <producedTypes>
+    <refType typeId="6e26b3e3-5064-4c4b-973d-0ab83fdf928f" valueTypeId="fb794ce5-0001-49d4-bce1-c8033d4e8dc5"/>
+    <listType typeId="25158862-77f1-4db1-850b-687669b0a077" valueTypeId="abdc4696-0417-4dd3-a3c0-91f46021542f"/>
+    <managerType typeId="02e590ad-153f-43d9-abd7-12d8a6a56f57" valueTypeId="8ee0873c-9c45-462c-b7a0-43e962cbe024"/>
+  </producedTypes>
+  <name>ЗначенияОценкиКачестваКода</name>
+  <synonym>
+    <key>ru</key>
+    <value>Значения оценки качества кода</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="dbf2f36e-7924-4499-8af7-c8874eead6fb">
+    <name>НечегоОценивать</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нечего оценивать</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="79a34a1e-e8ce-4355-8db5-385604a8b6e8">
+    <name>ЗамечанийНет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Замечаний нет</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1739159f-d56b-419c-8956-bec9ffc9ec71">
+    <name>ЕстьНезначительныеЗамечания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Есть незначительные замечания</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="5eabdc0e-e13b-4663-b6ad-8a027e53ce97">
+    <name>ЕстьКритичныеЗамечания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Есть критичные замечания</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

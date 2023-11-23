@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c113193a-7163-41b9-b6b7-d4715b074086">
+  <producedTypes>
+    <managerType typeId="624a068a-8f86-424f-bcf0-2e4dce49940b" valueTypeId="641be7aa-0b99-4b82-9d9c-6e404e1c7b16"/>
+    <valueManagerType typeId="bb8dfeea-58af-4577-bced-212289c60afa" valueTypeId="26d81f3d-7a0f-4333-805a-8db5c762b811"/>
+    <valueKeyType typeId="36dc1459-12fc-4eb8-9aeb-4dbe01437a8d" valueTypeId="ef58540a-1589-4480-a371-fa346ee383c9"/>
+  </producedTypes>
+  <name>Путь_oscript2</name>
+  <synonym>
+    <key>ru</key>
+    <value>Путь oscript2</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>1024</length>
+    </stringQualifiers>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9dd774bc-dee5-44e6-b717-76184d0f6d94">
+  <producedTypes>
+    <selectionType typeId="a88a4d74-7c76-4a17-a797-0497dd60ee2e" valueTypeId="f795e2d6-0aa9-4ccb-9cfa-b622d0fbcd30"/>
+    <listType typeId="922af474-f141-48ad-a3f2-869001f99f7e" valueTypeId="7778c11c-418c-4ec9-85b4-df877a4bb513"/>
+    <managerType typeId="a2d6ab90-9c47-4072-aac2-fdaead789c3f" valueTypeId="d9774013-889d-4b2b-942f-58bb0227f1dc"/>
+    <recordSetType typeId="139023c5-b7fa-4696-bbab-e4c94c029832" valueTypeId="956aeaeb-3e79-411e-a72f-8ce1e1e68124"/>
+    <recordKeyType typeId="21425557-be52-4650-8d82-ebf6ee11dc6b" valueTypeId="fcda883e-485f-499f-8e0a-ededce4ba036"/>
+    <recordType typeId="5913b7a6-a88e-4e03-8f61-93b6d7fb2349" valueTypeId="67f12661-9b60-41f8-864b-0a62699aecda"/>
+    <recordManagerType typeId="755e1420-0187-4d32-8d1a-e3acaafdb82b" valueTypeId="71a12fb4-0f07-4e61-8cf9-a75077fc65ac"/>
+  </producedTypes>
+  <name>ОтветственныеПоПодсисетмам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ответственные по подсисетмам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ОтветственныеПоПодсисетмам.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ОтветственныеПоПодсисетмам.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="c3650bfe-c2b1-4547-89bf-fe56f28e229f">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="9553f262-5d85-4d00-9572-9cd1a7321b08">
+    <name>Подсистема</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подсистема</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Подсистемы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="7f1991a6-b371-4f66-9ecf-8de95d6dcf71">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="c1b4eebf-c202-465c-a9b6-5c3f0ffa5b24">
+    <name>ФормаВыбораПараметровДобавления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора параметров добавления</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ee2479c2-8730-4d59-b5a8-1fa994116844">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

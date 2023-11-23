@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ff73ac80-6a39-40e4-a683-9f1aac52d1b2">
+  <name>КонтрольИзмененияМетаданных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контроль изменения метаданных</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>InformationRegister.ОтветственныеПоПодсисетмам</content>
+  <content>Report.КонтрольИзмененияОбъектовМетаданных</content>
+  <content>Role.БазовыеПраваКонтрольОбъектовМетаданных</content>
+  <content>Catalog.РассылкиОтчетов</content>
+  <content>InformationRegister.ОтветственныеПоКонфигурациям</content>
+  <content>CommonModule.ЗаписьСправочников</content>
+  <content>ScheduledJob.ЗагрузкаИзмененияСвойствОбъектовМетаданных</content>
+  <content>Report.АнализИзмененийСвойствОбъектов</content>
+  <content>InformationRegister.ИзмененияСвойствОбъектовМетаданных</content>
+  <content>InformationRegister.ОчередьПолученияИзмененийОбъектовВерсийХранилища</content>
+  <content>InformationRegister.ОчередьОповещенийИзмененияМетаданныхRMQ</content>
+  <content>ScheduledJob.ОтправкаОповещенийИзмененияМетаданныхRMQ</content>
+  <content>Report.ЗахваченныеОбъектыХранилищ</content>
+  <subsystems>ЛогическиеПодсистемы</subsystems>
+  <parentSubsystem>Subsystem.ТехническийПроект</parentSubsystem>
+</mdclass:Subsystem>

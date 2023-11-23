@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9105e200-51a7-471d-9fb6-4ac0d86a8b3b">
+  <producedTypes>
+    <objectType typeId="18ce6e36-c7c5-46b2-a5e2-2e1913e07701" valueTypeId="90d9076b-9f62-490a-b549-70c0b1b5a391"/>
+    <refType typeId="f755b39f-d1d1-45f8-8603-753f48fb78c6" valueTypeId="c368216b-6bd0-4313-a606-dfbc0a5801b3"/>
+    <selectionType typeId="a93a7d30-bf43-4e7c-800c-4bc99ddd2986" valueTypeId="4fd255f0-b680-442a-abbd-eb443fc2daf2"/>
+    <listType typeId="00564740-44c7-4e2f-a4a1-48eda56a9525" valueTypeId="261ed005-1cef-4c0e-a02f-c1b9845e6b5c"/>
+    <managerType typeId="1d150294-2e64-4956-8f4e-6d1538e39f45" valueTypeId="e1f85349-3eda-4565-b374-68b37d3e29f5"/>
+  </producedTypes>
+  <name>Базы1С</name>
+  <synonym>
+    <key>ru</key>
+    <value>Информационные системы (Базы)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.Базы1С.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <owners>Catalog.Конфигурации</owners>
+  <descriptionLength>50</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.Базы1С.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultChoiceForm>Catalog.Базы1С.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="31d06cb2-a2c0-4905-a59f-93cb238157f8">
+    <name>СтрокаСоединения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Строка соединения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="172def5b-4d95-4ebe-9726-e1620fa8537f">
+    <name>АдресСервисаДополнений</name>
+    <synonym>
+      <key>ru</key>
+      <value>URI сервиса дополнений</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Путь публикации сервиса работы с дополнениями в формате:
+&lt;схема>://&lt;логин>:&lt;пароль>@&lt;хост>:&lt;порт>/&lt;путь>
+&lt;путь> в общем случае: &lt;путь к базе>/hs/&lt;корневой URL сервиса>
+Например: http://izb-dev03/fin_dev33/hs/additions</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3a4f1fe4-255f-477e-abea-d5ec01845639">
+    <name>ПользовательСервисаДополнений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь сервиса дополнений</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b7045338-c978-48d4-be9a-8daa4bab3dca">
+    <name>ПарольСервисаДополнений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пароль сервиса дополнений</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <passwordMode>true</passwordMode>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="1ccb29cf-308c-40cd-94f5-4a104abec460">
+    <name>ЭтоКопия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это копия</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fa1db225-cf06-421e-afe5-df69f343187b">
+    <name>НаименованиеМетеор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Наименование метеор</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <indexing>Index</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a80f7ef9-51af-4b30-a402-76274b906cdc">
+    <name>ИдентификаторКлиентаДополнений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор клиента дополнений</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="311a7383-8952-47d0-bffb-d264f400ccdd">
+    <name>СоздаватьКлонДляРазработчиков</name>
+    <synonym>
+      <key>ru</key>
+      <value>Создавать клон для разработчиков</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b236bbb0-47b0-4d40-8fd3-2973bba0d17c">
+    <name>СтрокаСоединенияИсточник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Строка соединения источник</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9e33394f-e1ab-486a-92e4-b8c95544c6c8">
+    <name>СтрокаСоединенияПриемник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Строка соединения приемник</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6028254e-5ddf-4f3f-99b3-828310167685">
+    <name>ЗапретУстановкиРасширений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запрет установки расширений</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3fdd2ddc-ee87-4c6b-a7fe-52868ec88f63">
+    <name>КонфигурацияМетеор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конфигурация метеор (Наименование)</value>
+    </synonym>
+    <comment>Связь поля Конфигурация в Метеор с базой 1С</comment>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>80</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="64507bb8-2eb4-4de6-8289-4c785c11fd20">
+    <name>АдресСервисаУправлениеПользователями</name>
+    <synonym>
+      <key>ru</key>
+      <value>URI сервиса управление пользователями</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>250</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Путь публикации сервиса работы с дополнениями в формате:
+&lt;схема>://&lt;логин>:&lt;пароль>@&lt;хост>:&lt;порт>/&lt;путь>
+&lt;путь> в общем случае: &lt;путь к базе>/hs/&lt;корневой URL сервиса>
+Например: http://izb-dev03/fin_dev33/hs/additions</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4a8dc3d9-ec89-4cd1-a6dc-7eca570f4245">
+    <name>ПользовательСервисаУправлениеПользователями</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь сервиса управление пользователями</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="be8ac736-a5b3-4d56-be87-b91140983a48">
+    <name>ПарольСервисаУправлениеПользователями</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пароль сервиса управление пользователями</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>25</length>
+      </stringQualifiers>
+    </type>
+    <passwordMode>true</passwordMode>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="fde2e205-b7fe-4818-8a25-e70d674e4f18">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="ad620185-f11e-44d9-ba6c-87092bba1343">
+    <name>ФормаВыбораПоддержкаДополнений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора поддержка дополнений</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="5f7c3376-8daa-4445-9e3a-32989c957430">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

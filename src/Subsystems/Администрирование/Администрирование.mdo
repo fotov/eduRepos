@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cfa166db-8273-493d-acbf-e201e44c7427">
+  <name>Администрирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Администрирование</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <explanation>
+    <key>ru</key>
+    <value>Администрирование, настройка, сервисные функции</value>
+  </explanation>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.РазделАдминистрированиеУК</picture>
+  </picture>
+  <content>CommonCommand.НастройкаСистемнойУчетнойЗаписиЭлектроннойПочты</content>
+  <content>Report.УниверсальныйОтчет</content>
+  <content>Catalog.ГруппыДоступа</content>
+  <content>Report.АнализЖурналаРегистрации</content>
+  <content>Catalog.ПрофилиГруппДоступа</content>
+  <content>Catalog.ВидыКонтактнойИнформации</content>
+  <content>CommonCommand.ДополнительныеОтчетыАдминистрирование</content>
+  <content>Catalog.ГруппыПользователей</content>
+  <content>Catalog.КлючевыеОперации</content>
+  <content>Catalog.ВнешниеПользователи</content>
+  <content>Catalog.ГруппыВнешнихПользователей</content>
+  <content>Catalog.ТомаХраненияФайлов</content>
+  <content>Catalog.НаборыДополнительныхРеквизитовИСведений</content>
+  <content>CommonForm.Расширения</content>
+  <content>Catalog.УчетныеЗаписиЭлектроннойПочты</content>
+  <content>Catalog.ДополнительныеОтчетыИОбработки</content>
+  <content>CommonForm.ОписаниеИзмененийПрограммы</content>
+  <content>Report.ОбъемНенужныхФайлов</content>
+  <content>Catalog.РассылкиОтчетов</content>
+  <content>CommonForm.ПараметрыПроксиСервера</content>
+  <content>Catalog.ВариантыОтчетов</content>
+  <content>CommonPicture.РазделАдминистрирование48</content>
+  <content>InformationRegister.НомераОтсканированныхФайлов</content>
+  <content>CommonForm.НастройкиВходаПользователей</content>
+  <content>CommonForm.НастройкаДоступаКСервисуMorpher</content>
+  <content>Report.СведенияОПользователях</content>
+  <content>CommonCommand.ДополнительныеОбработкиАдминистрирование</content>
+  <content>CommonCommand.ПанельОтчетовАдминистрирование</content>
+  <content>Report.ПрогрессОтложенногоОбновления</content>
+  <content>InformationRegister.НастройкиОчисткиФайлов</content>
+  <content>CommonCommand.ВремяТекущегоСеанса</content>
+  <content>Catalog.ПрофилиКлючевыхОпераций</content>
+  <content>Report.ОценкаПроизводительности</content>
+  <content>Catalog.ШаблоныСообщений</content>
+  <content>Report.АнализПравДоступа</content>
+  <content>CommonForm.ВосстановлениеПаролей</content>
+  <content>Report.ПраваРолей</content>
+  <content>Catalog.Пользователи</content>
+  <content>CommonForm.ФормаНачальнаяСтраница</content>
+  <content>CommonPicture.РазделАдминистрированиеУК</content>
+  <content>CommonPicture.РазделГлавное</content>
+  <subsystems>Администрирование</subsystems>
+  <subsystems>БазоваяФункциональность</subsystems>
+  <subsystems>Мониторинг</subsystems>
+  <subsystems>НастройкаФункциональности</subsystems>
+  <subsystems>НСИ</subsystems>
+</mdclass:Subsystem>

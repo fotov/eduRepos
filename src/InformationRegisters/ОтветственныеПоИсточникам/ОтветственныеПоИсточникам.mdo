@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d85c8bd8-bbe4-4d3c-a243-7c0ee4fa8ace">
+  <producedTypes>
+    <selectionType typeId="ce9099dc-9953-4e83-98c0-132b809e5557" valueTypeId="ba53394f-cfd6-4923-a083-993d21fd13dd"/>
+    <listType typeId="44d2885a-3702-443a-bb6b-a4f0cb7dcced" valueTypeId="b9160721-cb6f-4907-8206-d9d5a8989109"/>
+    <managerType typeId="749c3a36-49ae-4cd5-aee4-b972b040455a" valueTypeId="09dee9cb-f6d0-471f-88eb-5dcf2d35b72a"/>
+    <recordSetType typeId="cd23dc16-7f08-412b-920a-fbf2203be1cb" valueTypeId="098e982e-dd10-485a-a02d-47b249304db9"/>
+    <recordKeyType typeId="4987b7af-07a6-4937-a856-9fafdf0d967c" valueTypeId="ed202341-0d83-4c90-a4a4-32666de7f5fa"/>
+    <recordType typeId="b415ba70-e51a-481a-a7fe-b460d1db5d5a" valueTypeId="99351e13-f2af-47d2-a910-07fab21b26d2"/>
+    <recordManagerType typeId="0a6986f4-eeca-4c6a-bf29-d7a5d0c9960f" valueTypeId="9f0c5b1f-40ac-4777-b95b-debeaa502060"/>
+  </producedTypes>
+  <name>ОтветственныеПоИсточникам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ответственные по источникам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.ОтветственныеПоИсточникам.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="f5372971-c484-450c-8ecb-51a200b45133">
+    <name>Источник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Источник</value>
+    </synonym>
+    <type>
+      <types>BusinessProcessRef.ПредварительнаяПроверка</types>
+      <types>CatalogRef.ИсторияХранилища</types>
+      <types>BusinessProcessRef.СогласованиеПереноса</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="184986af-308d-4e5c-8940-d568fdddc293">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </dimensions>
+  <forms uuid="28ac1517-d9d1-40b4-baaf-b133d68e6e59">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="23babf03-6813-4e9a-98a4-079844d0f38b">
+  <name>ЗагрузкаОшибокАПК</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка ошибок АПК</value>
+  </synonym>
+  <methodName>CommonModule.АвтоматизированнаяПроверкаКодаСлужебный.ЗагрузитьОшибкиАПКОбработчикЗадания</methodName>
+  <description>Загрузка ошибок АПК</description>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

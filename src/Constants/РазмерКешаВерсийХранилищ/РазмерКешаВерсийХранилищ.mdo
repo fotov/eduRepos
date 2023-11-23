@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1530d06b-0201-4862-9ddd-318af7eeb9a7">
+  <producedTypes>
+    <managerType typeId="671fa3a4-8d49-418c-a293-1ee509111b29" valueTypeId="8e89965b-d515-49f8-a4a5-98c31d9f7af1"/>
+    <valueManagerType typeId="514e0a52-54ea-4ad3-9033-f5e903e7f0fb" valueTypeId="c772581c-8487-4e46-99cf-3ddafe7e2275"/>
+    <valueKeyType typeId="8b24d1c5-024b-4f94-b24e-7bc688d27f78" valueTypeId="aad8db44-8739-4d0a-830d-1b1523b8f61e"/>
+  </producedTypes>
+  <name>РазмерКешаВерсийХранилищ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Размер кеша версий хранилищ, Гб</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>2</precision>
+      <nonNegative>true</nonNegative>
+    </numberQualifiers>
+  </type>
+  <explanation>
+    <key>ru</key>
+    <value>Размер дискового пространства в гигабайтах</value>
+  </explanation>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

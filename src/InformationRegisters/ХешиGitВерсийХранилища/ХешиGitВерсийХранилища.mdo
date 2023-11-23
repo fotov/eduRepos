@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c144e535-13e2-41e5-9e67-780af50a7499">
+  <producedTypes>
+    <selectionType typeId="ec203bd1-d225-434b-86a8-8f6aa6e9d6e7" valueTypeId="771e0bc6-e0b7-45c1-ae1a-688b7a2e1983"/>
+    <listType typeId="a7e6e892-7f8f-4141-a596-75edb7c7da33" valueTypeId="19323b09-3fcb-4bdd-8c3f-ba8f0244639d"/>
+    <managerType typeId="b7c25e10-4197-466d-8516-78b277d4fcec" valueTypeId="9562c7b1-d9db-4177-8a89-d75d6f5ba945"/>
+    <recordSetType typeId="6446f781-9239-4262-b79b-5e823373f9fe" valueTypeId="11bec1fa-266d-4e30-9cec-133ff25a326e"/>
+    <recordKeyType typeId="d5535590-505b-4221-83d8-7f1f9eacc18b" valueTypeId="26be10d2-710f-4e2c-b279-bc4be4a25441"/>
+    <recordType typeId="9c0b6c75-a6e5-4bd6-92dd-ba2ae84d9287" valueTypeId="5b53f1cc-22ee-412c-8e70-136cd47162c2"/>
+    <recordManagerType typeId="1bfe839c-f233-49dd-b05c-23c4262d19a7" valueTypeId="61fe0172-32d3-4a2b-bb48-3f2f624ac898"/>
+  </producedTypes>
+  <name>ХешиGitВерсийХранилища</name>
+  <synonym>
+    <key>ru</key>
+    <value>Хеши git версий хранилища</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="8fdb4294-551c-4ea8-9164-7ca2d6a64631">
+    <name>Хеш</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хеш</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>40</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="c482a513-50c6-41ec-bba7-8a1580d495fe">
+    <name>ВерсияХранилища</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия хранилища</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИсторияХранилища</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

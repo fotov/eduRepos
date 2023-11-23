@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="32837e35-fadd-447f-b64f-72068b556650">
+  <name>КонтрольВерсий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контроль версий</value>
+  </synonym>
+  <comment>Объекты, механизмы работы с GIT</comment>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>CommonModule.АвтоматизированнаяПроверкаКодаСлужебный</content>
+  <content>InformationRegister.ОчередьУведомленийСинтаксическойПроверки</content>
+  <content>Enum.СтатусыОперацийУведомлений</content>
+  <content>Constant.КаталогРепозиториевСравненияИзменений</content>
+  <content>InformationRegister.ХешиГитСравненияИзменений</content>
+  <content>InformationRegister.ОчередьСозданияВетокГитПоЗадаче</content>
+  <content>InformationRegister.ЗахваченныеОбъектыХранилищ</content>
+  <content>ScheduledJob.ЗагрузкаЗахваченныхОбъектовХранилищ</content>
+  <content>Report.ЗахваченныеОбъектыХранилищ</content>
+  <content>InformationRegister.ЗахваченныеОбъектыХранилищОтправленныеУведомления</content>
+  <content>ScheduledJob.ФормированиеУведомленийПоЗахваченнымОбъектамХранилищ</content>
+  <subsystems>GIT</subsystems>
+  <subsystems>Хранилища</subsystems>
+  <parentSubsystem>Subsystem.НепрерывнаяИнтеграция</parentSubsystem>
+</mdclass:Subsystem>

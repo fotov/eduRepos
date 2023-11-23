@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4dc84154-bcdb-4224-a358-b4ced975017f">
+  <producedTypes>
+    <selectionType typeId="53152cb1-557b-4dca-a77e-e8b9987d5a71" valueTypeId="01f69b55-ec5b-4614-82fb-8200e4c9857c"/>
+    <listType typeId="ea309b0f-bef0-416a-bfce-2e82929fb3c5" valueTypeId="28fc4f32-67ce-4f56-a90a-2640cf0e31f6"/>
+    <managerType typeId="81055857-62fd-447f-aa67-28e462a7811f" valueTypeId="e9427027-be11-4729-bcff-7aa9324fe090"/>
+    <recordSetType typeId="f94548af-9d2c-4d35-9e90-56b654e82d18" valueTypeId="39cd6267-cbae-4353-a22b-040ea263aeee"/>
+    <recordKeyType typeId="132e0acd-649d-466c-a241-a9b9b898f44c" valueTypeId="9e280b90-c95c-4f96-a429-d737493caaed"/>
+    <recordType typeId="478a1b2a-60d0-4792-884c-1a2082a05b5d" valueTypeId="932e2ac2-eeca-453b-bac3-02e18bb04865"/>
+    <recordManagerType typeId="de0bfa8e-2faf-4b7c-8fee-433861b98079" valueTypeId="606ad192-7d89-4a21-8283-8a866f45acc3"/>
+  </producedTypes>
+  <name>ЗадачиМетеорВерсийХранилища</name>
+  <synonym>
+    <key>ru</key>
+    <value>Задачи метеор версий хранилища</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="79d85ecb-3c41-4cda-b3c5-2685d1bb5dbe">
+    <name>ЗадачаМетеор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача метеор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЗадачиМетеор</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>Index</indexing>
+  </resources>
+  <dimensions uuid="d5e46c53-0278-4402-a66c-2792fb3a5288">
+    <name>ВерсияХранилища</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия хранилища</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИсторияХранилища</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

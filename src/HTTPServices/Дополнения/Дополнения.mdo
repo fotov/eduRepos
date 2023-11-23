@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="74aa6f1c-418f-4900-8f48-9b99198cf8ba">
+  <name>Дополнения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дополнения</value>
+  </synonym>
+  <rootURL>additions</rootURL>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="1fd77328-e22d-4c52-9545-5c42acaea109">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <comment>Получение состояния Расширений</comment>
+    <template>/info</template>
+    <methods uuid="f8214ed6-20cc-4db7-86b4-6112ce011efe">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>СостояниеДополненийGETЗапрос</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="081c47dc-4ce8-4b6c-9361-67aa78601ac6">
+    <name>Данные</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные</value>
+    </synonym>
+    <template>/data</template>
+    <methods uuid="373fb1d6-c740-410c-a73d-61c6f3d24b41">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>ДанныеДополненийGETЗапрос</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="e6184a03-c741-4fa7-9dd9-07cf3640c8a5">
+    <name>Удаление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удаление</value>
+    </synonym>
+    <template>/delete</template>
+    <methods uuid="3b64738f-f2fc-4e9a-ba82-5490bc69e29b">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>УдалениеДополненийPOSTЗапрос</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="059507c6-f6d7-4db3-b94c-755b055b53e2">
+    <name>ИзменениеПараметров</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменение параметров</value>
+    </synonym>
+    <template>/params_change</template>
+    <methods uuid="14e2b2ff-9d20-46d0-99f1-2ae0c30b3b62">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>ИзменениеПараметровPOSTЗапрос</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="9297e907-c886-4348-9ee2-84f33515466e">
+    <name>Установка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Установка</value>
+    </synonym>
+    <template>/install</template>
+    <methods uuid="2c269434-c6a5-4430-a0ea-c727685e2395">
+      <name>POST</name>
+      <synonym>
+        <key>ru</key>
+        <value>POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>УстановкаPOST</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="4c1ac7b3-3b98-4dc1-8f6a-3ce6c77042db">
+    <name>Версия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия</value>
+    </synonym>
+    <template>/*</template>
+    <methods uuid="0b52af2d-6157-44f4-835a-f3dc59f01026">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>ВерсияGET</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="16ba7aa0-36a3-4f43-930a-f70402381479">
+    <name>ДанныеСписком</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные списком</value>
+    </synonym>
+    <template>/data_list</template>
+    <methods uuid="bf72efa9-78d6-440e-8616-f4cfd5e20e05">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>ДанныеДополненийСпискомGETЗапрос</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

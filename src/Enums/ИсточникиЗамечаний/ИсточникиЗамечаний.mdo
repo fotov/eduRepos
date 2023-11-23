@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3b26a776-1fe6-4fcf-8bba-b1e9839a8f2f">
+  <producedTypes>
+    <refType typeId="9f60363c-ad02-4339-b419-a20941ab71a3" valueTypeId="7386b227-04ba-43b4-b56e-c2865652f91a"/>
+    <listType typeId="d49bb6b9-00b9-4aab-8970-69c00efc9356" valueTypeId="fc88a705-770f-4f05-8d15-407828dcc4c5"/>
+    <managerType typeId="717a29b8-ec51-4712-911b-46150bb3921a" valueTypeId="6109444a-305e-4a46-95fc-55027979cb35"/>
+  </producedTypes>
+  <name>ИсточникиЗамечаний</name>
+  <synonym>
+    <key>ru</key>
+    <value>Источники замечаний</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="9f4fdc5f-4190-463f-8ac0-07dae45ce53e">
+    <name>ПроверкаКода</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверка кода</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9266d9b9-307f-4061-849c-030261ee8351">
+    <name>Тестирование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тестирование</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

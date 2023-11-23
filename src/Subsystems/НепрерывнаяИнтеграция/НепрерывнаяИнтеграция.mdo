@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7374e05a-4d20-4a41-a7b6-b8e8fff10a0d">
+  <name>НепрерывнаяИнтеграция</name>
+  <synonym>
+    <key>ru</key>
+    <value>Непрерывная интеграция</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.РазделНепрерывнаяИнтеграция</picture>
+  </picture>
+  <content>CommonModule.РаботаСФормамиКлиент</content>
+  <content>CommonModule.РаботаСФормамиСервер</content>
+  <content>CommonModule.ВнешниеДанные</content>
+  <content>CommonCommand.ПанельОтчетовНепрерывнаяИнтеграция</content>
+  <content>CommonPicture.РазделНепрерывнаяИнтеграция</content>
+  <content>Role.РазделНепрерывнаяИнтеграция</content>
+  <content>CommonModule.АвтоматизированнаяПроверкаКода</content>
+  <content>Role.ДобавлениеИзменениеПредварительнаяПроверка</content>
+  <content>Role.ДобавлениеИзменениеПройденныеТесты</content>
+  <content>Role.ДобавлениеИзменениеСломанныеТесты</content>
+  <content>Role.ЧтениеПредварительнаяПроверка</content>
+  <content>Role.ЧтениеСогласованиеПереноса</content>
+  <content>ScheduledJob.ВыполнениеОпросаАвтотестов</content>
+  <content>ScheduledJob.ЗагрузкаЗадачМетеор</content>
+  <content>ScheduledJob.ЗагрузкаОшибокАПК</content>
+  <content>ScheduledJob.ЗагрузкаДанныхИзGit</content>
+  <content>ScheduledJob.ОбновлениеИсторииХранилищАПК</content>
+  <content>ScheduledJob.ОбновлениеИсторииХранилищ</content>
+  <content>Constant.АдресСервераЦКК</content>
+  <content>CommonModule.СинтаксическаяПроверкаBSLLS</content>
+  <content>CommonModule.ИнтеграцияСИтилиум</content>
+  <content>Constant.АдресСервераИтилиум</content>
+  <content>CommonModule.ИнтеграцияСМетеор</content>
+  <content>Report.АнализСинтаксическойПроверки</content>
+  <content>InformationRegister.СледующиеЭтапыЗадачиПоТочкеМаршрута</content>
+  <content>Constant.Путь_oscript2</content>
+  <content>Constant.ПутьСкрипта_ВыгрузкиВФайлы</content>
+  <content>ScheduledJob.ОбработкаЭтаповЗадачМетеор</content>
+  <content>ScheduledJob.ОтправкаУведомленийСинтаксическойПроверки</content>
+  <content>CommonModule.ИнтеграцияССППР</content>
+  <content>Enum.СтатусыОперацийОбработкиОчереди</content>
+  <content>ScheduledJob.СозданиеВетокГитПоЗадаче</content>
+  <content>Report.КонтрольЭтаповЗадачМетеор</content>
+  <content>ScheduledJob.ЗагрузкаИсторииЭтаповЗадачМетеор</content>
+  <content>DataProcessor.ЗагрузкаИсторииЭтаповЗадачМетеор</content>
+  <subsystems>Инфраструктура</subsystems>
+  <subsystems>КонтрольВерсий</subsystems>
+  <subsystems>ПереносИзменений</subsystems>
+</mdclass:Subsystem>

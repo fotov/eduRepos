@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="43fbf7a9-94db-4cfe-a66e-f2c72e051f41">
+  <producedTypes>
+    <objectType typeId="019b4afc-689c-41ed-bf3e-2d6cedef2b80" valueTypeId="aaf6a96b-792e-43b5-826f-e7c474582550"/>
+    <managerType typeId="ed2c9f55-b310-423a-b1e2-33ee7b0edfb4" valueTypeId="33e8388e-f98c-4d34-80f0-12498735b63e"/>
+  </producedTypes>
+  <name>СведенияОДополнениях</name>
+  <synonym>
+    <key>ru</key>
+    <value>Сведения о дополнениях</value>
+  </synonym>
+  <mainDataCompositionSchema>Report.СведенияОДополнениях.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="b73ff44c-ccd0-4383-8261-5e926e9ef283">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

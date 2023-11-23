@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1fbf59f2-1f96-46ff-b036-d1964324763c">
+  <name>РазделНепрерывнаяИнтеграция</name>
+  <synonym>
+    <key>ru</key>
+    <value>Раздел непрерывная интеграция</value>
+  </synonym>
+</mdclass:Role>

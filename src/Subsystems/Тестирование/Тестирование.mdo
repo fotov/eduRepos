@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3d3b0a51-2c4a-487f-9668-3ed8b27fb215">
+  <name>Тестирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тестирование</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.РазделТестирование</picture>
+  </picture>
+  <content>InformationRegister.ПройденныеТесты</content>
+  <content>InformationRegister.СломанныеТесты</content>
+  <content>ScheduledJob.ПерезапускПодготовкиТестовыхБаз</content>
+  <content>CommonCommand.ПанельОтчетовТестирование</content>
+  <content>CommonPicture.РазделТестирование</content>
+  <content>Role.РазделТестирование</content>
+  <content>BusinessProcess.ПодготовкаСредыДляИнтеграционныхТестов</content>
+  <content>BusinessProcess.КонвейерОбработки</content>
+  <content>Catalog.Тесты</content>
+  <content>BusinessProcess.ПодготовкаТестовойБазы</content>
+  <content>InformationRegister.НастройкиБазИнтеграционныхТестов</content>
+  <content>Constant.ПроектПодготовкаСредыДляИнтеграционныхТестов</content>
+  <content>ScheduledJob.ЗапускИнтеграционныхТестов</content>
+  <content>Role.ЧтениеТесты</content>
+  <content>Role.ДобавлениеИзменениеНастройкиБазИнтеграционныхТестов</content>
+  <content>Role.ЧтениеПройденныеТесты</content>
+  <content>Role.ДобавлениеИзменениеКонвейерОбработки</content>
+  <content>Role.ДобавлениеИзменениеПодготовкаСредыДляИнтеграционныхТестов</content>
+  <content>Role.ДобавлениеИзменениеПодготовкаТестовойБазы</content>
+  <content>Report.ТестированиеКонвейеров</content>
+</mdclass:Subsystem>

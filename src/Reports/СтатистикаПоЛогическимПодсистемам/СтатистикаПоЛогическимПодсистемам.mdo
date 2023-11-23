@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ef8160b2-b9c6-4df6-8f90-f8a8f6f168b4">
+  <producedTypes>
+    <objectType typeId="c4679513-6bc5-42fb-b7ed-ca87191e930e" valueTypeId="2b39fd54-93d9-4ce8-b8ee-828c60dd10f4"/>
+    <managerType typeId="4c0f249b-f868-46a1-8edf-e04d28b3aea7" valueTypeId="f87f5926-274a-4342-a148-c4dadf06689a"/>
+  </producedTypes>
+  <name>СтатистикаПоЛогическимПодсистемам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Статистика по логическим подсистемам</value>
+  </synonym>
+  <defaultForm>CommonForm.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.СтатистикаПоЛогическимПодсистемам.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>CommonForm.ФормаВариантаОтчета</defaultVariantForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="8c0015dd-83f1-4cbb-82f9-de44b7d492e0">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

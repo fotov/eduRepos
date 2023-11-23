@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="48a90709-6155-4039-90a7-0aeabc68781e">
+  <name>Интеграция</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интеграция</value>
+  </synonym>
+  <comment>Объекты, которые необходимо встроить в обслуживаемые конфигурации</comment>
+  <includeHelpInContents>true</includeHelpInContents>
+  <explanation>
+    <key>ru</key>
+    <value>Объекты, которые необходимо встроить в обслуживаемые конфигурации</value>
+  </explanation>
+  <content>Role.ИспользованиеСервисаДополнений</content>
+  <content>Role.АдминистрированиеРасширений</content>
+  <content>HTTPService.Дополнения</content>
+  <content>CommonModule.РаботаСДополнениямиИнтеграция</content>
+  <content>Constant.АдресСервисаСервераДополнений</content>
+  <content>DataProcessor.РаботаСДополнениямиИнтеграция</content>
+  <content>Constant.ИдентификаторКлиентаДополнений</content>
+  <content>Role.БазовыеПраваДополненияИнтеграция</content>
+  <content>CommonModule.РаботаСДополнениямиИнтеграцияКлиентСервер</content>
+  <parentSubsystem>Subsystem.Дополнения</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ec245f6e-ff9f-4125-a7f7-906b23cdf643">
+  <name>КонтрольЗаписиРабочихДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Контроль записи рабочих данных</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>InformationRegister.ИсторияЗаписиРабочихДанных</content>
+  <content>ScheduledJob.ЗагрузкаИсторииЗаписиРабочихДанных</content>
+  <content>Report.КонтрольЗаписиРабочихДанных</content>
+  <parentSubsystem>Subsystem.КачествоИМетрики</parentSubsystem>
+</mdclass:Subsystem>

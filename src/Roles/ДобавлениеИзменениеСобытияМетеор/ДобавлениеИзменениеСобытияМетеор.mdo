@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="223ab92c-1481-41b9-bdad-31ae62172dc2">
+  <name>ДобавлениеИзменениеСобытияМетеор</name>
+  <synonym>
+    <key>ru</key>
+    <value>Добавление изменение события метеор</value>
+  </synonym>
+</mdclass:Role>

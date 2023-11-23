@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7936917c-7695-49ca-8641-8a6e54940504">
+  <producedTypes>
+    <selectionType typeId="9aa258c4-3e32-48ab-a11e-fe891933df15" valueTypeId="d736e71e-65cb-45bb-9035-a6dc6806d624"/>
+    <listType typeId="ee851622-7243-4bdc-8686-8b5c7641ba52" valueTypeId="fb816ebf-c696-4aac-b5cb-11c5f4e3a3ec"/>
+    <managerType typeId="49dd8174-5333-4ebb-b3c1-124baf952456" valueTypeId="d5ed2b58-27b9-42e2-8fb4-8e945244d49f"/>
+    <recordSetType typeId="ece55268-50c6-4c5c-a6e6-d110ad2cf33e" valueTypeId="21f686da-79f1-4c3f-a62c-d2650b198d20"/>
+    <recordKeyType typeId="74acd6b8-9b5d-4db0-842d-9febe554b35f" valueTypeId="eabcac06-d1b4-4e21-a311-9e09a4bb9c16"/>
+    <recordType typeId="817ca365-f414-4c34-992c-a6c7d33537f1" valueTypeId="eed25585-1b96-4345-8d76-01be1083a95d"/>
+    <recordManagerType typeId="603dc84f-f8c5-4045-b292-9aa089e3ba11" valueTypeId="5164132d-4f2d-4502-a137-0565caed3340"/>
+  </producedTypes>
+  <name>ОчередьВыгрузкиДополнений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очередь выгрузки дополнений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.ОчередьВыгрузкиДополнений.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.ОчередьВыгрузкиДополнений.Form.ФормаСписка</defaultListForm>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="21832cb1-72fe-4fb1-a175-33f76b3f3e32">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыВыгрузкиДополнений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="aa30d893-42a0-4246-82a3-3adceca72e98">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="bfbdf829-3bf7-4cdf-9103-c3f862517ae0">
+    <name>ВерсияДополнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия дополнения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВерсииДополнений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="3f161729-3315-4168-a096-3837f968fefd">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="8aa22c3e-9682-48ef-989f-da8d572e6c48">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

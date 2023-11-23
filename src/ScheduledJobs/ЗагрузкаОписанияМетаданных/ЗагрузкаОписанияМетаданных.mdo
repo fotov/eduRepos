@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="348988c0-db04-4f43-a6e9-23c0698ceb4c">
+  <name>ЗагрузкаОписанияМетаданных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка описания метаданных</value>
+  </synonym>
+  <methodName>CommonModule.ЗагрузкаМетаданныхСлужебный.ЗагрузитьМетаданныеОбработчикЗадания</methodName>
+  <description>Загрузка описания метаданных</description>
+  <key>ЗагрузкаОписанияМетаданных</key>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

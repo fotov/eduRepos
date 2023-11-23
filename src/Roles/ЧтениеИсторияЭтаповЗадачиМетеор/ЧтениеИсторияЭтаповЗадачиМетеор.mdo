@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a2a4a4f7-181d-4076-8bb7-df276e4d221b">
+  <name>ЧтениеИсторияЭтаповЗадачиМетеор</name>
+  <synonym>
+    <key>ru</key>
+    <value>Чтение история этапов задачи метеор</value>
+  </synonym>
+</mdclass:Role>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="456f2b4f-7135-47bd-9f48-979d22494dc4">
+  <producedTypes>
+    <objectType typeId="e3b6eaac-e10e-4c03-aaf7-c8dbc22cd633" valueTypeId="26d13f2b-774b-45a7-aedf-b1c3bbea6551"/>
+    <refType typeId="ab879d10-1f84-4118-afd5-ef8d436dd90d" valueTypeId="3a335214-1cb5-4cf9-8c0c-0f095952bbbf"/>
+    <selectionType typeId="a9a4c12e-58a0-4254-941d-2aa3fc570c9d" valueTypeId="2c364cc2-c88e-4dca-85e0-019cc1156f49"/>
+    <listType typeId="574104fa-f5ba-4583-a330-ca3bfaec8da5" valueTypeId="701628ac-3a58-4d49-82d0-6846715c943f"/>
+    <managerType typeId="9d2108e2-5e7e-40ec-a5b9-d6a5e583830f" valueTypeId="31617292-b363-4f25-bdd5-6706fb9294a4"/>
+  </producedTypes>
+  <name>ВидыВыборочнойПроверки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды выборочной проверки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВидыВыборочнойПроверки.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>25</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="5fe125d6-d3d1-4c6f-acad-c178cc9c3202">
+      <name>ПроверкаДокументации</name>
+      <description>Проверка документации</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="5c258c53-7c16-49fe-a434-10b6cdad8e3d">
+      <name>ПроверкаКачестваКода</name>
+      <description>Проверка качества кода</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="0238ba04-be8b-48c8-bd5e-cd3de7461774">
+      <name>ПроверкаТрудозатрат</name>
+      <description>Проверка трудозатрат</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

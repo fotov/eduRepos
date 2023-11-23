@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4369d6c0-a59c-4732-b2b9-1f11bbfad727">
+  <producedTypes>
+    <managerType typeId="9509108e-039b-4242-a03a-76a90af42d83" valueTypeId="3046c098-c835-49ff-b635-2c5e6c43b0f4"/>
+    <valueManagerType typeId="5419882b-ef99-4c2a-ae44-4e88860ea929" valueTypeId="1107e4df-8488-4b28-9e0b-35b150919fdb"/>
+    <valueKeyType typeId="ed3b8e65-e1b3-4d16-9e79-762cef9c583d" valueTypeId="a94def78-405f-47ac-b085-3e469c7b8e3a"/>
+  </producedTypes>
+  <name>ПутьСкрипта_getRepoHistory</name>
+  <synonym>
+    <key>ru</key>
+    <value>Путь скрипта getRepoHistory</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

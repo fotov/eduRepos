@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ca4f29e7-4694-46ba-ac59-6ba8ad1c1496">
+  <name>УправлениеПользователями</name>
+  <synonym>
+    <key>ru</key>
+    <value>Управление пользователями</value>
+  </synonym>
+  <rootURL>UserManagement</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="0ee26883-b3fb-4eb7-9911-150d57e472df">
+    <name>Версия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия</value>
+    </synonym>
+    <template>/*</template>
+    <methods uuid="7a557be9-97b7-4e9b-8433-ca1767fb401c">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>ВерсияGET</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="b73e384e-1901-4a63-8307-540fcebbabe4">
+    <name>СписокПользователейСПравом</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список пользователей с правом</value>
+    </synonym>
+    <template>/UserList/{Право}</template>
+    <methods uuid="46f299d7-0c04-4f98-a03f-bb0db3525aff">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>СписокПользователейСПравомGETЗапрос</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

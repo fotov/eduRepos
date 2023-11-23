@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dcedd31c-3bce-4be8-be83-42f17d9a2915">
+  <name>СозданиеВетокГитПоЗадаче</name>
+  <synonym>
+    <key>ru</key>
+    <value>Создание веток гит по задаче</value>
+  </synonym>
+  <methodName>CommonModule.РаботаСGITСлужебный.СозданиеВетокГитПоЗадачеОбработчикЗадания</methodName>
+  <description>Создание веток гит по задаче</description>
+  <key>СозданиеВетокГитПоЗадаче</key>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

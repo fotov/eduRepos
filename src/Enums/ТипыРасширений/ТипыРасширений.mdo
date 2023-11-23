@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="89028fd5-0931-4bc7-af0f-37c96f983ffd">
+  <producedTypes>
+    <refType typeId="c1c95e9a-7d34-42fa-922f-04317e0e2a3d" valueTypeId="771611a1-d0e7-417f-8905-5d863d90b1f0"/>
+    <listType typeId="c2672488-4426-460a-bfdf-95e925f398b3" valueTypeId="fb8b4038-0a9e-4182-8ce9-4ade82a711f2"/>
+    <managerType typeId="d7420a29-5510-4b97-94f9-146d421bb4a2" valueTypeId="2996eba0-a300-40e8-ad96-60e3f5effc01"/>
+  </producedTypes>
+  <name>ТипыРасширений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы расширений</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="50450c47-4256-4563-b41c-da8f37e9c0b4">
+    <name>Исправление</name>
+    <synonym>
+      <key>ru</key>
+      <value>Исправление</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="8f63e7b6-222b-43a3-8604-718b3c4415fd">
+    <name>Доработка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доработка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="4bd3110f-e1ca-4b23-9c0c-cde85e679abd">
+    <name>ТестированиеНаПроде</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тестирование на проде</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7d28b3c7-2a49-415b-a100-1c16cbd27ff9">
+  <producedTypes>
+    <managerType typeId="8e605a39-ac37-49d1-838c-0ac61bb70547" valueTypeId="71a77618-ed74-4602-b201-02a2270a6d7d"/>
+    <valueManagerType typeId="aaec2a17-47de-4eb9-938c-97bf061d4a6f" valueTypeId="1f80c020-8a11-4cba-9a55-240d04f29120"/>
+    <valueKeyType typeId="136167bd-bd31-4470-8b30-86f0267a0850" valueTypeId="b4288ebb-1c80-4bd1-a845-509acb18da7b"/>
+  </producedTypes>
+  <name>КодировкаПотоковРаботаСGit</name>
+  <synonym>
+    <key>ru</key>
+    <value>Кодировка потоков работа с git</value>
+  </synonym>
+  <comment>Кодировка, устанавливаемая по умолчанию</comment>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>25</length>
+    </stringQualifiers>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c10892c9-4a9d-4c51-9f46-a77685936bfb">
+  <producedTypes>
+    <managerType typeId="82f03108-d004-41e2-86ca-3f40597b8e1c" valueTypeId="3d1fa23b-6630-4a9d-a5b4-5a0bf0eac6a9"/>
+    <valueManagerType typeId="a4a27840-8511-4edc-ba84-903cc47ac516" valueTypeId="980a18b0-7034-409b-a8d6-f71938dd80fb"/>
+    <valueKeyType typeId="64ebb06b-5126-4301-918d-7157481ec59b" valueTypeId="74581ae2-65f1-4616-8629-00391bcb618d"/>
+  </producedTypes>
+  <name>ТаймаутРаботаСGIT</name>
+  <synonym>
+    <key>ru</key>
+    <value>Таймаут работа С GIT</value>
+  </synonym>
+  <comment>Таймаут в секундах</comment>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>10</precision>
+    </numberQualifiers>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

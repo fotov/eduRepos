@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8c6bc19c-de87-42b8-a328-4e4b8f606a01">
+  <producedTypes>
+    <objectType typeId="68a72b70-1f5f-46cb-8d2e-2f2c9e4a0443" valueTypeId="fa234968-cae2-48a3-b610-ae1cf8f9fc07"/>
+    <refType typeId="05e1fb4c-388a-4ed3-b40f-250e026e8c1a" valueTypeId="8bd4cc33-e1fa-4e10-826d-dbea6b571a06"/>
+    <selectionType typeId="f86d4565-bdf7-4fcf-8394-2af138d6db9e" valueTypeId="ef9bfe05-4c5c-4b20-bc0e-3b758f3130e9"/>
+    <listType typeId="8825119c-1fe1-4134-9767-981ce6d4d1e4" valueTypeId="dc048d6f-8ff0-4c0e-bc8b-c57ea738bc9e"/>
+    <managerType typeId="e01fc31f-8a87-4ddd-9058-b257ace6f05e" valueTypeId="441e6494-a782-4bdd-b3de-f4d9b3a0dbf0"/>
+  </producedTypes>
+  <name>СтандартыРазработки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Стандарты разработки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.СтандартыРазработки.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Стандарт разработки</value>
+  </objectPresentation>
+  <dataHistory>Use</dataHistory>
+  <hierarchical>true</hierarchical>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="fb5b2022-9235-44a9-b3b3-0ec277536d16">
+      <name>Стандарты1С</name>
+      <description>Стандарты 1С</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+      <isFolder>true</isFolder>
+    </items>
+    <items id="207af0be-b869-495d-a3a0-5fd450b63d36">
+      <name>ВнутренниеСтандартыАвтомакон</name>
+      <description>Внутренние стандарты Автомакон</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+      <isFolder>true</isFolder>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.СтандартыРазработки.Form.ФормаЭлемента</defaultObjectForm>
+  <defaultListForm>Catalog.СтандартыРазработки.Form.ФормаСписка</defaultListForm>
+  <defaultChoiceForm>Catalog.СтандартыРазработки.Form.ФормаВыбора</defaultChoiceForm>
+  <attributes uuid="cd7bb323-54c4-4bf1-a8b5-3e4896c1cfce">
+    <name>Содержание</name>
+    <synonym>
+      <key>ru</key>
+      <value>Содержание</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <extendedEdit>true</extendedEdit>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="edcfac0e-15be-49d7-869f-4239e15aa743">
+    <name>ТекстСтандарта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст стандарта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <extendedEdit>true</extendedEdit>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="efed5625-648c-45be-8552-7f5cc61b2d22">
+    <name>КодСтандарта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код стандарта</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>4</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4a42ad89-ab2e-4906-a6eb-ea9f13beeeb6">
+    <name>РеквизитДопУпорядочивания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Порядок</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <indexing>IndexWithAdditionalOrder</indexing>
+    <fullTextSearch>Use</fullTextSearch>
+    <use>ForFolderAndItem</use>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="fbb974dd-4a61-4038-aea3-c61d551cb138">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="b15c5df0-c709-4a7a-a8ac-5a473802f03b">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="76e3f9a7-9c76-4acd-89f6-3eb6fcbc3d30">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <commands uuid="df135b38-c7ac-4035-a0a4-1945ef2236ba">
+    <name>ЗагрузитьСтандарты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Загрузить стандарты</value>
+    </synonym>
+    <group>ActionsPanelTools</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:Catalog>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="023c1e77-1f30-4580-a108-e7490c2bf89c">
+  <producedTypes>
+    <objectType typeId="1caf017f-9cd3-4d76-bf4d-5e69f05e9a32" valueTypeId="5135b91b-6efc-4f06-a5fa-e15aafde60ac"/>
+    <managerType typeId="11715c93-b560-4515-a7fb-b62a103c8df2" valueTypeId="230e74ef-0817-4556-9a00-12394b5f5b3d"/>
+  </producedTypes>
+  <name>РаботаСДополнениямиИнтеграция</name>
+  <synonym>
+    <key>ru</key>
+    <value>Работа с дополнениями интеграция</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <forms uuid="5e506436-e841-4e80-9a7b-3cb4cb95fcda">
+    <name>ФормаПолученияДополнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма получения дополнения</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a5e45918-16f1-44e3-928c-45ef8f3c6389">
+    <name>ФормаПолученияДополненияОбычная</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма получения дополнения обычная</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

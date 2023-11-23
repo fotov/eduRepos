@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0468533e-b69e-4ba4-ac5c-1ba6596d903a">
+  <name>ОчисткаКешаИсторииХранилища</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очистка кеша истории хранилища</value>
+  </synonym>
+  <methodName>CommonModule.КешВерсийХранилищСлужебный.ОчиститьУстаревшиеВерсииКешаИсторииХранилищаОбработчикЗадания</methodName>
+  <description>Очистка кеша истории хранилища</description>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

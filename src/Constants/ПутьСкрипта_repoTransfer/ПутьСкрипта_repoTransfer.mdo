@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f4fa2b1a-0039-4ab4-8f3b-b075b88025e7">
+  <producedTypes>
+    <managerType typeId="b0d4db13-2fad-4e73-9042-3694af8d7255" valueTypeId="556af754-48b9-45e2-9db3-6d7bd66675e5"/>
+    <valueManagerType typeId="a2367e27-44a6-42db-834b-ae33f9543a94" valueTypeId="ed5cf8dd-0339-4c7e-95a1-70f626bc1fcd"/>
+    <valueKeyType typeId="9cf3025c-9971-44e9-b76e-53e146f3da57" valueTypeId="ec046dc8-1c07-4264-9e4e-14503a6eb1ec"/>
+  </producedTypes>
+  <name>ПутьСкрипта_repoTransfer</name>
+  <synonym>
+    <key>ru</key>
+    <value>Путь скрипта repoTransfer</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

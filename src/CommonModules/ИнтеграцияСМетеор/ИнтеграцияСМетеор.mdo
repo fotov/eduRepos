@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="141f0b55-3f92-4983-9ab2-2a690abe5b4d">
+  <name>ИнтеграцияСМетеор</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интеграция с метеор</value>
+  </synonym>
+  <server>true</server>
+</mdclass:CommonModule>

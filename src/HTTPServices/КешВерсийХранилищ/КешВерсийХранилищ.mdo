@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="83aa84ba-7cab-42ef-a077-22f615b3fb0b">
+  <name>КешВерсийХранилищ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Кеш версий хранилищ</value>
+  </synonym>
+  <rootURL>сonfig_сache</rootURL>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="28414844-8d7b-4e7f-b1cd-144f36c58091">
+    <name>Версия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия</value>
+    </synonym>
+    <template>/*</template>
+    <methods uuid="1ffe7d06-9370-45be-8bd5-6767807374f9">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>ВерсияGET</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="a5811b2d-113c-4eca-ae91-539da7337718">
+    <name>ПолучениеФайлаВерсии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получение файла версии</value>
+    </synonym>
+    <template>/get</template>
+    <methods uuid="8fcede65-20a8-407e-a745-3ae769ac4378">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>ПолучениеФайлаВерсииGET</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

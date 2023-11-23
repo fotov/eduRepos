@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="44d24d43-929e-4da9-88b2-66bba06f36ef">
+  <producedTypes>
+    <selectionType typeId="a857366a-7f2d-4981-958a-6188c22d0f60" valueTypeId="01b30f17-a31a-4124-aafa-c1ec3a46b02d"/>
+    <listType typeId="83f38837-783f-4c85-bc74-b67fe3b5ac65" valueTypeId="5c705383-d6e9-4401-bdf2-4b08d3ff0dbb"/>
+    <managerType typeId="87364f33-e35b-42d4-a65e-2672edc97e5e" valueTypeId="63d995a2-9559-47ec-99da-08f1402ade7d"/>
+    <recordSetType typeId="206021b4-ad10-4bbb-ad82-df83241979de" valueTypeId="a202110b-214b-42ae-8414-dcf16c8f0ebf"/>
+    <recordKeyType typeId="0621f978-3142-4eb1-9999-4eb3249f2f98" valueTypeId="b37168ed-27b7-4bfd-bfa4-03af223b4e6f"/>
+    <recordType typeId="879bb743-18fa-4d08-a553-6ebb4f3f1ccb" valueTypeId="77a54aa4-a903-4195-afea-d5919689ea08"/>
+    <recordManagerType typeId="c384789f-a872-41ea-96a8-2b587fb8fad1" valueTypeId="79d8daea-e0af-4e52-8433-19c5aa55f33f"/>
+  </producedTypes>
+  <name>ПодпискиНаМониторинг</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подписки на мониторинг</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultListForm>InformationRegister.ПодпискиНаМониторинг.Form.ФормаСписка</defaultListForm>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="700449ca-718f-4c1a-8fee-36fdfb64127a">
+    <name>Пользователь</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ab51fe61-ab39-41db-8d1c-55823dfc3b6c">
+    <name>ВидМониторинга</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид мониторинга</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыМониторинга</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="7cb278c5-4686-4f17-a22c-81d940ba8805">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="450aae1d-5833-40ea-b5a7-8590fbb2579d">
+  <producedTypes>
+    <objectType typeId="69b7bc73-9f1c-4e3c-af98-4ce4f8236dff" valueTypeId="6b94345a-fea9-4908-be32-6ec9609bb709"/>
+    <refType typeId="2d62db5e-7f04-416c-b203-0b153ab7987a" valueTypeId="8a401def-05f0-45ee-a4c1-71e573f22193"/>
+    <selectionType typeId="addccd40-1992-4d81-8fec-6e3725dbc821" valueTypeId="382c7137-44fc-45ab-9c4d-b9336dfe4df4"/>
+    <listType typeId="12522b60-9c11-4133-8d29-9b777dbb4ee9" valueTypeId="40698b1e-160a-4ce7-b423-09558cb02bd0"/>
+    <managerType typeId="0b1d25cd-b4b2-499c-afd0-2cf5699cd9be" valueTypeId="2709225d-7803-4529-958e-736122f6d947"/>
+  </producedTypes>
+  <name>ТребованияДоработки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Требования доработки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ТребованияДоработки.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.ТребованияДоработки.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ТребованияДоработки.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="1fa0b2b7-fbc7-4c5e-a252-9df4cf3d3cdc">
+    <name>ЗадачаМетеор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача метеор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЗадачиМетеор</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="34a6b5da-4185-4175-889d-d6701a0e53c1">
+    <name>Процесс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процесс</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Процессы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="b9025c22-6152-43ba-a29a-f8859b5c23b0">
+    <producedTypes>
+      <objectType typeId="2f7a5050-1d12-4140-a933-4c385e36c2dd" valueTypeId="f0a869cc-510e-42bf-96d7-37c21287a6cd"/>
+      <rowType typeId="87854b07-3156-4fc3-bc10-5de93f2b200d" valueTypeId="8f837871-2061-4874-a829-5c16091104e6"/>
+    </producedTypes>
+    <name>ШагиПроцесса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаги процесса</value>
+    </synonym>
+    <attributes uuid="86745015-7cf0-42a3-91e8-f5446e668a4e">
+      <name>ШагПроцесса</name>
+      <synonym>
+        <key>ru</key>
+        <value>Шаг процесса</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ШагиПроцесса</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <choiceParameterLinks>
+        <name>Отбор.Владелец</name>
+        <field>Catalog.ТребованияДоработки.Attribute.Процесс</field>
+      </choiceParameterLinks>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="b0c0bc7d-99ef-4b32-bc0b-67d72bb7e1fb">
+    <producedTypes>
+      <objectType typeId="c1d6e265-6c62-4089-a054-809542571512" valueTypeId="02e7a8f0-9bfc-442b-8a5c-27f7d774ecb9"/>
+      <rowType typeId="dd50fcb6-e8a5-40a2-8879-5060657b41e9" valueTypeId="1ee7178b-f9bd-4ca9-b10d-191e9d76d128"/>
+    </producedTypes>
+    <name>Объекты</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объекты</value>
+    </synonym>
+    <attributes uuid="556f80ba-7309-44ef-b0d8-e0bfb7cfdd64">
+      <name>Объект</name>
+      <synonym>
+        <key>ru</key>
+        <value>Объект</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ОбъектыМетаданных</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="83bfb076-bdbe-4151-b8a1-9513cea5b2fa">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

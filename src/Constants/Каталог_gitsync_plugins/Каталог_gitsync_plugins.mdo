@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="111003a6-f0f7-4396-944b-3c4f6c3937e0">
+  <producedTypes>
+    <managerType typeId="44470026-11be-490e-a865-d63742d23bd8" valueTypeId="e9ef33f8-a218-4dd1-b88f-bdac403a0a0b"/>
+    <valueManagerType typeId="7f75fffd-1331-4790-8f5d-493916fab4b5" valueTypeId="a6500e17-1b75-45e1-bf50-2af01ff2c135"/>
+    <valueKeyType typeId="40864164-ef6c-4213-b4a1-ed29ea283bf4" valueTypeId="193e6478-c927-4ad5-a3ad-975dd2d4d22d"/>
+  </producedTypes>
+  <name>Каталог_gitsync_plugins</name>
+  <synonym>
+    <key>ru</key>
+    <value>Каталог gitsync plugins</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers/>
+  </type>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

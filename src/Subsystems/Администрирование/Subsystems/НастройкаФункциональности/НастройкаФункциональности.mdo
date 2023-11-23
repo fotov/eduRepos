@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3625433c-1724-442b-ab50-ab0e60b71fc6">
+  <name>НастройкаФункциональности</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройка функциональности</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <explanation>
+    <key>ru</key>
+    <value>Константы, настройки разделов</value>
+  </explanation>
+  <content>Constant.АдресЭлектроннойПочты</content>
+  <content>Constant.ИмяОтправителя</content>
+  <content>Constant.ИнцидентОткрыт_ЗависаниеИсторииХранилища</content>
+  <content>Constant.Каталог_gitsync_plugins</content>
+  <content>Constant.КаталогВременныхФайлов</content>
+  <content>Constant.ПарольЭлектроннойПочты</content>
+  <content>Constant.ПользовательИсходящейПочты</content>
+  <content>Constant.ПортSMTP</content>
+  <content>Constant.Путь_oscript</content>
+  <content>Constant.ПутьСкрипта_getRepoHistory</content>
+  <content>Constant.ПутьСкрипта_gitsync</content>
+  <content>Constant.ПутьСкрипта_repoTransfer</content>
+  <content>Constant.ПутьСкрипта_setMark</content>
+  <content>Constant.СерверИсходящейПочтыSMTP</content>
+  <content>CommonForm.ФормаКонстант</content>
+  <content>InformationRegister.ЗначенияНастроекПрограммы</content>
+  <content>ChartOfCharacteristicTypes.НастройкиПрограммы</content>
+  <content>CommonModule.ВнешниеДанныеВызовСервераПовтИсп</content>
+  <parentSubsystem>Subsystem.Администрирование</parentSubsystem>
+</mdclass:Subsystem>

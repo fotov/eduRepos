@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="842eab36-7e5e-42e9-919d-1e88c31ed514">
+  <producedTypes>
+    <selectionType typeId="197c162e-7a7a-4741-9930-c0a7e88132dc" valueTypeId="b7b0edaa-f0b2-4489-b1f2-42592423e70f"/>
+    <listType typeId="fea1514e-3981-43ce-b0f9-f384a17797b5" valueTypeId="ebe323d3-9efd-48b8-aafb-849a1d774063"/>
+    <managerType typeId="07579793-0a2e-4186-be79-a15bf548249f" valueTypeId="4e929c31-9ce2-40b7-a948-879a374f0170"/>
+    <recordSetType typeId="2b2389d5-1869-4032-8854-a6c8f6b5b3d3" valueTypeId="575a7538-83c9-462e-ad1e-10eb415536bd"/>
+    <recordKeyType typeId="6de39021-29e3-4356-b655-ce96727ddbd7" valueTypeId="f5130e2b-ca87-4470-8f30-353211496388"/>
+    <recordType typeId="1d0d60dc-a365-4d17-8b10-fe6aae1f3f30" valueTypeId="40b49512-65ef-49af-bbc8-9136b86f4955"/>
+    <recordManagerType typeId="1473ab9d-5e6c-4380-ae18-42fff1f5bdc2" valueTypeId="cfd63363-88ae-4fd7-a1af-5a0400a58971"/>
+  </producedTypes>
+  <name>ВедущиеПоСотрудникам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ведущие по сотрудникам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="d97250c2-6dbf-4ed7-86a3-13da4e5909e6">
+    <name>Ведущий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ведущий</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="c2c7f1bc-7a4c-4b4f-89f2-a5082220b242">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d7fd6dc4-4544-43c2-a209-6f08376778dd">
+    <name>РольВедущего</name>
+    <synonym>
+      <key>ru</key>
+      <value>Роль ведущего</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РолиСотрудников</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <choiceParameters>
+      <name>Отбор.Ведущий</name>
+      <value xsi:type="core:BooleanValue">
+        <value>true</value>
+      </value>
+    </choiceParameters>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

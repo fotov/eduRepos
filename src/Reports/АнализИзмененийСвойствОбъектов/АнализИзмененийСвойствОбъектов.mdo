@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8422e738-3f07-46d0-96c8-1ca623cf374a">
+  <producedTypes>
+    <objectType typeId="0ee73223-da9b-44d8-9be2-fb81ca638a53" valueTypeId="7e71a51c-ace1-47b0-9871-20c5c89da6ff"/>
+    <managerType typeId="5ac4c0cc-d793-451c-a06c-7d71cf5b33b3" valueTypeId="6a56b3df-0b4e-4d06-ba85-edaf63ec97ce"/>
+  </producedTypes>
+  <name>АнализИзмененийСвойствОбъектов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Анализ изменений свойств объектов</value>
+  </synonym>
+  <defaultForm>CommonForm.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.АнализИзмененийСвойствОбъектов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>CommonForm.ФормаВариантаОтчета</defaultVariantForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="d487c770-421c-447d-92e7-baa1a5d638d1">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

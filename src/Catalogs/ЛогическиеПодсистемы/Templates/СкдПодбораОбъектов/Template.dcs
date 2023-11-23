@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектМетаданных</dataPath>
+			<field>ОбъектМетаданных</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект метаданных</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Конфигурация</dataPath>
+			<field>Конфигурация</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конфигурация</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЛогическаяПодсистема</dataPath>
+			<field>ЛогическаяПодсистема</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТекущаяЛогическаяПодсистема</dataPath>
+			<field>ТекущаяЛогическаяПодсистема</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая логическая подсистема</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ЕстьКонфликтНазначенияПодсистемы</dataPath>
+			<field>ЕстьКонфликтНазначенияПодсистемы</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Есть конфликт назначения подсистемы</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подсистема</dataPath>
+			<field>Подсистема</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Пометка</dataPath>
+			<field>Пометка</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пометка</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТекущийОтветственный</dataPath>
+			<field>ТекущийОтветственный</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий ответственный</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ОбъектыМетаданных.Ссылка КАК ОбъектМетаданных,
+	&amp;ЛогическаяПодсистема КАК ЛогическаяПодсистема,
+	СоставЛогическихПодсистем.ЛогическаяПодсистема КАК ТекущаяЛогическаяПодсистема,
+	СоставПодсистем.Подсистема КАК Подсистема,
+	НЕ СоставЛогическихПодсистем.ЛогическаяПодсистема ЕСТЬ NULL
+		И НЕ СоставЛогическихПодсистем.ЛогическаяПодсистема = &amp;ЛогическаяПодсистема КАК ЕстьКонфликтНазначенияПодсистемы,
+	ВЫБОР
+		КОГДА &amp;УстановитьПометкиДляОбъектовБезКонфликтов
+			ТОГДА СоставЛогическихПодсистем.ЛогическаяПодсистема ЕСТЬ NULL
+		ИНАЧЕ ЛОЖЬ
+	КОНЕЦ КАК Пометка,
+	ОтветственныеЛогическихПодсистемСрезПоследних.Ответственный КАК ТекущийОтветственный,
+	ОбъектыМетаданных.Владелец КАК Конфигурация
+ИЗ
+	Справочник.ОбъектыМетаданных КАК ОбъектыМетаданных
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СоставПодсистем КАК СоставПодсистем
+		ПО ОбъектыМетаданных.Ссылка = СоставПодсистем.ОбъектМетаданных
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СоставЛогическихПодсистем КАК СоставЛогическихПодсистем
+			ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ОтветственныеЛогическихПодсистем.СрезПоследних КАК ОтветственныеЛогическихПодсистемСрезПоследних
+			ПО СоставЛогическихПодсистем.ЛогическаяПодсистема = ОтветственныеЛогическихПодсистемСрезПоследних.ЛогическаяПодсистема
+		ПО ОбъектыМетаданных.Ссылка = СоставЛогическихПодсистем.ОбъектМетаданных
+ГДЕ
+	(&amp;Подсистема = НЕОПРЕДЕЛЕНО
+			ИЛИ СоставПодсистем.Подсистема = &amp;Подсистема)
+	И НЕ ОбъектыМетаданных.ПометкаУдаления
+
+УПОРЯДОЧИТЬ ПО
+	Пометка УБЫВ,
+	ОбъектыМетаданных.Владелец.Наименование,
+	ОбъектыМетаданных.Наименование</query>
+	</dataSet>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ЛогическаяПодсистема</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Логическая подсистема</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.ЛогическиеПодсистемы</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Справочник.ЛогическиеПодсистемы.ПустаяСсылка</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Подсистема</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Подсистема</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Подсистемы</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>УстановитьПометкиДляОбъектовБезКонфликтов</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Установить пометки для объектов без конфликтов</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Конфигурация</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЛогическаяПодсистема</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОбъектМетаданных</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Подсистема</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Пометка</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТекущаяЛогическаяПодсистема</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТекущийОтветственный</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ЕстьКонфликтНазначенияПодсистемы</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

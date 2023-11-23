@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5eda8dc9-3c7f-417b-bf61-07f14889e298">
+  <name>ПроверкаДокументации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверка документации</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>BusinessProcess.ПроверкаДокументации</content>
+  <content>Catalog.ВидыПроверокДокументации</content>
+  <content>Enum.ВариантыРезультатовПроверкиДокументации</content>
+  <content>InformationRegister.РезультатыПроверкиДокументации</content>
+  <content>Role.ДобавлениеИзменениеПроверкиДокументации</content>
+  <content>Role.РазделПроверкаДокументации</content>
+  <content>Role.ЧтениеПроверкиДокументации</content>
+  <parentSubsystem>Subsystem.КачествоИМетрики</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:BusinessProcess xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e6510df1-f15c-4e3f-a769-a872e16147f0">
+  <producedTypes>
+    <objectType typeId="937cf497-5573-4fd5-9d9e-890ee09ecc67" valueTypeId="178285cf-e571-4f28-aff7-8379791ed201"/>
+    <refType typeId="8f867626-8d49-4615-b170-d0ca6801fb7b" valueTypeId="3b9da6d9-bd7a-4959-9ba7-c062d062e0ff"/>
+    <selectionType typeId="3ef85fab-cca9-4073-9c7b-49ebb12dbecd" valueTypeId="6a772d96-ff06-466f-85f4-9ced87c8f649"/>
+    <listType typeId="90850308-cb28-400d-9497-392861eb0812" valueTypeId="1856286f-489e-4a87-94a7-face1c7c9a8c"/>
+    <managerType typeId="f954f51a-a7d4-448a-a614-60c6e2b403e8" valueTypeId="24bd28e4-f49d-415c-9e01-114d9bcd77d6"/>
+    <routePointRef typeId="14c8f8e3-4ac0-42d0-9d2c-b1b24310ceba" valueTypeId="b7431ccc-f259-4f61-942e-5d91c5009b98"/>
+  </producedTypes>
+  <name>ПроверкаДокументации</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проверить документацию</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>BusinessProcess.ПроверкаДокументации.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockFields>BusinessProcess.ПроверкаДокументации.Attribute.ЗадачаМетеор</dataLockFields>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Проверка документации</value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Проверки документации</value>
+  </listPresentation>
+  <editType>InDialog</editType>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <task>Task.ЗадачаИсполнителя</task>
+  <createTaskInPrivilegedMode>true</createTaskInPrivilegedMode>
+  <attributes uuid="8a7e8d5c-3461-4686-99c5-ef3893aec3db">
+    <name>ЗадачаМетеор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача метеор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЗадачиМетеор</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="7ebeee28-dcd6-41fc-975c-3a74bc48f15f">
+    <name>ФормаЗадачиПроверкиДокументации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма задачи проверки документации</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:BusinessProcess>

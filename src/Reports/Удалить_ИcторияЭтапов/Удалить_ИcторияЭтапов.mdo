@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="24156f6d-c98d-4ebd-ad10-497dacd94f69">
+  <producedTypes>
+    <objectType typeId="c216c604-9382-4a04-a3b7-b5d23527ca65" valueTypeId="198cf409-bbe9-4db4-80d4-e7642d944c5a"/>
+    <managerType typeId="f9639acf-7b64-401d-a5d9-32843431321f" valueTypeId="25ae5c7d-0f4d-4bdf-bb86-68a742051fe5"/>
+  </producedTypes>
+  <name>Удалить_ИcторияЭтапов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удалить иcтория этапов</value>
+  </synonym>
+  <mainDataCompositionSchema>Report.Удалить_ИcторияЭтапов.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="979f8924-f8b5-4888-bca6-c83b6b61b486">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

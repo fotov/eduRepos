@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="75216ce4-ac59-4669-a924-ed02ce8acd64">
+  <producedTypes>
+    <refType typeId="0dc62c69-90bc-442b-b88c-a4e8e1ec798f" valueTypeId="ec543610-173e-4be9-ba6c-d5d01641a569"/>
+    <listType typeId="45155e3e-af94-452b-b738-af59924d1728" valueTypeId="987b9876-4cd4-40ff-b0e4-6e43d4b04e4c"/>
+    <managerType typeId="efd01fd6-3833-42ec-b8f0-bc9e92733919" valueTypeId="e6c6e981-130c-4e63-a138-dfbd750538c6"/>
+  </producedTypes>
+  <name>ТипыДополнений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Типы дополнений</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="bad9ec5d-b8a2-4d82-8a34-b12f8347c8c9">
+    <name>ДополнительныйОтчетИлиОбработка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительный отчет или обработка</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="1ce0cebb-5457-47ed-b9e3-798bd4b01184">
+    <name>Расширение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Расширение</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

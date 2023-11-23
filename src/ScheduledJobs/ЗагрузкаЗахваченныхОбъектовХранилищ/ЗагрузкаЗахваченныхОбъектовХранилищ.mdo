@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="39484e30-1e61-4e82-8e1f-52120e14aa6d">
+  <name>ЗагрузкаЗахваченныхОбъектовХранилищ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка захваченных объектов хранилищ</value>
+  </synonym>
+  <methodName>CommonModule.РаботаСХранилищамиСлужебный.ЗагрузкаЗахваченныхОбъектовХранилищОбработчикЗадания</methodName>
+  <description>Загрузка захваченных объектов хранилищ</description>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

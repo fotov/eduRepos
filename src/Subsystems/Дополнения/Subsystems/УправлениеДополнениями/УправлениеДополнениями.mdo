@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8eda8386-4a97-4e8c-b9ac-cd7f9d54eb59">
+  <name>УправлениеДополнениями</name>
+  <synonym>
+    <key>ru</key>
+    <value>Управление дополнениями</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <content>DataProcessor.УправлениеДополнениями</content>
+  <content>HTTPService.ДополненияСервер</content>
+  <content>InformationRegister.СтатусыДополнений</content>
+  <content>BusinessProcess.ПодключениеРасширения</content>
+  <content>BusinessProcess.ОтключениеРасширения</content>
+  <content>InformationRegister.ИсторияДополнений</content>
+  <parentSubsystem>Subsystem.Дополнения</parentSubsystem>
+</mdclass:Subsystem>

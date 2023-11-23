@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d554d425-d380-421a-bbb7-5aa4c0de7057">
+  <name>ЗагрузкаЗадачМетеор</name>
+  <synonym>
+    <key>ru</key>
+    <value>Загрузка задач метеор</value>
+  </synonym>
+  <methodName>CommonModule.РаботаСХранилищамиСлужебный.ЗагрузитьЗадачиМетеорОбработчикЗадания</methodName>
+  <description>Загрузка задач метеор</description>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

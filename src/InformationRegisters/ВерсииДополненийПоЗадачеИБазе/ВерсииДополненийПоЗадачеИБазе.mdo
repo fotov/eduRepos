@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b917b64d-d1b9-41a0-ba8c-264e532a7359">
+  <producedTypes>
+    <selectionType typeId="cff651cc-913f-48f6-b165-b8a9b635a7c8" valueTypeId="79b75e5f-68f7-4358-b110-b6368e634a0b"/>
+    <listType typeId="55efac20-fb06-4778-a541-e10a5df579cb" valueTypeId="073f4095-1b1f-4a02-8114-b616f129b890"/>
+    <managerType typeId="9c4e0e71-4f67-4540-8c15-1a603b9a8446" valueTypeId="dc167d0d-eb7a-4724-80ed-db96e4e64fe6"/>
+    <recordSetType typeId="d3059850-1e14-4292-8971-368e79fd4358" valueTypeId="d390db6e-3e33-45dc-a225-55a1dadf6161"/>
+    <recordKeyType typeId="a25f52a8-ce47-43f1-9da0-ca3e188b583b" valueTypeId="8b56696e-34e4-4922-809f-ef2c3edb177d"/>
+    <recordType typeId="40b5d3a0-690d-4139-a478-b6e4d6186f9a" valueTypeId="650a5a44-fbb8-495d-8639-0206d6437e9a"/>
+    <recordManagerType typeId="a2d3a95b-86f8-4248-afbd-bf5a5cf78fff" valueTypeId="5652fdf4-5eb4-43e9-a6c0-9d612bc3384d"/>
+  </producedTypes>
+  <name>ВерсииДополненийПоЗадачеИБазе</name>
+  <synonym>
+    <key>ru</key>
+    <value>Версии дополнений по задаче и базе</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="5dfd0cda-8cfb-4790-8afa-2e6801df95f0">
+    <name>ВерсияДополнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия дополнения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВерсииДополнений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="05ce44e3-1826-4cde-9d07-b31908dbbdec">
+    <name>АвторИзменений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Автор изменений</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="92c02806-8ebf-4d25-ba55-a378992b34b7">
+    <name>ЗадачаМетеор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача метеор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЗадачиМетеор</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="f90b7f94-51eb-4a4c-8ff9-b61f0e0206a8">
+    <name>База</name>
+    <synonym>
+      <key>ru</key>
+      <value>База</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Базы1С</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

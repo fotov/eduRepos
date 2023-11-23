@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f9707e90-b0a4-41a0-8bd7-047d57854d92">
+  <producedTypes>
+    <objectType typeId="f47923e0-859b-4e09-ad3c-31b026705fb0" valueTypeId="b770d53b-71b6-4faa-a7dc-3e9f9f2a1bfc"/>
+    <managerType typeId="6703c4a3-3980-43d2-82ea-5f8a99a52cb8" valueTypeId="4f2b7056-bd29-4cc5-9ee6-da70b446505a"/>
+  </producedTypes>
+  <name>АдминистраторыРасширений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Администраторы расширений</value>
+  </synonym>
+  <mainDataCompositionSchema>Report.АдминистраторыРасширений.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="c719b0f0-6bc3-44df-969d-542175a15f91">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

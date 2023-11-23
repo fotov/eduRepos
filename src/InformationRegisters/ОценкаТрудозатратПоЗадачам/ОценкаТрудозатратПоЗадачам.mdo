@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="479bf738-8603-4560-a067-c941531b0483">
+  <producedTypes>
+    <selectionType typeId="9d7eb86a-91ca-4c24-acce-5db6beca67d5" valueTypeId="49564b23-e0a6-472c-bdb7-d22c3294795f"/>
+    <listType typeId="faf9ca27-98e4-44c5-9b64-3e52fb22a643" valueTypeId="8dacbc9a-77a6-4982-9299-7c62da65d66f"/>
+    <managerType typeId="b0c3d904-cbbe-4c9b-9950-303e8504d09d" valueTypeId="8af34aa0-d603-449a-aa8f-ee62ae7a1242"/>
+    <recordSetType typeId="e44be5c2-0d8d-4759-bcdf-decd7ec037e1" valueTypeId="0395fc25-a4d5-4533-abb2-ede4a6ba1f0e"/>
+    <recordKeyType typeId="4cf01fd2-56c1-4f30-aee0-48a8b4610fef" valueTypeId="256b40bf-80c3-49a2-a98a-dc1a260f9bb1"/>
+    <recordType typeId="677d3fde-8923-40c8-9ccc-beb7968c39f2" valueTypeId="57afaee9-3ca3-41b7-a12c-4f901a38f548"/>
+    <recordManagerType typeId="3010dbd2-779b-43ef-b16e-439fd78418e9" valueTypeId="d8bcaab7-21d6-40a2-8a85-144b875613dc"/>
+  </producedTypes>
+  <name>ОценкаТрудозатратПоЗадачам</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оценка трудозатрат по задачам</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="05ecdb4b-aaf2-4832-a153-261b9fb12658">
+    <name>Количество</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Оценка часов</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="f35cf49d-19fa-478d-a7b4-5d60fd1e2d03">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="9646dbdc-9fc3-4651-8ba5-bac0d34add8d">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="7ff3f062-5564-4d32-8472-5b64fee74534">
+    <name>ЗадачаМетеор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Задача Метеор</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЗадачиМетеор</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="d6b0f542-2b9b-480e-9d59-75e550a1345a">
+    <name>РольИсполнителяЗадачи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Роль исполнителя задачи</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РолиИсполнителей</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

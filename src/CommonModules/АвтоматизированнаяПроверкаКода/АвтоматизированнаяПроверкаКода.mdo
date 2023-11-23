@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="fcec9da6-adfc-4463-a2a5-3d92af9d8ce9">
+  <name>АвтоматизированнаяПроверкаКода</name>
+  <synonym>
+    <key>ru</key>
+    <value>Автоматизированная проверка кода</value>
+  </synonym>
+  <server>true</server>
+</mdclass:CommonModule>

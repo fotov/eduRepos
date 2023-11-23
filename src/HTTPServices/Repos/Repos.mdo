@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cc5ce674-d527-4747-92dd-4f126f4e835a">
+  <name>Repos</name>
+  <synonym>
+    <key>ru</key>
+    <value>Repos</value>
+  </synonym>
+  <rootURL>repos</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="6add4d58-a0c0-4b2d-83ef-cc35caeb7d84">
+    <name>Методы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Методы</value>
+    </synonym>
+    <template>/*</template>
+    <methods uuid="93aaa560-aa6b-46a3-b5f2-2d03db7bd99b">
+      <name>ОбработкаЗапросов</name>
+      <synonym>
+        <key>ru</key>
+        <value>Обработка запросов</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>МетодыОбработкаЗапросов</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

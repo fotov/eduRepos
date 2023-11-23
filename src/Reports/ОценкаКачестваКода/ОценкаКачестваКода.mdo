@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e14558eb-516a-41ec-b357-558f561a04d2">
+  <producedTypes>
+    <objectType typeId="37e8b834-de7a-4948-b3cf-98f24832af53" valueTypeId="aabe9452-4547-4a02-b06b-60e2cc67f903"/>
+    <managerType typeId="78eb4830-753f-401f-9355-280b9ed310f7" valueTypeId="22b9dc1a-2e6b-4e10-8ab2-ac9819ba158b"/>
+  </producedTypes>
+  <name>ОценкаКачестваКода</name>
+  <synonym>
+    <key>ru</key>
+    <value>Оценка качества кода</value>
+  </synonym>
+  <mainDataCompositionSchema>Report.ОценкаКачестваКода.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="3bfb9d2b-1fc5-45d5-8235-f470048097a5">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

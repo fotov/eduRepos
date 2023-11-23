@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="560233c4-602f-448c-b1b7-676cc6d5995a">
+  <producedTypes>
+    <refType typeId="7608884a-9829-474a-aa6f-81e4ec46d154" valueTypeId="17e967e6-e95e-4a73-b485-6f0b043f408f"/>
+    <listType typeId="91ae797b-0f91-4ebd-88b0-22e83953bdd9" valueTypeId="d9f26fa4-14ab-4b31-9a07-38292b492ad9"/>
+    <managerType typeId="a11f3bb8-98f2-4792-86e9-d1794ba087d5" valueTypeId="7a0f030a-2ccf-450f-8bf2-82fc188c30ff"/>
+  </producedTypes>
+  <name>ВидыИзменений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Виды изменений</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="cb1dd9d7-f973-44f2-835d-de175618c7d7">
+    <name>Изменено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Изменено</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="9bf4cb09-fdf0-4a16-a54a-f9b844c35488">
+    <name>Добавлено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Добавлено</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="13134a5b-6a7e-4c00-a79d-9bdee41cb957">
+    <name>Удалено</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удалено</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

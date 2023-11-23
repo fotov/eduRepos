@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a94f4173-fedb-4114-91dc-ce9760207d08">
+  <name>ОтправкаУведомленийСинтаксическойПроверки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Отправка уведомлений синтаксической проверки</value>
+  </synonym>
+  <methodName>CommonModule.АвтоматизированнаяПроверкаКодаСлужебный.ОтправкаУведомленийСинтаксическойПроверкиОбработчикЗадания</methodName>
+  <description>Отправка уведомлений синтаксической проверки</description>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

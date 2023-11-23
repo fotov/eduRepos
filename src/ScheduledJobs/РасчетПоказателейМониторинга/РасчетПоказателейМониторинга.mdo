@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="0628d5ee-db59-4197-aa9a-e013c24d3d0e">
+  <name>РасчетПоказателейМониторинга</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчет показателей мониторинга</value>
+  </synonym>
+  <methodName>CommonModule.МониторингСлужебный.РасчетПоказателейМониторинга_ОбработчикЗадания</methodName>
+  <description>Расчет показателей мониторинга</description>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

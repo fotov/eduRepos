@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:SessionParameter xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="15ed4a0c-9b5b-4fc6-abd5-d787917fa081">
+  <name>ВыполняетсяОтладкаВКопии</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выполняется отладка в копии</value>
+  </synonym>
+  <comment>!!! Включает режим, когда копия рабочей базы идентифицирует себя, как рабочую базу.</comment>
+  <type>
+    <types>Boolean</types>
+  </type>
+</mdclass:SessionParameter>

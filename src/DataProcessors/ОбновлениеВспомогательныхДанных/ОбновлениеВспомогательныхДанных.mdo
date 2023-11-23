@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="00aef5b7-8b1c-456a-a549-cc0797c4d1d3">
+  <producedTypes>
+    <objectType typeId="accca529-fcc1-4089-8659-8e19e7a745c6" valueTypeId="7c0c8282-6f77-44a7-af14-0742705d7fb0"/>
+    <managerType typeId="7a49290a-52ba-4160-8b68-e9950f18bae0" valueTypeId="940d7e00-be70-41d9-be3a-d1ded7e6482a"/>
+  </producedTypes>
+  <name>ОбновлениеВспомогательныхДанных</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обновление вспомогательных данных</value>
+  </synonym>
+  <comment>Для обновления вспомогательных данных БСП</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ОбновлениеВспомогательныхДанных.Form.Форма</defaultForm>
+  <help>
+    <pages>
+      <lang>ru</lang>
+    </pages>
+  </help>
+  <forms uuid="0ab801bf-79a9-475d-900f-11456b4546d4">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

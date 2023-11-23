@@ -1,0 +1,891 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>Изменения</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Хранилище</dataPath>
+			<field>Хранилище</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Хранилище</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подсистема</dataPath>
+			<field>Подсистема</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВерсияХранилища</dataPath>
+			<field>ВерсияХранилища</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия хранилища</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>АвторВерсии</dataPath>
+			<field>АвторВерсии</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автор версии</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОбъектМетаданных</dataPath>
+			<field>ОбъектМетаданных</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объект метаданных</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Конфигурация</dataPath>
+			<field>Конфигурация</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конфигурация</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ИсторияХранилища.Ссылка КАК ВерсияХранилища,
+	ИсторияХранилища.Владелец КАК Хранилище
+ПОМЕСТИТЬ ВерсииХранилища
+ИЗ
+	Справочник.ИсторияХранилища КАК ИсторияХранилища
+ГДЕ
+	ИсторияХранилища.Дата МЕЖДУ &amp;ДатаНачала И &amp;ДатаОкончания
+	И ИсторияХранилища.Владелец В
+			(ВЫБРАТЬ
+				Конфигурации.ХранилищеРазработки КАК ХранилищеРазработки
+			ИЗ
+				Справочник.Конфигурации КАК Конфигурации)
+{ГДЕ
+	ИсторияХранилища.Владелец КАК Хранилище}
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ИсторияХранилищаИзменены.ИмяОбъекта КАК ИмяОбъекта,
+	ИсторияХранилищаИзменены.Ссылка КАК ВерсияХранилища,
+	ВерсииХранилища.Хранилище КАК Хранилище
+ПОМЕСТИТЬ ИзмененияВерсий
+ИЗ
+	Справочник.ИсторияХранилища.Изменены КАК ИсторияХранилищаИзменены
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВерсииХранилища КАК ВерсииХранилища
+		ПО ИсторияХранилищаИзменены.Ссылка = ВерсииХранилища.ВерсияХранилища
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ИсторияХранилищаДобавлены.ИмяОбъекта,
+	ИсторияХранилищаДобавлены.Ссылка,
+	ВерсииХранилища.Хранилище
+ИЗ
+	Справочник.ИсторияХранилища.Добавлены КАК ИсторияХранилищаДобавлены
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВерсииХранилища КАК ВерсииХранилища
+		ПО ИсторияХранилищаДобавлены.Ссылка = ВерсииХранилища.ВерсияХранилища
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ИсторияХранилищаУдалены.ИмяОбъекта,
+	ИсторияХранилищаУдалены.Ссылка,
+	ВерсииХранилища.Хранилище
+ИЗ
+	Справочник.ИсторияХранилища.Удалены КАК ИсторияХранилищаУдалены
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВерсииХранилища КАК ВерсииХранилища
+		ПО ИсторияХранилищаУдалены.Ссылка = ВерсииХранилища.ВерсияХранилища
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ОбъектыМетаданных.Владелец.ХранилищеРазработки КАК ХранилищеРазработки,
+	ОбъектыМетаданных.Ссылка КАК Ссылка,
+	ОбъектыМетаданных.Наименование + "%" КАК ПаттернНаименования,
+	ОбъектыМетаданных.Наименование КАК Наименование,
+	ОбъектыМетаданных.Владелец КАК Конфигурация
+ПОМЕСТИТЬ ОбъектыМетаданных
+ИЗ
+	Справочник.ОбъектыМетаданных КАК ОбъектыМетаданных
+ГДЕ
+	ОбъектыМетаданных.Владелец.ХранилищеРазработки В
+			(ВЫБРАТЬ
+				ВерсииХранилища.Хранилище
+			ИЗ
+				ВерсииХранилища КАК ВерсииХранилища)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ИзмененияВерсий.ВерсияХранилища КАК ВерсияХранилища,
+	ЕСТЬNULL(ОбъектыМетаданных.Ссылка, ЗНАЧЕНИЕ(Справочник.ОбъектыМетаданных.ПустаяСсылка)) КАК ОбъектМетаданных,
+	ИзмененияВерсий.Хранилище КАК Хранилище,
+	ПРЕДСТАВЛЕНИЕ(ИзмененияВерсий.ВерсияХранилища.Автор) КАК АвторВерсии,
+	ИзмененияВерсий.ИмяОбъекта КАК ИмяОбъекта,
+	ЕСТЬNULL(ОбъектыМетаданных.Конфигурация, ЗНАЧЕНИЕ(Справочник.Конфигурации.ПустаяСсылка)) КАК Конфигурация
+ПОМЕСТИТЬ ИзмененныеОбъекты
+ИЗ
+	ИзмененияВерсий КАК ИзмененияВерсий
+		ЛЕВОЕ СОЕДИНЕНИЕ ОбъектыМетаданных КАК ОбъектыМетаданных
+		ПО (ИзмененияВерсий.ИмяОбъекта ПОДОБНО ОбъектыМетаданных.ПаттернНаименования)
+			И ИзмененияВерсий.Хранилище = ОбъектыМетаданных.ХранилищеРазработки
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	НеНайденныеОбъекты.ВерсияХранилища КАК ВерсияХранилища,
+	НеНайденныеОбъекты.Хранилище КАК Хранилище,
+	НеНайденныеОбъекты.АвторВерсии КАК АвторВерсии,
+	ЕСТЬNULL(ИсторияИмен.ОбъектМетаданных, "Объект не найден: " + НеНайденныеОбъекты.ИмяОбъекта) КАК ОбъектМетаданных,
+	НеНайденныеОбъекты.Конфигурация КАК Конфигурация
+ПОМЕСТИТЬ ПоискОбъектовПоИстории
+ИЗ
+	(ВЫБРАТЬ
+		ИзмененныеОбъекты.ВерсияХранилища КАК ВерсияХранилища,
+		ИзмененныеОбъекты.ОбъектМетаданных КАК ОбъектМетаданных,
+		ИзмененныеОбъекты.Хранилище КАК Хранилище,
+		ИзмененныеОбъекты.АвторВерсии КАК АвторВерсии,
+		ИзмененныеОбъекты.ИмяОбъекта КАК ИмяОбъекта,
+		ИзмененныеОбъекты.Конфигурация КАК Конфигурация
+	ИЗ
+		ИзмененныеОбъекты КАК ИзмененныеОбъекты
+	ГДЕ
+		ИзмененныеОбъекты.ОбъектМетаданных = ЗНАЧЕНИЕ(Справочник.ОбъектыМетаданных.ПустаяСсылка)) КАК НеНайденныеОбъекты
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			ИсторияИменОбъектовМетаданных.ОбъектМетаданных КАК ОбъектМетаданных,
+			ИсторияИменОбъектовМетаданных.Наименование + "%" КАК ПаттернНаименования,
+			ИсторияИменОбъектовМетаданных.ОбъектМетаданных.Владелец КАК Хранилище
+		ИЗ
+			РегистрСведений.ИсторияИменОбъектовМетаданных КАК ИсторияИменОбъектовМетаданных) КАК ИсторияИмен
+		ПО (НеНайденныеОбъекты.ИмяОбъекта ПОДОБНО ИсторияИмен.ПаттернНаименования)
+			И (ИсторияИмен.Хранилище = НеНайденныеОбъекты.Хранилище)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ВсеИзмененныеОбъекты.ВерсияХранилища КАК ВерсияХранилища,
+	ВсеИзмененныеОбъекты.ОбъектМетаданных КАК ОбъектМетаданных,
+	ВсеИзмененныеОбъекты.Хранилище КАК Хранилище,
+	ВсеИзмененныеОбъекты.АвторВерсии КАК АвторВерсии,
+	ЕСТЬNULL(СоставПодсистем.Подсистема, ЗНАЧЕНИЕ(Справочник.Подсистемы.ПустаяСсылка)) КАК Подсистема,
+	ВсеИзмененныеОбъекты.Конфигурация КАК Конфигурация
+ИЗ
+	(ВЫБРАТЬ
+		ИзмененныеОбъекты.ВерсияХранилища КАК ВерсияХранилища,
+		ИзмененныеОбъекты.ОбъектМетаданных КАК ОбъектМетаданных,
+		ИзмененныеОбъекты.Хранилище КАК Хранилище,
+		ИзмененныеОбъекты.АвторВерсии КАК АвторВерсии,
+		ИзмененныеОбъекты.Конфигурация КАК Конфигурация
+	ИЗ
+		ИзмененныеОбъекты КАК ИзмененныеОбъекты
+	ГДЕ
+		НЕ ИзмененныеОбъекты.ОбъектМетаданных = ЗНАЧЕНИЕ(Справочник.ОбъектыМетаданных.ПустаяСсылка)
+	
+	ОБЪЕДИНИТЬ ВСЕ
+	
+	ВЫБРАТЬ
+		ПоискОбъектовПоИстории.ВерсияХранилища,
+		ПоискОбъектовПоИстории.ОбъектМетаданных,
+		ПоискОбъектовПоИстории.Хранилище,
+		ПоискОбъектовПоИстории.АвторВерсии,
+		ПоискОбъектовПоИстории.Конфигурация
+	ИЗ
+		ПоискОбъектовПоИстории КАК ПоискОбъектовПоИстории) КАК ВсеИзмененныеОбъекты
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СоставПодсистем КАК СоставПодсистем
+		ПО ВсеИзмененныеОбъекты.ОбъектМетаданных = СоставПодсистем.ОбъектМетаданных</query>
+	</dataSet>
+	<dataSet xsi:type="DataSetObject">
+		<name>ОтветственныеПодсистем</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Подсистема</dataPath>
+			<field>Подсистема</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подсистема</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Подсистемы</v8:Type>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Ответственные</dataPath>
+			<field>Ответственные</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответственные</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Конфигурация</dataPath>
+			<field>Конфигурация</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конфигурация</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Конфигурации</v8:Type>
+			</valueType>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<objectName>ОтветственныеПодсистем</objectName>
+	</dataSet>
+	<dataSetLink>
+		<sourceDataSet>Изменения</sourceDataSet>
+		<destinationDataSet>ОтветственныеПодсистем</destinationDataSet>
+		<sourceExpression>Подсистема</sourceExpression>
+		<destinationExpression>Подсистема</destinationExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>Изменения</sourceDataSet>
+		<destinationDataSet>ОтветственныеПодсистем</destinationDataSet>
+		<sourceExpression>Конфигурация</sourceExpression>
+		<destinationExpression>Конфигурация</destinationExpression>
+	</dataSetLink>
+	<parameter>
+		<name>ДатаНачала</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата начала</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>ДатаОкончания</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Дата окончания</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодОтчета.ДатаОкончания</expression>
+	</parameter>
+	<parameter>
+		<name>ПериодОтчета</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период отчета</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<nestedSchema>
+		<name>ПодсистемыБезОтветственных</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Подсистемы без ответственных</v8:content>
+			</v8:item>
+		</title>
+		<schema>
+			<dataSource>
+				<name>ИсточникДанных1</name>
+				<dataSourceType>Local</dataSourceType>
+			</dataSource>
+			<dataSet xsi:type="DataSetQuery">
+				<name>НаборДанных1</name>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Подсистема</dataPath>
+					<field>Подсистема</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Ответственный</dataPath>
+					<field>Ответственный</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Конфигурация</dataPath>
+					<field>Конфигурация</field>
+					<title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Конфигурация</v8:content>
+						</v8:item>
+					</title>
+				</field>
+				<dataSource>ИсточникДанных1</dataSource>
+				<query>ВЫБРАТЬ
+	Подсистемы.Ссылка КАК Подсистема,
+	Подсистемы.Владелец КАК Конфигурация
+ИЗ
+	Справочник.Подсистемы КАК Подсистемы
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ОтветственныеПоПодсисетмам.СрезПоследних КАК ОтветственныеПоПодсисетмамСрезПоследних
+		ПО (ОтветственныеПоПодсисетмамСрезПоследних.Подсистема = Подсистемы.Ссылка)
+ГДЕ
+	(ОтветственныеПоПодсисетмамСрезПоследних.Ответственный ЕСТЬ NULL
+			ИЛИ ОтветственныеПоПодсисетмамСрезПоследних.Ответственный = ЗНАЧЕНИЕ(Справочник.Пользователи.ПустаяСсылка))
+	И НЕ Подсистемы.ПометкаУдаления</query>
+			</dataSet>
+			<parameter>
+				<name>Период</name>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Период</v8:content>
+					</v8:item>
+				</title>
+				<valueType>
+					<v8:Type>xs:dateTime</v8:Type>
+					<v8:DateQualifiers>
+						<v8:DateFractions>DateTime</v8:DateFractions>
+					</v8:DateQualifiers>
+				</valueType>
+				<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+				<useRestriction>true</useRestriction>
+			</parameter>
+			<settingsVariant>
+				<dcsset:name>Основной</dcsset:name>
+				<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+				<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>СистемныеПоля.НомерПоПорядкуВГруппировке</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Подсистема</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">Конфигурация</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:userSettingID>34f1d78c-5df1-47fd-8ddd-4a6e9375fbcb</dcsset:userSettingID>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Подсистема.Наименование</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+					</dcsset:order>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МакетОформления</dcscor:parameter>
+							<dcscor:value xsi:type="xs:string">Зеленый</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Конфигурация</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:settings>
+			</settingsVariant>
+		</schema>
+		<settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows"/>
+	</nestedSchema>
+	<nestedSchema>
+		<name>ОбъектыНеОпределенОтветственный</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Объекты не определен ответственный</v8:content>
+			</v8:item>
+		</title>
+		<schema>
+			<dataSource>
+				<name>ИсточникДанных1</name>
+				<dataSourceType>Local</dataSourceType>
+			</dataSource>
+			<dataSet xsi:type="DataSetQuery">
+				<name>НаборДанных1</name>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ОбъектМетаданных</dataPath>
+					<field>ОбъектМетаданных</field>
+					<title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объект метаданных</v8:content>
+						</v8:item>
+					</title>
+					<role>
+						<dcscom:dimension>true</dcscom:dimension>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Конфигурация</dataPath>
+					<field>Конфигурация</field>
+					<title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Конфигурация</v8:content>
+						</v8:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Подсистема</dataPath>
+					<field>Подсистема</field>
+					<role>
+						<dcscom:dimension>true</dcscom:dimension>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Ответственный</dataPath>
+					<field>Ответственный</field>
+					<useRestriction>
+						<condition>true</condition>
+					</useRestriction>
+					<attributeUseRestriction>
+						<condition>true</condition>
+					</attributeUseRestriction>
+				</field>
+				<dataSource>ИсточникДанных1</dataSource>
+				<query>ВЫБРАТЬ
+	ОбъектыМетаданных.Ссылка КАК ОбъектМетаданных,
+	ОбъектыМетаданных.Владелец КАК Конфигурация,
+	ЗНАЧЕНИЕ(Справочник.Подсистемы.ПустаяСсылка) КАК Подсистема
+ПОМЕСТИТЬ ОбъектыБезОтветственных
+ИЗ
+	Справочник.ОбъектыМетаданных КАК ОбъектыМетаданных
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СоставПодсистем КАК СоставПодсистем
+		ПО (СоставПодсистем.ОбъектМетаданных = ОбъектыМетаданных.Ссылка)
+ГДЕ
+	СоставПодсистем.ОбъектМетаданных ЕСТЬ NULL
+	И НЕ ОбъектыМетаданных.ПометкаУдаления
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	СоставПодсистем.ОбъектМетаданных,
+	СоставПодсистем.ОбъектМетаданных.Владелец,
+	СоставПодсистем.Подсистема
+ИЗ
+	РегистрСведений.СоставПодсистем КАК СоставПодсистем
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ОтветственныеПоПодсисетмам.СрезПоследних КАК ОтветственныеПоПодсисетмамСрезПоследних
+		ПО СоставПодсистем.Подсистема = ОтветственныеПоПодсисетмамСрезПоследних.Подсистема
+ГДЕ
+	(ОтветственныеПоПодсисетмамСрезПоследних.Ответственный ЕСТЬ NULL
+			ИЛИ ОтветственныеПоПодсисетмамСрезПоследних.Ответственный = ЗНАЧЕНИЕ(Справочник.Пользователи.ПустаяСсылка))
+	И НЕ СоставПодсистем.ОбъектМетаданных.ПометкаУдаления
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ОбъектыБезОтветственных.ОбъектМетаданных КАК ОбъектМетаданных,
+	ОбъектыБезОтветственных.Конфигурация КАК Конфигурация,
+	ОбъектыБезОтветственных.Подсистема КАК Подсистема
+ИЗ
+	ОбъектыБезОтветственных КАК ОбъектыБезОтветственных</query>
+			</dataSet>
+			<parameter>
+				<name>Период</name>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Период</v8:content>
+					</v8:item>
+				</title>
+				<valueType>
+					<v8:Type>xs:dateTime</v8:Type>
+					<v8:DateQualifiers>
+						<v8:DateFractions>DateTime</v8:DateFractions>
+					</v8:DateQualifiers>
+				</valueType>
+				<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+				<useRestriction>true</useRestriction>
+			</parameter>
+			<settingsVariant>
+				<dcsset:name>Основной</dcsset:name>
+				<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+				<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>СистемныеПоля.НомерПоПорядкуВГруппировке</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ОбъектМетаданных</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Подсистема</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">Конфигурация</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:userSettingID>42b1495a-c84d-4744-b61c-d3862e1f2015</dcsset:userSettingID>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">Подсистема</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:userSettingID>3a84d5e2-f1e9-47b1-a9af-2c8103754f22</dcsset:userSettingID>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ОбъектМетаданных</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+					</dcsset:order>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МакетОформления</dcscor:parameter>
+							<dcscor:value xsi:type="xs:string">Зеленый</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Конфигурация</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:settings>
+			</settingsVariant>
+		</schema>
+		<settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows"/>
+	</nestedSchema>
+	<settingsVariant>
+		<dcsset:name>КонтрольИзмененияОбъектовМетаданных</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Контроль изменения объектов метаданных</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ВерсияХранилища</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>АвторВерсии</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОбъектМетаданных</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Хранилище</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>05e38626-c272-406b-b66f-62a39f68825a</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ПериодОтчета</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Yesterday</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>ea2ba853-6f46-4e59-806b-3cfd5be34070</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>ВерсияХранилища.Код</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Зеленый</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>Хранилище</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Подсистема</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>Ответственные</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+	<settingsVariant>
+		<dcsset:name>ПодсистемыБезОтветственных</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Подсистемы без ответственных</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Зеленый</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemNestedObject">
+				<dcsset:objectID>ПодсистемыБезОтветственных</dcsset:objectID>
+				<dcsset:settings>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>СистемныеПоля.НомерПоПорядкуВГруппировке</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Подсистема</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">Конфигурация</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:userSettingID>34f1d78c-5df1-47fd-8ddd-4a6e9375fbcb</dcsset:userSettingID>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Подсистема.Наименование</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+					</dcsset:order>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МакетОформления</dcscor:parameter>
+							<dcscor:value xsi:type="xs:string">Зеленый</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Конфигурация</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:settings>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+	<settingsVariant>
+		<dcsset:name>ОбъектыБезОтветственных</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Объекты без ответственных</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:item xsi:type="dcsset:StructureItemNestedObject">
+				<dcsset:objectID>ОбъектыНеОпределенОтветственный</dcsset:objectID>
+				<dcsset:settings>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>СистемныеПоля.НомерПоПорядкуВГруппировке</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>ОбъектМетаданных</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Подсистема</dcsset:field>
+						</dcsset:item>
+					</dcsset:selection>
+					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">Конфигурация</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:userSettingID>42b1495a-c84d-4744-b61c-d3862e1f2015</dcsset:userSettingID>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:use>false</dcsset:use>
+							<dcsset:left xsi:type="dcscor:Field">Подсистема</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:userSettingID>3a84d5e2-f1e9-47b1-a9af-2c8103754f22</dcsset:userSettingID>
+						</dcsset:item>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>ОбъектМетаданных</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
+					</dcsset:order>
+					<dcsset:outputParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:parameter>МакетОформления</dcscor:parameter>
+							<dcscor:value xsi:type="xs:string">Зеленый</dcscor:value>
+						</dcscor:item>
+					</dcsset:outputParameters>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Конфигурация</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:settings>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

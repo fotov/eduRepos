@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bfd298f6-47da-4547-9c8f-8c7edee57b02">
+  <producedTypes>
+    <objectType typeId="28e4623c-fd8f-4030-9d2d-b65265a958fb" valueTypeId="ef248c02-44c9-44a5-806d-971fee96ccfc"/>
+    <managerType typeId="a85ed940-085d-455a-b048-5d14960774e5" valueTypeId="7124564a-3015-400c-9c71-4ad34e0cc80e"/>
+  </producedTypes>
+  <name>Удалить_ОценкаДлительностиОпераций</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удалить оценка длительности операций</value>
+  </synonym>
+  <defaultForm>CommonForm.ФормаОтчета</defaultForm>
+  <mainDataCompositionSchema>Report.Удалить_ОценкаДлительностиОпераций.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <defaultSettingsForm>CommonForm.ФормаНастроекОтчета</defaultSettingsForm>
+  <defaultVariantForm>CommonForm.ФормаВариантаОтчета</defaultVariantForm>
+  <variantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</variantsStorage>
+  <templates uuid="10e0f0c7-0882-4847-b647-83dd1cf00104">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d4df4319-4931-4eaa-87fc-7e4d5400ec5b">
+  <name>ОбновлениеСтатусовДополнений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обновление статусов дополнений</value>
+  </synonym>
+  <methodName>CommonModule.РаботаСДополнениямиСлужебный.УстановкаСтатусаДополненийОбработчикЗадания</methodName>
+  <description>Обновление статусов дополнений</description>
+  <use>true</use>
+  <predefined>true</predefined>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

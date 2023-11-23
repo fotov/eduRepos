@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4876df8d-7337-4083-9634-15388207ca90">
+  <producedTypes>
+    <objectType typeId="8e37479c-20dc-49eb-a933-926f3f3cab4e" valueTypeId="9aeee54c-8f3f-4242-bd7b-9ac05ac58573"/>
+    <managerType typeId="90ce6d8e-86fa-4174-a863-9882974757b6" valueTypeId="d23ed1d6-3ffb-4057-9cb8-79018ef8bfc0"/>
+  </producedTypes>
+  <name>ЗахваченныеОбъектыХранилищ</name>
+  <synonym>
+    <key>ru</key>
+    <value>Захваченные объекты хранилищ</value>
+  </synonym>
+  <mainDataCompositionSchema>Report.ЗахваченныеОбъектыХранилищ.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="9d62d842-fee4-40a4-99fa-f6b532a83533">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

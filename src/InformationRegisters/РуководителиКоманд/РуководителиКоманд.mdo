@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7531de22-9b49-445c-94c3-71678da2026f">
+  <producedTypes>
+    <selectionType typeId="c94e77e8-d75e-4328-b648-5cb283e32655" valueTypeId="811f6207-ebbc-4eb9-8163-af50aa3416aa"/>
+    <listType typeId="98f3ed7b-2acb-4ca3-bdb4-a7ed8920b45c" valueTypeId="91ce6a62-ffe5-42d2-8fcf-a88c42e2cf46"/>
+    <managerType typeId="75ff820a-f942-44ef-897f-41b26e5a385b" valueTypeId="2571bc36-1dd7-4eea-8dee-54962d2c11a9"/>
+    <recordSetType typeId="0714a7e3-7f40-4449-8971-ff2abe89649a" valueTypeId="a8bcb51c-bf27-4cd2-93c5-4e2556084d8b"/>
+    <recordKeyType typeId="117c1755-3dc1-404d-9bd8-775292508792" valueTypeId="c16407f1-61f1-415c-920d-f17e9a6f57fa"/>
+    <recordType typeId="b4beeb31-92e4-4948-9c45-18a5d369f007" valueTypeId="3b5f056a-bb9e-4a89-9578-79dd683044f7"/>
+    <recordManagerType typeId="ebfb9892-840e-43f8-a57d-abc76cd06fe6" valueTypeId="f6492d11-a49f-4a14-9abe-b986aefb9f70"/>
+  </producedTypes>
+  <name>РуководителиКоманд</name>
+  <synonym>
+    <key>ru</key>
+    <value>Руководители команд</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="4aabca25-8a1f-4fec-bc0a-4e9357246452">
+    <name>Руководитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Руководитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="f903b6af-b198-4f1b-bdcf-30911496fb81">
+    <name>Команда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Команда</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Команды</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

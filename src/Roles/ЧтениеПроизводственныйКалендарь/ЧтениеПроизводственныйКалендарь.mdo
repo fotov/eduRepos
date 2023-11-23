@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d215a0f8-8184-4de6-bcb1-b503cf80f9b7">
+  <name>ЧтениеПроизводственныйКалендарь</name>
+  <synonym>
+    <key>ru</key>
+    <value>Чтение производственный календарь</value>
+  </synonym>
+</mdclass:Role>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="be43933f-7a7b-41f9-ad64-50568fdae5f0">
+  <name>ДополненияСервер</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дополнения сервер</value>
+  </synonym>
+  <rootURL>additions_srv</rootURL>
+  <sessionMaxAge>10</sessionMaxAge>
+  <urlTemplates uuid="2bbe8a04-299b-41fb-af66-e4390282b043">
+    <name>ВерсияСервиса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Версия сервиса</value>
+    </synonym>
+    <template>/*</template>
+    <methods uuid="1460e50e-d89e-4cc9-9a70-19b297c5e8e2">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>ВерсияGET</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="56576797-d001-4b66-91bb-151c215bd119">
+    <name>ДанныеВерсии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные версии</value>
+    </synonym>
+    <template>/data</template>
+    <methods uuid="f99274f9-c1ed-4750-a047-bfc9f57a5e87">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>ДанныеGET</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="49ad6537-09c2-4fe2-8af9-ddafc8c4955b">
+    <name>Список</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список</value>
+    </synonym>
+    <template>/list</template>
+    <methods uuid="3abfbfc1-0dea-4944-8e00-eed6ba9715d0">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>СписокGET</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="f92586f4-96fd-4970-9cf1-84dcdf32dea8">
+    <name>СписокВерсийДополнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список версий дополнения</value>
+    </synonym>
+    <template>/versions</template>
+    <methods uuid="c1387d0d-81ae-43ec-afea-ff4aed7d160b">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>СписокВерсийДополненияGET</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="f02d2b9f-b377-4bc5-93d0-8ede265da2a0">
+    <name>СписокУстановленныхДополнений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список установленных дополнений</value>
+    </synonym>
+    <template>/installed</template>
+    <methods uuid="1e74fa3e-7c0a-4c01-a536-ac9e3ad67560">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>СписокУстановленныхДополненийGET</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="72967e65-f1f7-43dc-a2e1-aee1b8387f21">
+    <name>ДанныеУстановленногоДополнения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные установленного дополнения</value>
+    </synonym>
+    <template>/installed_data</template>
+    <methods uuid="3554a3f6-a7f6-4b2d-9167-e426030bde33">
+      <name>GET</name>
+      <synonym>
+        <key>ru</key>
+        <value>GET</value>
+      </synonym>
+      <handler>ДанныеУстановленногоДополненияGET</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

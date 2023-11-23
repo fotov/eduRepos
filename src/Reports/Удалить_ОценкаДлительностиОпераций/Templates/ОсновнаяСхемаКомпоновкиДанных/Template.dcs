@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>НаборДанных1</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КлючеваяОперация</dataPath>
+			<field>КлючеваяОперация</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Идентификатор</dataPath>
+			<field>Идентификатор</field>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КомментарийЗавершерния</dataPath>
+			<field>КомментарийЗавершерния</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий завершерния</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УниверсальнаяДатаНачала</dataPath>
+			<field>УниверсальнаяДатаНачала</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Универсальная дата начала</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>УниверсальнаяДатаЗавершения</dataPath>
+			<field>УниверсальнаяДатаЗавершения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Универсальная дата завершения</v8:content>
+				</v8:item>
+			</title>
+			<role>
+				<dcscom:dimension>true</dcscom:dimension>
+			</role>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КомментарийНачала</dataPath>
+			<field>КомментарийНачала</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий начала</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаНачала</dataPath>
+			<field>ДатаНачала</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата начала</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаЗавершения</dataPath>
+			<field>ДатаЗавершения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата завершения</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Длительность</dataPath>
+			<field>Длительность</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Длительность</v8:content>
+				</v8:item>
+			</title>
+			<appearance>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧН=0</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Хранилище</dataPath>
+			<field>Хранилище</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Хранилище</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ
+	ЖурналМониторинга.КлючеваяОперация КАК КлючеваяОперация,
+	ЖурналМониторинга.Идентификатор КАК Идентификатор,
+	ЖурналМониторинга.ДатаЗаписиУниверсальная КАК ДатаЗаписиУниверсальная,
+	ЖурналМониторинга.НомерСеанса КАК НомерСеанса,
+	ЖурналМониторинга.ДатаЗаписиНачалоДня КАК ДатаЗаписиНачалоДня,
+	ЖурналМониторинга.Этап КАК Этап,
+	ЖурналМониторинга.Комментарий КАК Комментарий,
+	ЖурналМониторинга.ДатаЗаписи КАК ДатаЗаписи
+ПОМЕСТИТЬ НачалаОперации
+ИЗ
+	РегистрСведений.ЖурналМониторинга КАК ЖурналМониторинга
+ГДЕ
+	ИСТИНА
+	И ЖурналМониторинга.Этап = &amp;ЭтапНачало
+	И ЖурналМониторинга.ДатаЗаписи МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+{ГДЕ
+	ЖурналМониторинга.КлючеваяОперация.*}
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЖурналМониторинга.КлючеваяОперация КАК КлючеваяОперация,
+	ЖурналМониторинга.Идентификатор КАК Идентификатор,
+	МИНИМУМ(ЖурналМониторинга.ДатаЗаписиУниверсальная) КАК ДатаЗаписиУниверсальная,
+	НачалаОперации.ДатаЗаписиУниверсальная КАК ДатаЗаписиУниверсальнаяНачала
+ПОМЕСТИТЬ СрезПервыхЗавершенийОпераций
+ИЗ
+	НачалаОперации КАК НачалаОперации
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ЖурналМониторинга КАК ЖурналМониторинга
+		ПО НачалаОперации.КлючеваяОперация = ЖурналМониторинга.КлючеваяОперация
+			И (ЖурналМониторинга.Идентификатор = НачалаОперации.Идентификатор)
+			И (ЖурналМониторинга.Этап = &amp;ЭтапЗавершение)
+			И НачалаОперации.ДатаЗаписиУниверсальная &lt; ЖурналМониторинга.ДатаЗаписиУниверсальная
+
+СГРУППИРОВАТЬ ПО
+	ЖурналМониторинга.КлючеваяОперация,
+	ЖурналМониторинга.Идентификатор,
+	НачалаОперации.ДатаЗаписиУниверсальная
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ЖурналМониторинга.КлючеваяОперация КАК КлючеваяОперация,
+	ЖурналМониторинга.Идентификатор КАК Идентификатор,
+	ЖурналМониторинга.ДатаЗаписиУниверсальная КАК ДатаЗаписиУниверсальная,
+	ЖурналМониторинга.НомерСеанса КАК НомерСеанса,
+	ЖурналМониторинга.ДатаЗаписиНачалоДня КАК ДатаЗаписиНачалоДня,
+	ЖурналМониторинга.Этап КАК Этап,
+	ЖурналМониторинга.Комментарий КАК Комментарий,
+	ЖурналМониторинга.ДатаЗаписи КАК ДатаЗаписи,
+	СрезПервыхЗавершенийОпераций.ДатаЗаписиУниверсальнаяНачала КАК ДатаЗаписиУниверсальнаяНачала
+ПОМЕСТИТЬ ЗавершенияОпераций
+ИЗ
+	РегистрСведений.ЖурналМониторинга КАК ЖурналМониторинга
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ СрезПервыхЗавершенийОпераций КАК СрезПервыхЗавершенийОпераций
+		ПО ЖурналМониторинга.КлючеваяОперация = СрезПервыхЗавершенийОпераций.КлючеваяОперация
+			И ЖурналМониторинга.Идентификатор = СрезПервыхЗавершенийОпераций.Идентификатор
+			И ЖурналМониторинга.ДатаЗаписиУниверсальная = СрезПервыхЗавершенийОпераций.ДатаЗаписиУниверсальная
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	НачалаОперации.КлючеваяОперация КАК КлючеваяОперация,
+	НачалаОперации.Идентификатор КАК Идентификатор,
+	НачалаОперации.ДатаЗаписиУниверсальная КАК УниверсальнаяДатаНачала,
+	НачалаОперации.Комментарий КАК КомментарийНачала,
+	НачалаОперации.ДатаЗаписи КАК ДатаНачала,
+	ЗавершенияОпераций.ДатаЗаписиУниверсальная КАК УниверсальнаяДатаЗавершения,
+	ЗавершенияОпераций.Комментарий КАК КомментарийЗавершерния,
+	ЗавершенияОпераций.ДатаЗаписи КАК ДатаЗавершения,
+	РАЗНОСТЬДАТ(НачалаОперации.ДатаЗаписи, ЕСТЬNULL(ЗавершенияОпераций.ДатаЗаписи, НачалаОперации.ДатаЗаписи), СЕКУНДА) КАК Длительность,
+	ВЫБОР
+		КОГДА НачалаОперации.Идентификатор ССЫЛКА Справочник.ИсторияХранилища
+			ТОГДА ВЫРАЗИТЬ(НачалаОперации.Идентификатор КАК Справочник.ИсторияХранилища).Владелец
+		КОГДА НачалаОперации.Идентификатор ССЫЛКА Справочник.Хранилища
+			ТОГДА НачалаОперации.Идентификатор
+		ИНАЧЕ ЗНАЧЕНИЕ(Справочник.Хранилища.ПустаяСсылка)
+	КОНЕЦ КАК Хранилище
+ИЗ
+	НачалаОперации КАК НачалаОперации
+		ЛЕВОЕ СОЕДИНЕНИЕ ЗавершенияОпераций КАК ЗавершенияОпераций
+		ПО НачалаОперации.КлючеваяОперация = ЗавершенияОпераций.КлючеваяОперация
+			И НачалаОперации.Идентификатор = ЗавершенияОпераций.Идентификатор
+			И НачалаОперации.ДатаЗаписиУниверсальная = ЗавершенияОпераций.ДатаЗаписиУниверсальнаяНачала</query>
+	</dataSet>
+	<calculatedField>
+		<dataPath>ДлительностьОперации</dataPath>
+		<expression>СтроковыеФункцииУККлиентСервер.ПредставлениеКоличестваВремени(Длительность)</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Длительность операции</v8:content>
+			</v8:item>
+		</title>
+		<useRestriction>
+			<condition>true</condition>
+			<group>true</group>
+			<order>true</order>
+		</useRestriction>
+		<orderExpression>
+			<dcscom:expression>Длительность</dcscom:expression>
+			<dcscom:orderType>Asc</dcscom:orderType>
+			<dcscom:autoOrder>false</dcscom:autoOrder>
+		</orderExpression>
+	</calculatedField>
+	<parameter>
+		<name>ЭтапЗавершение</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Этап завершение</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.ЭтапыОперацийМониторинга</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Перечисление.ЭтапыОперацийМониторинга.Завершение</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>ЭтапНачало</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Этап начало</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.ЭтапыОперацийМониторинга</v8:Type>
+		</valueType>
+		<value xsi:type="dcscor:DesignTimeValue">Перечисление.ЭтапыОперацийМониторинга.Начало</value>
+		<useRestriction>true</useRestriction>
+	</parameter>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаОкончания</expression>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;Период.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+		<use>Always</use>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>ОценкаДлительностиОпераций</dcsset:name>
+		<dcsset:presentation xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Оценка длительности операций</v8:content>
+			</v8:item>
+		</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КлючеваяОперация</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Идентификатор</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаНачала</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДатаЗавершения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>УниверсальнаяДатаНачала</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>УниверсальнаяДатаЗавершения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КомментарийНачала</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>КомментарийЗавершерния</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ДлительностьОперации</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">КлючеваяОперация</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>d927c8bb-69e1-4d1a-813c-fc0c3bba3c6a</dcsset:userSettingID>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Хранилище</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:userSettingID>52148fd2-5311-48c0-a19e-218d96c82e05</dcsset:userSettingID>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Период</dcscor:parameter>
+					<dcscor:value xsi:type="v8:StandardPeriod">
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Today</v8:variant>
+					</dcscor:value>
+					<dcsset:userSettingID>d2a11d50-9385-46fa-9f84-89c6e3b41e5a</dcsset:userSettingID>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:order>
+				<dcsset:item xsi:type="dcsset:OrderItemField">
+					<dcsset:field>УниверсальнаяДатаНачала</dcsset:field>
+					<dcsset:orderType>Asc</dcsset:orderType>
+				</dcsset:item>
+			</dcsset:order>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

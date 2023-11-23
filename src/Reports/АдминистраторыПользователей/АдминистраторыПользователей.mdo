@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="450f4163-7e3d-4e12-90e4-3cd5fa196a13">
+  <producedTypes>
+    <objectType typeId="f7ab985b-7ef0-434e-baf1-bf24315503ce" valueTypeId="2351e1dc-d2e7-485d-b681-e8583edb4c9c"/>
+    <managerType typeId="68fe8262-aa14-41cd-9838-6087225487ab" valueTypeId="d290bb17-8541-4d0e-a7d5-ccebc4047523"/>
+  </producedTypes>
+  <name>АдминистраторыПользователей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Администраторы пользователей</value>
+  </synonym>
+  <mainDataCompositionSchema>Report.АдминистраторыПользователей.Template.ОсновнаяСхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="c740836a-3d6c-4e50-acc8-ed769108de20">
+    <name>ОсновнаяСхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основная схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c55a89f7-c0ec-414e-a53d-5c3e347b4a73">
+  <producedTypes>
+    <selectionType typeId="f473f3a3-3b15-4b82-9f3c-9dec3d070799" valueTypeId="2fae817d-8f96-4753-bbbf-aef25e79595a"/>
+    <listType typeId="3394277e-fafb-4ab3-836f-986492066212" valueTypeId="d4bb3927-3207-42e9-b003-d9e4c4d2f1f4"/>
+    <managerType typeId="3dc978db-1df6-42e6-b653-ecb9c734f1a2" valueTypeId="5cf58c77-7ec0-468f-a617-b16622150904"/>
+    <recordSetType typeId="fd497a06-60c5-4bf0-9746-d7952d4fed6e" valueTypeId="c2fba822-66c4-402d-904d-3f607e3b6503"/>
+    <recordKeyType typeId="18581150-8da4-422d-804c-5ce5bc7ef55d" valueTypeId="ec5d1880-994f-4a3f-a28f-98ca400da75a"/>
+    <recordType typeId="5edf98d1-020e-4eab-8fbb-4de97857ba0d" valueTypeId="e81ddb23-5b99-4fc7-987f-1d206c8846f3"/>
+    <recordManagerType typeId="cf2ea54b-0974-4af9-ba86-0b8efb718b94" valueTypeId="61d42bbb-d9a5-4d0b-baeb-eac348345a80"/>
+  </producedTypes>
+  <name>РезультатыСинтаксическойПроверки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Результаты синтаксической проверки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="f4d7c934-6880-4e17-bcfe-6659853b2287">
+    <name>КоличествоОшибокАПК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество ошибок АПК</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="fc7848a1-70c2-43d2-bf0f-fd6d4ee285f7">
+    <name>ПровереноАПК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверено АПК</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="eea291c6-aaa0-48e7-aff7-d528ef4aa14c">
+    <name>КоличествоОшибокBSL_LS</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество ошибок BSL LS</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>5</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="875d8a34-bed2-433c-a7a6-299703e1b56d">
+    <name>ПровереноBSLLS</name>
+    <synonym>
+      <key>ru</key>
+      <value>Проверено BSLLS</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="4fb4e814-295f-4f96-9527-cff3fbde14b1">
+    <name>ОбъектПроверки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект проверки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИсторияХранилища</types>
+      <types>CatalogRef.ВерсииДополнений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

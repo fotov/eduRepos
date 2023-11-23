@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4a472c12-95bc-4775-8158-e1c4776da59a">
+  <producedTypes>
+    <selectionType typeId="f6dfca83-6bf3-4fa2-af2b-db50e07e6201" valueTypeId="4599eee8-1f9b-4a05-95a8-3199ae67cf19"/>
+    <listType typeId="feb5dcdd-8750-43a6-babe-f4f5e4c0ca7c" valueTypeId="f0584e11-9a36-4a36-ad51-7902737c7ee0"/>
+    <managerType typeId="5eb38e79-ba7b-4699-9185-b25a81405274" valueTypeId="da50a090-bdb5-4a24-8adf-387c7586c71c"/>
+    <recordSetType typeId="4a9e9a97-9e3b-4273-849f-5330aac68b9b" valueTypeId="8c97c49b-ff17-4db8-87cc-481b515d8d94"/>
+    <recordKeyType typeId="08e62db9-7f0b-4227-9867-ed1501b41007" valueTypeId="611f97b3-9b9c-46a6-9fcd-56cbc9afa1f7"/>
+    <recordType typeId="5e22293f-7810-4118-a1f6-beb8a9d9b18b" valueTypeId="6cf9e113-203b-4c45-adbd-55a083bc48b6"/>
+    <recordManagerType typeId="49dddb56-d8c4-47f5-a01b-c788a78e873c" valueTypeId="74ccb6b5-baa6-4562-80e8-429878b90620"/>
+  </producedTypes>
+  <name>КомандыСотрудников</name>
+  <synonym>
+    <key>ru</key>
+    <value>Команды сотрудников</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="580da4fc-cce2-45b7-81d8-d2edccb792fe">
+    <name>Команда</name>
+    <synonym>
+      <key>ru</key>
+      <value>Команда</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Команды</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="bd36a79b-c5e0-47c8-a3ad-a4c604c66068">
+    <name>Сотрудник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сотрудник</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Сотрудники</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

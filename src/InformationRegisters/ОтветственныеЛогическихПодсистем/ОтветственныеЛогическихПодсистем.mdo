@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="13c4afe7-a1fb-41b0-a95b-eb2479f0f373">
+  <producedTypes>
+    <selectionType typeId="5382a97f-8ba3-49b2-933e-ffcb85834321" valueTypeId="ec3e03b8-00b5-4313-bd6e-fe0d17fda357"/>
+    <listType typeId="bd30eba2-83fe-40b9-833f-ac1050a0d4c0" valueTypeId="5ac6253a-fa26-4fbe-b5e3-6b0e8ea06a2d"/>
+    <managerType typeId="9cb185e2-103c-4118-8ba5-acbeef995c90" valueTypeId="ed9a8c14-a6e1-41d6-8a1a-46ed9fe379ea"/>
+    <recordSetType typeId="b6d1aa17-f156-4a4d-bfbc-85c72a095358" valueTypeId="2bbaac9c-0b1e-4a7d-9236-ab1dd3aed2b6"/>
+    <recordKeyType typeId="ff01ad8f-23a8-4b93-b849-11cb1ad2a269" valueTypeId="2abff399-1b2c-42db-9f30-67a8ca76e0b7"/>
+    <recordType typeId="bb5edaad-58ba-4189-9d2e-96e5b9fb7b8f" valueTypeId="42aa5d3b-0c61-4b1b-8bc7-c56472f1731d"/>
+    <recordManagerType typeId="b40fd641-1512-4050-829c-4a4a004e50aa" valueTypeId="d0501fdb-1483-4200-88fc-c26526ea5d32"/>
+  </producedTypes>
+  <name>ОтветственныеЛогическихПодсистем</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ответственные логических подсистем</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <recordPresentation>
+    <key>ru</key>
+    <value>Ответственный по логической подсистеме</value>
+  </recordPresentation>
+  <resources uuid="c029e404-c58c-4a1d-afb9-0d5b79118166">
+    <name>Ответственный</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответственный</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="e2711217-a4b8-4e2a-815d-bcd592b8cb96">
+    <name>ЛогическаяПодсистема</name>
+    <synonym>
+      <key>ru</key>
+      <value>Логическая подсистема</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ЛогическиеПодсистемы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="828554aa-07f5-4315-8df1-6c585b56180f">
+    <name>ФормаВыбора</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма выбора</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

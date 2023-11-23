@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a576873d-eb6c-493b-ba5a-c3031cd135da">
+  <producedTypes>
+    <objectType typeId="c4b55853-385d-4657-93d6-680669e5cd4c" valueTypeId="8d4de364-364b-4d4a-af5d-7887fb20df28"/>
+    <refType typeId="77a7d121-33a2-44a4-9a69-8553928868a5" valueTypeId="a64394ab-e70d-4f0f-89dc-d4d4184f9619"/>
+    <selectionType typeId="05f106ca-6aa3-41af-bac2-42ba3c74d731" valueTypeId="f9c18c93-b718-440b-a65c-40a59cec6be7"/>
+    <listType typeId="7f9028b3-a478-4fd4-87a3-62887708c31b" valueTypeId="9c513d25-6b02-4e05-a072-6a0dff187aba"/>
+    <managerType typeId="6cfb6322-156c-4665-84ac-c8b49c9c27f1" valueTypeId="6529f3c0-026c-4ea6-8e85-5a2a24596514"/>
+  </producedTypes>
+  <name>ПоказателиМониторинга</name>
+  <synonym>
+    <key>ru</key>
+    <value>Показатели мониторинга</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ПоказателиМониторинга.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="f7fe5415-a7a5-4055-aca6-5d2e3e9d2ff2">
+      <name>ВремяОбработки</name>
+      <description>Время обработки</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="7c39f872-8335-40b4-97e3-2b6b6c96f665">
+      <name>ДлинаОчереди</name>
+      <description>Длина очереди</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+    <items id="e1253051-a854-4bbf-bd27-01fed56693c9">
+      <name>СреднееВремяОбработки</name>
+      <description>Среднее время обработки</description>
+      <code xsi:type="core:StringValue">
+        <value></value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+</mdclass:Catalog>

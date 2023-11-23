@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6c8e6cff-5726-468b-bf4f-f45ab94a5530">
+  <name>ЗаписьВРегистрыВременно</name>
+  <synonym>
+    <key>ru</key>
+    <value>Запись в регистры временно</value>
+  </synonym>
+</mdclass:Role>

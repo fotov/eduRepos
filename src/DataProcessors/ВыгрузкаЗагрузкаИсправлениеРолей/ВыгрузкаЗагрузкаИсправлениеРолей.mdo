@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="50f2bbb0-2292-4400-85d5-fa8fa906434b">
+  <producedTypes>
+    <objectType typeId="fbfca91b-b799-4a9d-b5f5-d22e1019034c" valueTypeId="0345954b-b21f-4eda-ba69-19a255340204"/>
+    <managerType typeId="944fcc54-532d-4b96-bbad-50c303879cf3" valueTypeId="a2ec7fd6-17e5-4c13-81a7-4ded5d757d7e"/>
+  </producedTypes>
+  <name>ВыгрузкаЗагрузкаИсправлениеРолей</name>
+  <synonym>
+    <key>ru</key>
+    <value>Выгрузка загрузка исправление ролей</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ВыгрузкаЗагрузкаИсправлениеРолей.Form.Форма</defaultForm>
+  <attributes uuid="c2d0bf42-a1a1-4c98-b4de-8bcade9b52ff">
+    <name>Каталог</name>
+    <synonym>
+      <key>ru</key>
+      <value>Каталог</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="bf448a87-ef1c-4ad8-809e-bb4f3dbcb8b3">
+    <name>СтрокаСоединения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Строка соединения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <forms uuid="de004ad3-fcc0-49b5-86e0-316a9c827b7e">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

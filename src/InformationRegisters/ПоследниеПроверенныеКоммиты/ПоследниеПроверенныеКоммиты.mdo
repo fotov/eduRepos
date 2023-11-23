@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aba8542f-3b31-4319-806b-764312fc780e">
+  <producedTypes>
+    <selectionType typeId="3c85533e-9a5f-4624-8e87-10ecbfe10f69" valueTypeId="1993b4f1-d438-4291-b5c3-8519c6755c17"/>
+    <listType typeId="d3317004-f4e7-498c-81a6-157c3b057aa5" valueTypeId="ba215094-c150-47de-84a7-29dce5b90bb8"/>
+    <managerType typeId="4b067fec-b572-4cb4-8ff8-6d7c91bf8525" valueTypeId="b6395cfe-5c41-48bf-ba6e-ace2f287e683"/>
+    <recordSetType typeId="f50f34d0-fe0d-4ecb-be5b-f12bc25a6200" valueTypeId="e443b908-e143-4aef-91ed-7ffe3685cb30"/>
+    <recordKeyType typeId="f2a4bd62-5400-485b-8c48-49a75b56438b" valueTypeId="013eeed7-b5a3-4db9-a298-209f5fa2f320"/>
+    <recordType typeId="08592e7e-d263-4c03-bb6d-c847de9f5097" valueTypeId="602240ca-1c7d-4957-a130-e9d883a86d1b"/>
+    <recordManagerType typeId="4a6e2391-ae26-44e3-aa4d-176e958dbe73" valueTypeId="17741bae-dea4-4c87-83bf-4a068d4ee39e"/>
+  </producedTypes>
+  <name>ПоследниеПроверенныеКоммиты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Последние проверенные коммиты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="e21162f0-5214-4262-a49a-ec9e61734df6">
+    <name>Коммит</name>
+    <synonym>
+      <key>ru</key>
+      <value>Коммит</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИсторияХранилища</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="fe6011f1-af67-4dcd-a213-726fad94366a">
+    <name>Успех</name>
+    <synonym>
+      <key>ru</key>
+      <value>Успех</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="c3b07ba7-1dcd-4539-9b4d-e259bb261f27">
+    <name>КонвейерОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конвейер обработки</value>
+    </synonym>
+    <type>
+      <types>BusinessProcessRef.КонвейерОбработки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="b43da33e-0f02-4ade-bc92-05a9871b529a">
+    <name>Хранилище</name>
+    <synonym>
+      <key>ru</key>
+      <value>Хранилище</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Хранилища</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

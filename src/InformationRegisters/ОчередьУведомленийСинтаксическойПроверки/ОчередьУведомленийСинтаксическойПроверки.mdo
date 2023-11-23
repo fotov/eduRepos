@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6badc566-09f8-47ea-81d0-1097753be35e">
+  <producedTypes>
+    <selectionType typeId="42d3c4ce-5973-419f-9627-3ba71f00b95a" valueTypeId="126c0d97-47f7-45fd-8dd7-c832f9b19aac"/>
+    <listType typeId="73427541-1e6d-4f5a-94f4-f5a83c3f2804" valueTypeId="39445e3d-6427-45e2-81a3-6cad6927ca4d"/>
+    <managerType typeId="b6ca0618-9da5-4eb9-b530-1ba3ad8fde01" valueTypeId="f33be98c-7161-4a4e-b302-045529b62b56"/>
+    <recordSetType typeId="05833ead-16e5-4d26-9702-b64a33f36fcf" valueTypeId="7144f40a-aff0-42a1-bc60-1db55cee035d"/>
+    <recordKeyType typeId="6929d11f-8915-4d98-b1b4-f51c2567a6ee" valueTypeId="60092a06-bffe-464f-9e56-52c3f316f276"/>
+    <recordType typeId="406450ba-c518-4ea9-b9dc-1a38f88695a3" valueTypeId="f19934c2-3a69-402d-bdde-9b626fbcefb4"/>
+    <recordManagerType typeId="6dceb6a7-af83-4893-b404-92c8543d12c5" valueTypeId="972cdf0e-1ac3-411b-b010-20eb7326c596"/>
+  </producedTypes>
+  <name>ОчередьУведомленийСинтаксическойПроверки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Очередь уведомлений синтаксической проверки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="fa7fea15-27a0-4435-99d0-ac28b3fed8e5">
+    <name>Статус</name>
+    <synonym>
+      <key>ru</key>
+      <value>Статус</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СтатусыОперацийУведомлений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="5b5a58d6-4cd8-4c1f-9227-fd50027e9d69">
+    <name>ОбъектПроверки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект проверки</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ИсторияХранилища</types>
+      <types>CatalogRef.ВерсииДополнений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="81eadf70-2120-4efb-837e-6e891a796cab">
+    <name>ЭтоПроверкаАПК</name>
+    <synonym>
+      <key>ru</key>
+      <value>Это проверка АПК</value>
+    </synonym>
+    <comment>Маркер вида проверки. АПК или БСЛ-ЛС. Если Истина, то АПК.</comment>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

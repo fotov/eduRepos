@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WebService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="12be4229-1582-4a09-a8c1-9d92db87dacf">
+  <name>Automacon</name>
+  <synonym>
+    <key>ru</key>
+    <value>Automacon</value>
+  </synonym>
+  <namespace>https://automacon.ru/</namespace>
+  <descriptorFileName>Automacon.1cws</descriptorFileName>
+  <sessionMaxAge>20</sessionMaxAge>
+  <operations uuid="dcb0b36c-8d83-4b3d-bbff-4818cf3482a9">
+    <name>ПолучитьРезультатЗапроса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить результат запроса</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьРезультатЗапроса</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="40bb8f5d-1eea-424c-b023-b5c344cddda4">
+      <name>ТекстЗапроса</name>
+      <synonym>
+        <key>ru</key>
+        <value>Текст запроса</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="2ff9dfa6-b6bb-40da-99a7-cb1a270f2b6a">
+      <name>СтруктураПараметров</name>
+      <synonym>
+        <key>ru</key>
+        <value>Структура параметров</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="9f9b8e87-80af-4851-b578-6fd3d03e0227">
+    <name>ЗарегистрироватьОбновлениеИБ</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зарегистрировать обновление ИБ</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ЗарегистрироватьОбновлениеИБ</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="0319da30-fd23-45f9-a50a-354b5256a4dd">
+      <name>Хранилище</name>
+      <synonym>
+        <key>ru</key>
+        <value>Хранилище</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="c34fd3c5-3245-4612-9654-f8006ec51c9c">
+      <name>НомерКоммита</name>
+      <synonym>
+        <key>ru</key>
+        <value>Номер коммита</value>
+      </synonym>
+      <xdtoValueType>
+        <name>integer</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="1c2f2542-944e-4c6e-aad7-a1167f98d81c">
+      <name>База1С</name>
+      <synonym>
+        <key>ru</key>
+        <value>База1 С</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="d176ffac-e655-4404-a19b-a1c636932340">
+      <name>Комментарий</name>
+      <synonym>
+        <key>ru</key>
+        <value>Комментарий</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="aa1e20ff-4354-427e-b72b-244477b9024a">
+      <name>Ответственный</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ответственный</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+  <operations uuid="3c5d1987-e4a0-4f0d-87b2-21ce292ae780">
+    <name>ПолучитьСписокПредопределенныхЭлементов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Получить список предопределенных элементов</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>ПолучитьСписокПредопределенныхЭлементов</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="cd537ffd-07d6-4dee-a0f6-119130c3f6b4">
+      <name>КонфигурацияИдентификатор</name>
+      <synonym>
+        <key>ru</key>
+        <value>Конфигурация идентификатор</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+</mdclass:WebService>
