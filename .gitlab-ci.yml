@@ -1,5 +1,5 @@
 include:
-  - project: 'automacon/vkusvill-1c/pipe-1c'
+  - project: 'automacon/vkusvill-1c/quality/pipe-1c'
     ref: repos/customize-pipe
 #    ref: develop
     file:
