@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a24adb9e-fed6-456c-8be7-555b4bf02f1d">
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8011db7a-9f2e-482d-9efe-f6ccc9288460">
   <name>НастройкаСоставаЛогическихПодсистем</name>
   <synonym>
     <key>ru</key>

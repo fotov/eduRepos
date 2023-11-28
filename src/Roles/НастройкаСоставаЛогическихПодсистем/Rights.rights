@@ -4,29 +4,36 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
-		<name>Configuration.УправлениеКоммитами</name>
+		<name>Catalog.ЛогическиеПодсистемы</name>
 		<right>
-			<name>MainWindowModeEmbeddedWorkplace</name>
+			<name>Read</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>MainWindowModeKiosk</name>
+			<name>View</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>MainWindowModeNormal</name>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.СоставЛогическихПодсистем</name>
+		<right>
+			<name>Read</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>MainWindowModeFullscreenWorkplace</name>
+			<name>Update</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>MainWindowModeWorkplace</name>
+			<name>View</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>AnalyticsSystemClient</name>
+			<name>Edit</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -38,72 +45,55 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.ОтветственныеЛогическихПодсистем</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
+		<name>Subsystem.ТехническийПроект.Subsystem.Документация</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.ОтветственныеЛогическихПодсистем.StandardAttribute.Recorder</name>
+		<name>Subsystem.ТехническийПроект</name>
 		<right>
-			<name>Edit</name>
-			<value>false</value>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.ОтветственныеЛогическихПодсистем.StandardAttribute.Active</name>
+		<name>Configuration.УправлениеКоммитами</name>
 		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ОтветственныеЛогическихПодсистем.Resource.Ответственный</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ОтветственныеЛогическихПодсистем.StandardAttribute.Period</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ОтветственныеЛогическихПодсистем.Dimension.ЛогическаяПодсистема</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.ОтветственныеЛогическихПодсистем.StandardAttribute.LineNumber</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>InformationRegister.СоставЛогическихПодсистем</name>
-		<right>
-			<name>Edit</name>
+			<name>MainWindowModeNormal</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>Read</name>
+			<name>MainWindowModeWorkplace</name>
 			<value>true</value>
 		</right>
 		<right>
-			<name>Update</name>
+			<name>MainWindowModeEmbeddedWorkplace</name>
 			<value>true</value>
 		</right>
+		<right>
+			<name>MainWindowModeFullscreenWorkplace</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>MainWindowModeKiosk</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>AnalyticsSystemClient</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Subsystem.ТехническийПроект.Subsystem.НСИ</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Subsystem.ТехническийПроект.Subsystem.КонтрольИзмененияМетаданных</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
