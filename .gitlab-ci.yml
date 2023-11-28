@@ -1,0 +1,64 @@
+include:
+  - project: 'automacon/vkusvill-1c/pipe-1c'
+    ref: repos/customize-pipe
+#    ref: develop
+    file:
+      - "/gitlab/.snippets.yml"
+      - "/gitlab/.vars.yml"
+      - "/gitlab/.workflows.yml"
+      - "/gitlab/.config-defaults.yml"
+
+      - "/gitlab/sonarqube.gitlab-ci.yml"
+      - "/gitlab/release.gitlab-ci.yml"
+      - "/gitlab/edt.gitlab-ci.yml"
+      - "/gitlab/onec.gitlab-ci.yml"
+      - "/gitlab/yaxunit.gitlab-ci.yml"
+      - "/gitlab/tools.gitlab-ci.yml"
+
+stages:
+  - build
+  - test
+  - deploy
+
+variables: !reference [.repos-vars, variables]
+
+workflow:
+  rules:
+    - !reference [.default-workflows-request, rules]
+    - !reference [.default-workflows-schedule, rules]
+
+# .pre -------------------------------------
+
+release:version:
+  extends: .release:version
+
+tools:cache:
+  extends: .tools:cache
+
+# build -----------------------------------
+
+edt:convertation:
+  extends:
+    .edt:convertation
+  needs: []
+
+onec:build-test-base:
+  extends: .onec:build-test-base
+  needs: ["edt:convertation"]
+  script:
+    - !reference [.script_snippets, build_test_base_default ]
+  cache:
+    - !reference [.cache_snippets, build_test_base_default ]
+
+# test -----------------------------------
+
+sonarqube:check:
+  extends: .sonarqube:check
+  needs:
+    - job: onec:convert-edt-errors
+      optional: true
+    - job: release:version
+
+yaxunit:test:
+  extends: .yaxunit:test
+
