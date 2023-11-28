@@ -933,7 +933,14 @@
       <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
-        <common>true</common>
+        <for>
+          <value>true</value>
+          <role>Role.ДобавлениеИзменениеЛогическихПодсистем</role>
+        </for>
+        <for>
+          <value>true</value>
+          <role>Role.ПолныеПрава</role>
+        </for>
       </userVisible>
       <extendedTooltip>
         <name>ФормаНазначитьОтветственногоРасширеннаяПодсказка</name>
