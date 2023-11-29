@@ -1972,21 +1972,21 @@
                   <key>ru</key>
                   <value>Базовая подпись (CAdES-BES)</value>
                 </presentation>
-                <value xsi:type="core:ReferenceValue"/>
+                <value xsi:type="core:UndefinedValue"/>
               </choiceList>
               <choiceList>
                 <presentation>
                   <key>ru</key>
                   <value>Подпись с меткой доверенного времени (CAdES-T)</value>
                 </presentation>
-                <value xsi:type="core:ReferenceValue"/>
+                <value xsi:type="core:UndefinedValue"/>
               </choiceList>
               <choiceList>
                 <presentation>
                   <key>ru</key>
                   <value>Архивная подпись (CAdES-A)</value>
                 </presentation>
-                <value xsi:type="core:ReferenceValue"/>
+                <value xsi:type="core:UndefinedValue"/>
               </choiceList>
             </extInfo>
           </items>
