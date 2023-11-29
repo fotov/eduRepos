@@ -1,7 +1,6 @@
 include:
   - project: 'automacon/vkusvill-1c/quality/pipe-1c'
-    ref: repos/customize-pipe
-#    ref: develop
+    ref: develop
     file:
       - "/gitlab/.snippets.yml"
       - "/gitlab/.vars.yml"
