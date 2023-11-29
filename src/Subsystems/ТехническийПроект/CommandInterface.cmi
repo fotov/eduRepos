@@ -3,6 +3,7 @@
   <commandsOrder>
     <orderFragments>
       <group>ActionsPanelReports</group>
+      <commands>0:65e27d0f-3c9b-430f-996d-119f0b756025</commands>
       <commands>CommonCommand.ПанельОтчетовТехническийПроект</commands>
     </orderFragments>
   </commandsOrder>

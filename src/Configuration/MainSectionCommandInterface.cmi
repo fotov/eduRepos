@@ -7,17 +7,25 @@
         <common>true</common>
       </visible>
     </visibilityFragments>
+    <visibilityFragments>
+      <command>0:fca107cf-02f0-42e1-af54-3a9455279570</command>
+      <visible>
+        <common>true</common>
+      </visible>
+    </visibilityFragments>
   </commandsVisibility>
   <commandsPlacement>
     <placementFragments>
       <group>ActionsPanelReports</group>
       <commands>CommonCommand.ПанельОтчетовГлавное</commands>
+      <commands>0:fca107cf-02f0-42e1-af54-3a9455279570</commands>
     </placementFragments>
   </commandsPlacement>
   <commandsOrder>
     <orderFragments>
       <group>ActionsPanelReports</group>
       <commands>CommonCommand.ПанельОтчетовГлавное</commands>
+      <commands>0:fca107cf-02f0-42e1-af54-3a9455279570</commands>
     </orderFragments>
   </commandsOrder>
 </cmi:CommandInterface>
