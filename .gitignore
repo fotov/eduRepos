@@ -1,1 +1,18 @@
 /.idea/
+DumpFilesIndex.txt
+ConfigDumpInfo.xml
+/build/
+out/
+.scannerwork/
+.vscode/
+.metadata/
+#.settings/
+.packman/
+tools/vanessa-add/
+
+### IntelliJ IDEA ###
+/.idea
+/repos.iml
+*.iws
+*.iml
+*.ipr
