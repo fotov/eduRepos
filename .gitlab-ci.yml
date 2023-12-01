@@ -6,6 +6,7 @@ include:
       - "/gitlab/.vars.yml"
       - "/gitlab/.workflows.yml"
       - "/gitlab/.config-defaults.yml"
+      - "/gitlab/.rules.yml"
 
       - "/gitlab/sonarqube.gitlab-ci.yml"
       - "/gitlab/release.gitlab-ci.yml"
@@ -52,12 +53,24 @@ onec:build-test-base:
 # test -----------------------------------
 
 sonarqube:check:
-  extends: .sonarqube:check
+  extends: .sonarqube:customizable
+  stage: test
+  variables:
+    RUN_ANALYSIS: "true"
   needs:
     - job: onec:convert-edt-errors
       optional: true
     - job: release:version
+      optional: true
 
 yaxunit:test:
   extends: .yaxunit:test
 
+# deploy -----------------------------------
+
+sonarqube:coverage:
+  extends: .sonarqube:customizable
+  stage: deploy
+  rules: !reference [".runPushCoverageToSonarqubeRules", "rules"]
+  variables:
+    RUN_COVERAGE: "true"
