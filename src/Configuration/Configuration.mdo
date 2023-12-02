@@ -1672,6 +1672,7 @@
   <informationRegisters>InformationRegister.ФайлыВРабочемКаталоге</informationRegisters>
   <informationRegisters>InformationRegister.ХешиGitВерсийХранилища</informationRegisters>
   <informationRegisters>InformationRegister.ХешиГитСравненияИзменений</informationRegisters>
+  <informationRegisters>InformationRegister.ОбъектыМетаданныхПрава</informationRegisters>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.ВопросыАнкетОбъектов</chartsOfCharacteristicTypes>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.ДополнительныеРеквизитыИСведения</chartsOfCharacteristicTypes>
   <chartsOfCharacteristicTypes>ChartOfCharacteristicTypes.СвойстваОбъектов</chartsOfCharacteristicTypes>
