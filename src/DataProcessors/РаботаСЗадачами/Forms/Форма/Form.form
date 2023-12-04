@@ -5140,12 +5140,12 @@
                 <horizontalAlign>Left</horizontalAlign>
               </autoCommandBar>
               <handlers>
-                <event>OnActivateRow</event>
-                <name>ТаблицаОбъектовПриАктивизацииСтроки</name>
-              </handlers>
-              <handlers>
                 <event>Selection</event>
                 <name>ТаблицаОбъектовВыбор</name>
+              </handlers>
+              <handlers>
+                <event>OnActivateRow</event>
+                <name>ТаблицаОбъектовПриАктивизацииСтроки</name>
               </handlers>
               <searchStringAddition>
                 <visible>true</visible>
