@@ -52,7 +52,7 @@ onec:build-test-base:
 # test -----------------------------------
 
 sonarqube:check:
-  extends: .sonarqube:check
+  extends: .sonarqube:customizable
   needs:
     - job: onec:convert-edt-errors
       optional: true
@@ -61,3 +61,11 @@ sonarqube:check:
 yaxunit:test:
   extends: .yaxunit:test
 
+# deploy -----------------------------------
+
+sonarqube:coverage:
+  extends: .sonarqube:customizable
+  stage: deploy
+  rules: !reference [".runPushCoverageToSonarqubeRules", "rules"]
+  variables:
+    RUN_COVERAGE: "true"
