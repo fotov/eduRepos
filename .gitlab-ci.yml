@@ -6,6 +6,7 @@ include:
       - "/gitlab/.vars.yml"
       - "/gitlab/.workflows.yml"
       - "/gitlab/.config-defaults.yml"
+      - "/gitlab/.rules.yml"
 
       - "/gitlab/sonarqube.gitlab-ci.yml"
       - "/gitlab/release.gitlab-ci.yml"
