@@ -116,4 +116,5 @@
   <dataProcessors>DataProcessor.ЮТHTTPСервисЗапрос</dataProcessors>
   <dataProcessors>DataProcessor.ЮТКонструкторТестовыхДанных</dataProcessors>
   <dataProcessors>DataProcessor.ЮТЮнитТесты</dataProcessors>
+  <businessProcesses>BusinessProcess.ПредварительнаяПроверка</businessProcesses>
 </mdclass:Configuration>
