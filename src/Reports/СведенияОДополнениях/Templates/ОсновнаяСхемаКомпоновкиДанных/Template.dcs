@@ -353,7 +353,7 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" t="false" ref="v8ui:СостоянияРасширенийБудетПодключено"/>
+							<dcscor:value xsi:type="v8ui:Picture"/>
 						</dcscor:item>
 					</dcsset:appearance>
 					<dcsset:useInOverall>DontUse</dcsset:useInOverall>
@@ -381,7 +381,7 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" t="false" ref="v8ui:СостоянияРасширенийПодключено"/>
+							<dcscor:value xsi:type="v8ui:Picture"/>
 						</dcscor:item>
 					</dcsset:appearance>
 					<dcsset:useInOverall>DontUse</dcsset:useInOverall>
@@ -505,7 +505,7 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" t="false" ref="v8ui:СостоянияРасширенийБудетПодключено"/>
+							<dcscor:value xsi:type="v8ui:Picture"/>
 						</dcscor:item>
 					</dcsset:appearance>
 					<dcsset:useInOverall>DontUse</dcsset:useInOverall>
@@ -533,7 +533,7 @@
 					<dcsset:appearance>
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:parameter>Картинка</dcscor:parameter>
-							<dcscor:value xsi:type="v8ui:Picture" t="false" ref="v8ui:СостоянияРасширенийПодключено"/>
+							<dcscor:value xsi:type="v8ui:Picture"/>
 						</dcscor:item>
 					</dcsset:appearance>
 					<dcsset:useInOverall>DontUse</dcsset:useInOverall>
