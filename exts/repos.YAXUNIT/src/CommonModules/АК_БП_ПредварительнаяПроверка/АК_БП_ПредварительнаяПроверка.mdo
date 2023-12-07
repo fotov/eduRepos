@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="29b2bb6f-9d6f-4187-9dd0-38251b70136b">
+  <name>АК_БП_ПредварительнаяПроверка</name>
+  <synonym>
+    <key>ru</key>
+    <value>Тестирование БП предварительная проверка</value>
+  </synonym>
+  <server>true</server>
+  <externalConnection>true</externalConnection>
+  <clientOrdinaryApplication>true</clientOrdinaryApplication>
+</mdclass:CommonModule>

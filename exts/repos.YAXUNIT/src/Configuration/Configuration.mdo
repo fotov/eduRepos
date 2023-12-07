@@ -47,6 +47,9 @@
   <commonTemplates>CommonTemplate.ЮТRegEx1CAddin</commonTemplates>
   <commonTemplates>CommonTemplate.ЮТYaxUnitAddIn</commonTemplates>
   <commonTemplates>CommonTemplate.ЮТОписаниеМетаданных</commonTemplates>
+  <commonModules>CommonModule.АК_БП_ПредварительнаяПроверка</commonModules>
+  <commonModules>CommonModule.АК_ПервыйТест</commonModules>
+  <commonModules>CommonModule.АК_СправочникВерсииДополнений</commonModules>
   <commonModules>CommonModule.Мокито</commonModules>
   <commonModules>CommonModule.МокитоОбучение</commonModules>
   <commonModules>CommonModule.МокитоПроверки</commonModules>
@@ -111,9 +114,8 @@
   <commonModules>CommonModule.ЮТФильтрация</commonModules>
   <commonModules>CommonModule.ЮТЧитатель</commonModules>
   <commonModules>CommonModule.ЮТЧитательСервер</commonModules>
-  <commonModules>CommonModule.АК_ПервыйТест</commonModules>
-  <commonModules>CommonModule.АК_СправочникВерсииДополнений</commonModules>
   <dataProcessors>DataProcessor.ЮТHTTPСервисЗапрос</dataProcessors>
   <dataProcessors>DataProcessor.ЮТКонструкторТестовыхДанных</dataProcessors>
   <dataProcessors>DataProcessor.ЮТЮнитТесты</dataProcessors>
+  <businessProcesses>BusinessProcess.ПредварительнаяПроверка</businessProcesses>
 </mdclass:Configuration>

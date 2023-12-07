@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8011db7a-9f2e-482d-9efe-f6ccc9288460">
+  <name>НастройкаСоставаЛогическихПодсистем</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройка состава логических подсистем</value>
+  </synonym>
+</mdclass:Role>

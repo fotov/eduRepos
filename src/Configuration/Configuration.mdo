@@ -12,7 +12,6 @@
   <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="53ca73a3-4577-4aa5-b699-000d5e272b1e"/>
   <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="4be4e27a-46fd-43aa-9451-7f41d70734f6"/>
   <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="c40242f6-fef8-4c79-9ebd-63185e0ce130"/>
-  <configurationExtensionCompatibilityMode>8.3.22</configurationExtensionCompatibilityMode>
   <defaultRunMode>ManagedApplication</defaultRunMode>
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
@@ -579,6 +578,7 @@
   <roles>Role.НастройкаИОценкаПроизводительности</roles>
   <roles>Role.НастройкаИЧтениеДанныхМониторинга</roles>
   <roles>Role.НастройкаСинхронизацииФайлов</roles>
+  <roles>Role.НастройкаСоставаЛогическихПодсистем</roles>
   <roles>Role.ОбновлениеКонфигурацииБазыДанных</roles>
   <roles>Role.ПолныеПрава</roles>
   <roles>Role.ПолныеПраваУК</roles>

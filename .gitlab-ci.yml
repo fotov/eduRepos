@@ -54,10 +54,14 @@ onec:build-test-base:
 
 sonarqube:check:
   extends: .sonarqube:customizable
+  stage: test
+  variables:
+    RUN_ANALYSIS: "true"
   needs:
     - job: onec:convert-edt-errors
       optional: true
     - job: release:version
+      optional: true
 
 yaxunit:test:
   extends: .yaxunit:test
