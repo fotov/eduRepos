@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="91e52c7c-927b-412b-b22b-f8549e45a1e9">
+  <producedTypes>
+    <selectionType typeId="ed0aeaeb-bd74-42df-8d96-f04a521a41de" valueTypeId="c78e9e21-fff1-474c-a82c-8b1a3babffb3"/>
+    <listType typeId="c54cf5d1-163c-42be-8726-52e0057c285e" valueTypeId="297e15a4-548c-41e2-a96b-711463b4b8a5"/>
+    <managerType typeId="c97d8a30-3e4a-4a65-a62c-68704d0caf1b" valueTypeId="b3807a8d-ab80-4161-97dd-003837f5171b"/>
+    <recordSetType typeId="5acb580b-c177-4755-8ac8-0faa0daed886" valueTypeId="fbce4c84-554f-4089-9c2d-a1d1ae5059fb"/>
+    <recordKeyType typeId="815e29b4-d70b-4986-9bab-df210eacc83d" valueTypeId="719f3665-b5c0-404a-b7fc-6f6d49de8cfc"/>
+    <recordType typeId="196e5220-aa0c-4071-9b91-4815c29dff1d" valueTypeId="17981460-e58f-41e1-9eb6-2b3c36a862f8"/>
+    <recordManagerType typeId="0ca2ed25-e15e-48f1-989a-ad528097a532" valueTypeId="11daaa4e-5b5c-45e0-99f1-4c2c9abc999e"/>
+  </producedTypes>
+  <name>ОбъектыМетаданныхПрава</name>
+  <synonym>
+    <key>ru</key>
+    <value>Объекты метаданных права</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="6981ec58-3cac-4c20-b53b-10cb62122e3b">
+    <name>Роль</name>
+    <synonym>
+      <key>ru</key>
+      <value>Роль</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="ab8a63a1-82b1-4a54-a680-efb69c786096">
+    <name>ОбъектМетаданных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект метаданных</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ОбъектыМетаданных</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+  </dimensions>
+  <dimensions uuid="cdfae80b-f405-4956-a0f7-dad581ddbf59">
+    <name>Право</name>
+    <synonym>
+      <key>ru</key>
+      <value>Право</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </dimensions>
+</mdclass:InformationRegister>

@@ -5052,6 +5052,53 @@
                   <textEdit>true</textEdit>
                 </extInfo>
               </items>
+              <items xsi:type="form:FormField">
+                <name>ТаблицаОбъектовКоличествоРолей</name>
+                <id>741</id>
+                <visible>true</visible>
+                <enabled>true</enabled>
+                <userVisible>
+                  <common>true</common>
+                </userVisible>
+                <dataPath xsi:type="form:DataPath">
+                  <segments>ТаблицаОбъектов.КоличествоРолей</segments>
+                </dataPath>
+                <extendedTooltip>
+                  <name>ТаблицаОбъектовКоличествоРолейРасширеннаяПодсказка</name>
+                  <id>743</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <type>Label</type>
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <extInfo xsi:type="form:LabelDecorationExtInfo">
+                    <horizontalAlign>Left</horizontalAlign>
+                  </extInfo>
+                </extendedTooltip>
+                <contextMenu>
+                  <name>ТаблицаОбъектовКоличествоРолейКонтекстноеМеню</name>
+                  <id>742</id>
+                  <visible>true</visible>
+                  <enabled>true</enabled>
+                  <userVisible>
+                    <common>true</common>
+                  </userVisible>
+                  <autoFill>true</autoFill>
+                </contextMenu>
+                <type>LabelField</type>
+                <editMode>Enter</editMode>
+                <showInHeader>true</showInHeader>
+                <headerHorizontalAlign>Left</headerHorizontalAlign>
+                <showInFooter>true</showInFooter>
+                <extInfo xsi:type="form:LabelFieldExtInfo">
+                  <autoMaxWidth>true</autoMaxWidth>
+                  <autoMaxHeight>true</autoMaxHeight>
+                  <hyperlink>true</hyperlink>
+                </extInfo>
+              </items>
               <autoCommandBar>
                 <name>ТаблицаОбъектовКоманднаяПанель</name>
                 <id>167</id>
@@ -5092,6 +5139,10 @@
                 </userVisible>
                 <horizontalAlign>Left</horizontalAlign>
               </autoCommandBar>
+              <handlers>
+                <event>Selection</event>
+                <name>ТаблицаОбъектовВыбор</name>
+              </handlers>
               <handlers>
                 <event>OnActivateRow</event>
                 <name>ТаблицаОбъектовПриАктивизацииСтроки</name>
@@ -8473,6 +8524,61 @@
       <valueType>
         <types>String</types>
         <stringQualifiers/>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>КоличествоРолей</name>
+      <title>
+        <key>ru</key>
+        <value>Количество ролей</value>
+      </title>
+      <id>25</id>
+      <valueType>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>5</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>ОбъектМетаданных</name>
+      <title>
+        <key>ru</key>
+        <value>Объект метаданных</value>
+      </title>
+      <id>26</id>
+      <valueType>
+        <types>CatalogRef.ОбъектыМетаданных</types>
+      </valueType>
+      <view>
+        <common>true</common>
+      </view>
+      <edit>
+        <common>true</common>
+      </edit>
+    </columns>
+    <columns>
+      <name>НеобходимыРоли</name>
+      <title>
+        <key>ru</key>
+        <value>Необходимы роли</value>
+      </title>
+      <id>27</id>
+      <valueType>
+        <types>Boolean</types>
       </valueType>
       <view>
         <common>true</common>
