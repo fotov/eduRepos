@@ -490,6 +490,21 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="7e58fad0-5b59-4811-8fce-269ed6cf80bb">
+    <name>ЗапретитьАвтоматическоеСогласование</name>
+    <synonym>
+      <key>ru</key>
+      <value>Запретить автоматическое согласование</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="546dd996-35fd-40f5-9391-d5c519da2ebb">
     <name>ФормаЭлемента</name>
     <synonym>
